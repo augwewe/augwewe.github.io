@@ -14,7 +14,7 @@ import {
 } from "./chunk-RLCMQTEQ.js";
 import {
   useEventListener
-} from "./chunk-OFJ5RNB2.js";
+} from "./chunk-KM3G6MA2.js";
 import {
   computed,
   inject,
@@ -178,4 +178,4 @@ export {
   usePageInfo,
   useScrollPromise
 };
-//# sourceMappingURL=chunk-NYUJGVIX.js.map
+//# sourceMappingURL=chunk-G3BKY3H3.js.map

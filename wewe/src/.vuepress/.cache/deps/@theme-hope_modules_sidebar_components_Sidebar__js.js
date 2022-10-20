@@ -4,10 +4,10 @@ import {
   renderChildren,
   renderItem,
   useSidebarItems
-} from "./chunk-WCABBGJP.js";
+} from "./chunk-27VLTFMW.js";
 import {
   useThemeLocaleData
-} from "./chunk-NYUJGVIX.js";
+} from "./chunk-G3BKY3H3.js";
 import "./chunk-4FFXQBON.js";
 import "./chunk-32HVN53J.js";
 import {
@@ -20,7 +20,7 @@ import {
   useRoute
 } from "./chunk-RLCMQTEQ.js";
 import "./chunk-YACYAO4R.js";
-import "./chunk-OFJ5RNB2.js";
+import "./chunk-KM3G6MA2.js";
 import {
   computed,
   defineComponent,

@@ -1,7 +1,7 @@
 import {
   useAutoLink,
   useThemeLocaleData
-} from "./chunk-NYUJGVIX.js";
+} from "./chunk-G3BKY3H3.js";
 import {
   dt
 } from "./chunk-4FFXQBON.js";
@@ -170,4 +170,4 @@ export {
   setupSidebarItems,
   useSidebarItems
 };
-//# sourceMappingURL=chunk-WCABBGJP.js.map
+//# sourceMappingURL=chunk-27VLTFMW.js.map
