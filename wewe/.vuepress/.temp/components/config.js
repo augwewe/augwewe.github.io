@@ -1,9 +1,9 @@
-import { useStyleTag } from "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
+import { useStyleTag } from "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
 import { h } from "vue";
 import { defineClientConfig } from "@vuepress/client";
-import Badge from "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import FontIcon from "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import BackToTop from "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
+import Badge from "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import FontIcon from "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import BackToTop from "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
 
 export default defineClientConfig({

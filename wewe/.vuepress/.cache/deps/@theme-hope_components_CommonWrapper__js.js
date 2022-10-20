@@ -1,6 +1,6 @@
 import {
   useSidebarItems
-} from "./chunk-27VLTFMW.js";
+} from "./chunk-KMOBYUK5.js";
 import {
   useMobile,
   usePageAuthor,
@@ -39,7 +39,7 @@ import "./chunk-WFBTEJUR.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/PageFooter.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/styles/footer.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/styles/footer.scss";
 var PageFooter_default = defineComponent({
   name: "PageFooter",
   setup() {
@@ -66,7 +66,7 @@ var PageFooter_default = defineComponent({
 });
 
 // node_modules/vuepress-theme-hope/lib/client/components/CommonWrapper.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/styles/common.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/styles/common.scss";
 var CommonWrapper_default = defineComponent({
   name: "CommonWrapper",
   props: {

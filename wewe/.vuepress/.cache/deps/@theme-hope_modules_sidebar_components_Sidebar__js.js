@@ -4,7 +4,7 @@ import {
   renderChildren,
   renderItem,
   useSidebarItems
-} from "./chunk-27VLTFMW.js";
+} from "./chunk-KMOBYUK5.js";
 import {
   useThemeLocaleData
 } from "./chunk-G3BKY3H3.js";
@@ -33,7 +33,7 @@ import "./chunk-WFBTEJUR.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/sidebar/components/SidebarChild.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar-child.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar-child.scss";
 var SidebarChild_default = defineComponent({
   name: "SidebarChild",
   props: {
@@ -59,7 +59,7 @@ var SidebarChild_default = defineComponent({
 });
 
 // node_modules/vuepress-theme-hope/lib/client/modules/sidebar/components/SidebarGroup.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar-group.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar-group.scss";
 var SidebarGroup_default = defineComponent({
   name: "SidebarGroup",
   props: {
@@ -105,7 +105,7 @@ var SidebarGroup_default = defineComponent({
 });
 
 // node_modules/vuepress-theme-hope/lib/client/modules/sidebar/components/SidebarLinks.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar-links.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar-links.scss";
 var SidebarLinks_default = defineComponent({
   name: "SidebarLinks",
   props: {
@@ -133,7 +133,7 @@ var SidebarLinks_default = defineComponent({
 });
 
 // node_modules/vuepress-theme-hope/lib/client/modules/sidebar/components/Sidebar.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/modules/sidebar/styles/sidebar.scss";
 var Sidebar_default = defineComponent({
   name: "SideBar",
   setup(_props, { slots }) {

@@ -15,7 +15,7 @@ import "./chunk-WFBTEJUR.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/transitions/FadeSlideY.js
-import "D:/myaugwewe/augwewe.github.io/wewe/node_modules/vuepress-theme-hope/lib/client/styles/fade-slide-y.scss";
+import "/Users/aiyuechuang/GitHubPage/augwewe.github.io/node_modules/vuepress-theme-hope/lib/client/styles/fade-slide-y.scss";
 var FadeSlideY_default = defineComponent({
   name: "FadeSlideY",
   setup(_props, { slots }) {
