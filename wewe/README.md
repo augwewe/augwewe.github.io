@@ -2,9 +2,9 @@
 home: true
 layout: Blog
 icon: home
-title: Blog Home
+title: augwewe 
 heroImage: /logo.svg
-heroText: the name of your blog
+heroText: keep hungry keep foolish
 tagline: You can put your slogan here
 heroFullScreen: true
 projects:
