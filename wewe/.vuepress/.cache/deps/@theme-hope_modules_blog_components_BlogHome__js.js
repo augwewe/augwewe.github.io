@@ -1,7 +1,7 @@
 import {
   ArticleList_default,
   InfoPanel_default
-} from "./chunk-WBYIVCVC.js";
+} from "./chunk-XCWREG7W.js";
 import "./chunk-FSYKKHIJ.js";
 import {
   ArticleIcon,
@@ -11,7 +11,7 @@ import {
   ProjectIcon,
   SlideDownIcon
 } from "./chunk-24VFT3SZ.js";
-import "./chunk-LH4CC3DX.js";
+import "./chunk-RKUFDFVK.js";
 import {
   useArticles
 } from "./chunk-HVWOKZXD.js";
