@@ -1,12 +1,12 @@
 import {
+  TOC_default
+} from "./chunk-BHLTDKKT.js";
+import {
   EditIcon
 } from "./chunk-D3G6LSSY.js";
 import {
   useDarkMode
 } from "./chunk-ZCV7TUBG.js";
-import {
-  TOC_default
-} from "./chunk-BHLTDKKT.js";
 import {
   PageInfo_default,
   useContributors,

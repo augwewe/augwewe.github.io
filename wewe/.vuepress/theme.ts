@@ -3,18 +3,18 @@ import { zhNavbar } from "./navbar.js";
 import { zhSidebar } from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://augwewe.cn",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "wewe",
+    url: "https://augwewe.cn",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "augwewe",
 
   docsDir: "docs",
 
@@ -40,14 +40,16 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "no pain no gain",
 
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
+        name:"augwewe",
+        description: "Methodical",
+        intro: "/intro.html",
       },
+
 
       // page meta
       metaLocales: {
@@ -75,12 +77,12 @@ export default hopeTheme({
       /**
        * Using Giscus
        */
-      provider: "Giscus",
+      /*provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
       repoId: "R_kgDOG_Pt2A",
       category: "Announcements",
       categoryId: "DIC_kwDOG_Pt2M4COD69",
-
+     */
       /**
        * Using Twikoo
        */
@@ -90,8 +92,20 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+       provider: "Waline",
+       serverURL: "https://discuss.augwewe.cn/",
+       reaction: [
+        '/Waline/tieba/tieba_agree.png',
+        '/Waline/tieba/tieba_sunglasses.png',
+        '/Waline/tieba/tieba_pick_nose.png',
+        '/Waline/tieba/tieba_sleep.png',
+        '/Waline/tieba/tieba_awkward.png',
+        '/Waline/tieba/tieba_coffee.png',
+        '/Waline/tieba/tieba_cute.png',
+        '/Waline/qq/qq_4.gif',
+        '/Waline/qq/qq_alpaca.gif',
+        '/Waline/qq/qq_bear2.gif',
+      ],
     },
 
     // Disable features you don't want here

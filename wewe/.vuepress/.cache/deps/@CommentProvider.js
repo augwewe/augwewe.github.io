@@ -1,4 +1,7 @@
 import {
+  tt
+} from "./chunk-4FFXQBON.js";
+import {
   client_exports
 } from "./chunk-FECFGNAG.js";
 import {
@@ -10,40 +13,48 @@ import {
   defineComponent,
   h,
   onMounted,
-  ref
+  watch
 } from "./chunk-ACN7CFPX.js";
 import "./chunk-WFBTEJUR.js";
 import "./chunk-5E3NKPRU.js";
 
-// node_modules/vuepress-plugin-comment2/lib/client/components/Giscus.js
-import "D:/myaugwewe/augwewe.github.io/node_modules/vuepress-plugin-comment2/lib/client/styles/giscus.scss";
+// node_modules/vuepress-plugin-comment2/lib/client/components/Waline.js
+import { Waline as w } from "@waline/client/dist/component.mjs";
+import { pageviewCount as C } from "@waline/client/dist/pageview.mjs";
+import { pageviewCount as _ } from "@waline/client/dist/pageview.mjs";
+import "D:/myaugwewe/augwewe.github.io/node_modules/@waline/client/dist/waline.css";
+import "D:/myaugwewe/augwewe.github.io/node_modules/vuepress-plugin-comment2/lib/client/styles/waline.scss";
 var e = COMMENT_OPTIONS;
-var k = Boolean(e.repo && e.repoId && e.category && e.categoryId);
-var i = ["de", "gsw", "en", "es", "fr", "id", "it", "ja", "ko", "pl", "ro", "ru", "vi", "zh-CN", "zh-TW"];
-var P = defineComponent({ name: "GiscusComment", props: { darkmode: Boolean }, setup(s) {
-  const p = (0, client_exports.usePageFrontmatter)(), u = useRoute(), r = ref(false), c = computed(() => {
-    const t = (0, client_exports.usePageLang)().value;
-    if (i.includes(t))
-      return t;
-    const o = t.split("-")[0];
-    return i.includes(o) ? o : "en";
-  }), d = computed(() => {
-    if (!k)
+var k = WALINE_LOCALES;
+var i = Boolean(e.serverURL);
+WALINE_META && import("D:/myaugwewe/augwewe.github.io/node_modules/@waline/client/dist/waline-meta.css");
+var A = defineComponent({ name: "WalineComment", setup() {
+  const a = useRoute(), m = (0, client_exports.usePageFrontmatter)(), p = (0, client_exports.usePageLang)(), s = tt(k);
+  let t;
+  const c = computed(() => {
+    if (!i)
       return false;
-    const t = e.comment !== false, o = p.value.comment;
-    return Boolean(o) || t !== false && o !== false;
-  }), m = computed(() => {
-    var _a, _b;
-    return { repo: e.repo, repoId: e.repoId, category: e.category, categoryId: e.categoryId, lang: c.value, theme: s.darkmode ? (_a = e.darkTheme) != null ? _a : "dark" : (_b = e.lightTheme) != null ? _b : "light", mapping: e.mapping || "pathname", term: (0, client_exports.withBase)(u.path), inputPosition: e.inputPosition || "top", reactionsEnabled: e.reactionsEnabled !== false ? "1" : "0", strict: e.strict !== false ? "1" : "0", emitMetadata: "0" };
-  });
-  return onMounted(async () => {
-    await import("./giscus-DQEKOTPR.js"), r.value = true;
-  }), () => h("div", { class: ["giscus-wrapper", { "input-top": e.inputPosition !== "bottom" }], style: { display: d.value ? "block" : "none" } }, r.value ? h("giscus-widget", m.value) : h("div", { style: "text-align:center" }, "Loading..."));
+    const r = e.comment !== false, o = m.value.comment;
+    return Boolean(o) || r !== false && o !== false;
+  }), v = computed(() => {
+    if (!i)
+      return false;
+    const r = e.pageview !== false, o = m.value.pageview;
+    return Boolean(o) || r !== false && o !== false;
+  }), f = computed(() => ({ lang: p.value === "zh-CN" ? "zh-CN" : "en", locale: { ...s.value, ...e.locale || {} }, emoji: ["//unpkg.com/@waline/emojis@1.1.0/weibo", "//unpkg.com/@waline/emojis@1.1.0/bilibili"], dark: "html.dark", ...e, path: (0, client_exports.withBase)(a.path) }));
+  return onMounted(() => {
+    watch(() => a.path, () => {
+      t == null || t(), v.value && setTimeout(() => {
+        t = C({ serverURL: e.serverURL, path: (0, client_exports.withBase)(a.path) });
+      }, e.delay || 500);
+    }, { immediate: true });
+  }), () => c.value ? h("div", { class: "waline-wrapper" }, i ? h(w, f.value) : []) : null;
 } });
 
 // dep:@CommentProvider
-var CommentProvider_default = P;
+var CommentProvider_default = A;
 export {
-  CommentProvider_default as default
+  CommentProvider_default as default,
+  _ as pageviewCount
 };
 //# sourceMappingURL=@CommentProvider.js.map
