@@ -1,8 +1,9 @@
 import {
   PasswordModal_default,
   useGlobalEcrypt
-} from "./chunk-3JDPW55S.js";
+} from "./chunk-5ZEMUNWG.js";
 import "./chunk-FSYKKHIJ.js";
+import "./chunk-BGOVVDTY.js";
 import "./chunk-G3BKY3H3.js";
 import "./chunk-4FFXQBON.js";
 import "./chunk-FECFGNAG.js";
@@ -14,7 +15,6 @@ import {
   h
 } from "./chunk-ACN7CFPX.js";
 import "./chunk-WFBTEJUR.js";
-import "./chunk-BGOVVDTY.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/encrypt/components/GloablEncrypt.js

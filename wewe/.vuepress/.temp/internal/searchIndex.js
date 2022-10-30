@@ -1,6 +1,6 @@
 export const searchIndex = [
   {
-    "title": "Intro Page",
+    "title": "关于博主",
     "headers": [],
     "path": "/intro.html",
     "pathLocale": "/",
@@ -21,278 +21,39 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Cherry",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/cherry.html",
+    "title": "",
+    "headers": [],
+    "path": "/Blog/2022/firstWrite.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Dragonfruit",
+    "title": "python Note",
     "headers": [
       {
         "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
+        "title": "步骤",
+        "slug": "步骤",
+        "link": "#步骤",
+        "children": []
       }
     ],
-    "path": "/posts/dragonfruit.html",
+    "path": "/Blog/2022/mywriter.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Strawberry",
+    "title": "文章编写笔记",
     "headers": [
       {
         "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
+        "title": "步骤",
+        "slug": "步骤",
+        "link": "#步骤",
+        "children": []
       }
     ],
-    "path": "/posts/strawberry.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Tomato",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/tomato.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Apple 1",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/apple/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Apple 2",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/apple/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Apple 3",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/apple/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Apple 4",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/apple/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Banana 1",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/banana/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Banana 2",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/banana/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Banana 3",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/banana/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Banana 4",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Heading 2",
-        "slug": "heading-2",
-        "link": "#heading-2",
-        "children": [
-          {
-            "level": 3,
-            "title": "Heading 3",
-            "slug": "heading-3",
-            "link": "#heading-3",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/posts/banana/4.html",
+    "path": "/Blog/2022/page-edit.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -353,100 +114,30 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Cherry 分类",
+    "title": "notebook 分类",
     "headers": [],
-    "path": "/category/cherry/",
+    "path": "/category/notebook/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "red 标签",
+    "title": "Vue 标签",
     "headers": [],
-    "path": "/tag/red/",
+    "path": "/tag/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Dragonfruit 分类",
+    "title": "VuePress 分类",
     "headers": [],
-    "path": "/category/dragonfruit/",
+    "path": "/category/vuepress/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "small 标签",
+    "title": "VuePress 标签",
     "headers": [],
-    "path": "/tag/small/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Fruit 分类",
-    "headers": [],
-    "path": "/category/fruit/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "round 标签",
-    "headers": [],
-    "path": "/tag/round/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Strawberry 分类",
-    "headers": [],
-    "path": "/category/strawberry/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "big 标签",
-    "headers": [],
-    "path": "/tag/big/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Vegetable 分类",
-    "headers": [],
-    "path": "/category/vegetable/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "yellow 标签",
-    "headers": [],
-    "path": "/tag/yellow/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Apple 分类",
-    "headers": [],
-    "path": "/category/apple/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "curly 标签",
-    "headers": [],
-    "path": "/tag/curly/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Banana 分类",
-    "headers": [],
-    "path": "/category/banana/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "long 标签",
-    "headers": [],
-    "path": "/tag/long/",
+    "path": "/tag/vuepress/",
     "pathLocale": "/",
     "extraFields": []
   }

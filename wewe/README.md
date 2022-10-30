@@ -4,9 +4,9 @@ layout: Blog
 icon: home
 title: augwewe 
 heroImage: /logo.png
-heroText: keep hungry keep foolish
-bgImage: /bg1.jpg
-tagline: You can put your slogan here
+heroText: augwewe
+bgImage: /f2.jpg
+tagline: <font color="white"> keep hungry keep foolish </font>
 heroFullScreen: true
 projects:
   - icon: project

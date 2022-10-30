@@ -95,7 +95,7 @@ export default hopeTheme({
        provider: "Waline",
        serverURL: "https://discuss.augwewe.cn/",
        reaction: [
-        '/Waline/tieba/tieba_agree.png',
+        // '/Waline/tieba/ti7eba_agree.png',
         '/Waline/tieba/tieba_sunglasses.png',
         '/Waline/tieba/tieba_pick_nose.png',
         '/Waline/tieba/tieba_sleep.png',
