@@ -1,8 +1,8 @@
 export const pagesRoutes = [
   ["v-184f4da6","/intro.html",{"title":"关于博主","icon":"home","type":"article","readingTime":{"minutes":0.15,"words":44},"excerpt":"Intro Page Place your introducation and profile here.","date":"2022-09-04T12:11:00.000Z","localizedDate":"2022年9月4日"},["/intro","/intro.md"]],
-  ["v-8daa1a0e","/",{"title":"augwewe","icon":"home","type":"home","readingTime":{"minutes":0.51,"words":153},"excerpt":"This is a blog home page demo. To use this layout, you should set both layout: Blog and home: true in the page front matter. For related configuration docs, please see blog homepag"},["/index.html","/README.md"]],
+  ["v-8daa1a0e","/",{"title":"augwewe","icon":"home","type":"home","readingTime":{"minutes":0.28,"words":83},"excerpt":""},["/index.html","/README.md"]],
   ["v-f22f3126","/Blog/2022/firstWrite.html",{"title":"","type":"article","readingTime":{"minutes":0,"words":0},"excerpt":""},["/Blog/2022/firstWrite","/Blog/2022/firstWrite.md"]],
-  ["v-711c2fc6","/Blog/2022/mywriter.html",{"title":"python Note","icon":"vue","type":"article","readingTime":{"minutes":0.2,"words":59},"excerpt":"第一个python笔记 步骤","author":"cava","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true},["/Blog/2022/mywriter","/Blog/2022/mywriter.md"]],
+  ["v-711c2fc6","/Blog/2022/mywriter.html",{"title":"python Note","icon":"vue","type":"article","readingTime":{"minutes":0.2,"words":59},"excerpt":"","author":"cava","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true,"isEncrypted":true},["/Blog/2022/mywriter","/Blog/2022/mywriter.md"]],
   ["v-b7228aa4","/Blog/2022/page-edit.html",{"title":"文章编写笔记","icon":"vue","type":"article","readingTime":{"minutes":0.23,"words":70},"excerpt":"你好，我是小可爱。你是谁呢。 步骤","author":"小可爱","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true},["/Blog/2022/page-edit","/Blog/2022/page-edit.md"]],
   ["v-3706649a","/404.html",{"title":"","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/404"]],
   ["v-5bc93818","/category/",{"title":"分类","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/category/index.html"]],
@@ -16,4 +16,5 @@ export const pagesRoutes = [
   ["v-b302da92","/tag/vue/",{"title":"Vue 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vue/index.html"]],
   ["v-43d7543a","/category/vuepress/",{"title":"VuePress 分类","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/category/vuepress/index.html"]],
   ["v-ed16b278","/tag/vuepress/",{"title":"VuePress 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vuepress/index.html"]],
+  ["v-21564982","/.~README.html",{"title":"","type":"article","readingTime":{"minutes":0,"words":0},"excerpt":""},["/.~README","/.~README.md"]],
 ]

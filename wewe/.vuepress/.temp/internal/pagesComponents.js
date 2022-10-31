@@ -35,4 +35,6 @@ export const pagesComponents = {
   "v-43d7543a": defineAsyncComponent(() => import(/* webpackChunkName: "v-43d7543a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/category/vuepress/index.html.vue")),
   // path: /tag/vuepress/
   "v-ed16b278": defineAsyncComponent(() => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.vue")),
+  // path: /.~README.html
+  "v-21564982": defineAsyncComponent(() => import(/* webpackChunkName: "v-21564982" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/.~README.html.vue")),
 }

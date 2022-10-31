@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://augwewe.cn",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "//at.alicdn.com/t/c/font_3740606_fkn8hfh30se.css",
 
   logo: "/logo.png",
 
@@ -62,6 +62,7 @@ export default hopeTheme({
     config: {
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
+      "/Blog/2022/mywriter.html":["721721"]
     },
   },
 

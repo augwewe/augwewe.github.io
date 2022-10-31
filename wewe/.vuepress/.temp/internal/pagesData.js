@@ -33,4 +33,6 @@ export const pagesData = {
   "v-43d7543a": () => import(/* webpackChunkName: "v-43d7543a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/category/vuepress/index.html.js").then(({ data }) => data),
   // path: /tag/vuepress/
   "v-ed16b278": () => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.js").then(({ data }) => data),
+  // path: /.~README.html
+  "v-21564982": () => import(/* webpackChunkName: "v-21564982" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/.~README.html.js").then(({ data }) => data),
 }

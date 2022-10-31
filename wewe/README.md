@@ -9,7 +9,7 @@ bgImage: /f2.jpg
 tagline: <font color="white"> keep hungry keep foolish </font>
 heroFullScreen: true
 projects:
-  - icon: project
+  - icon: zixun10
     name: project name
     desc: project detailed description
     link: https://your.project.link
@@ -29,21 +29,7 @@ projects:
     desc: Detailed description of the article
     link: https://link.to.your.article
 
-  - icon: friend
-    name: friend name
-    desc: Detailed description of friend
-    link: https://link.to.your.friend
-
-  - icon: /logo.svg
-    name: custom item
-    desc: Detailed description of this custom item
-    link: https://link.to.your.friend
 
 footer: customize your footer text
 ---
 
-This is a blog home page demo.
-
-To use this layout, you should set both `layout: Blog` and `home: true` in the page front matter.
-
-For related configuration docs, please see [blog homepage](https://vuepress-theme-hope.github.io/v2/guide/blog/home/).

@@ -19,4 +19,16 @@ export const zhSidebar = sidebar({
     "intro",
     "slides",
   ],
+  "/Blog/2022":[
+    {
+      text:"基础篇1",
+      icon:" ",
+      children:[""]
+    },
+    {
+      text:"基础篇2",
+      icon:"",
+      children:[""]
+    }
+  ]
 });
