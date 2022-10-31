@@ -36,6 +36,29 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "python Note",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Python 基础",
+        "slug": "python-基础",
+        "link": "#python-基础",
+        "children": [
+          {
+            "level": 3,
+            "title": "today",
+            "slug": "today",
+            "link": "#today",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/mywriter2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "文章编写笔记",
     "headers": [
       {

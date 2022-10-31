@@ -1,6 +1,6 @@
 {
   "hash": "dac96297",
-  "browserHash": "2f996337",
+  "browserHash": "a3cf0845",
   "optimized": {
     "autosize": {
       "src": "../../../../node_modules/autosize/dist/autosize.esm.js",
@@ -170,6 +170,12 @@
       "fileHash": "2ce1f07c",
       "needsInterop": false
     },
+    "@theme-hope/components/transitions/FadeSlideY.js": {
+      "src": "../../../../node_modules/vuepress-theme-hope/lib/client/components/transitions/FadeSlideY.js",
+      "file": "@theme-hope_components_transitions_FadeSlideY__js.js",
+      "fileHash": "bceedc1b",
+      "needsInterop": false
+    },
     "@theme-hope/components/SkipLink.js": {
       "src": "../../../../node_modules/vuepress-theme-hope/lib/client/components/SkipLink.js",
       "file": "@theme-hope_components_SkipLink__js.js",
@@ -186,12 +192,6 @@
       "src": "../../../../node_modules/vuepress-theme-hope/lib/client/modules/blog/components/InfoList.js",
       "file": "@theme-hope_modules_blog_components_InfoList__js.js",
       "fileHash": "e156587b",
-      "needsInterop": false
-    },
-    "@theme-hope/components/transitions/FadeSlideY.js": {
-      "src": "../../../../node_modules/vuepress-theme-hope/lib/client/components/transitions/FadeSlideY.js",
-      "file": "@theme-hope_components_transitions_FadeSlideY__js.js",
-      "fileHash": "bceedc1b",
       "needsInterop": false
     }
   },
