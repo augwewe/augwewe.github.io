@@ -14,13 +14,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/Blog/2022/firstWrite.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "python Note",
     "headers": [
       {
@@ -40,18 +33,10 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "Python 基础",
-        "slug": "python-基础",
-        "link": "#python-基础",
-        "children": [
-          {
-            "level": 3,
-            "title": "today",
-            "slug": "today",
-            "link": "#today",
-            "children": []
-          }
-        ]
+        "title": "python 基础练习",
+        "slug": "python-基础练习",
+        "link": "#python-基础练习",
+        "children": []
       }
     ],
     "path": "/Blog/2022/mywriter2.html",

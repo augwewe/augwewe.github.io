@@ -3,8 +3,6 @@ export const pagesData = {
   "v-184f4da6": () => import(/* webpackChunkName: "v-184f4da6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/intro.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/firstWrite.html
-  "v-f22f3126": () => import(/* webpackChunkName: "v-f22f3126" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/firstWrite.html.js").then(({ data }) => data),
   // path: /Blog/2022/mywriter.html
   "v-711c2fc6": () => import(/* webpackChunkName: "v-711c2fc6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter.html.js").then(({ data }) => data),
   // path: /Blog/2022/mywriter2.html

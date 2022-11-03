@@ -1,9 +1,25 @@
-<template><div><h2 id="python-基础" tabindex="-1"><a class="header-anchor" href="#python-基础" aria-hidden="true">#</a> Python 基础</h2>
-<h3 id="today" tabindex="-1"><a class="header-anchor" href="#today" aria-hidden="true">#</a> today</h3>
-<hr>
-<h4 id="代码块" tabindex="-1"><a class="header-anchor" href="#代码块" aria-hidden="true">#</a> 代码块</h4>
-<p><img src="@source/Blog/2022/mywriter2.assets/迪士尼1.jpg" alt="迪士尼1" loading="lazy"></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#输入。。</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
+<template><div><h2 id="python-基础练习" tabindex="-1"><a class="header-anchor" href="#python-基础练习" aria-hidden="true">#</a> python 基础练习</h2>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#Q1----------------------------------</span>
+a<span class="token operator">=</span><span class="token string">"snout"</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token comment">#输出"out"</span>
+b<span class="token operator">=</span><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'fog'</span><span class="token punctuation">,</span><span class="token string">'cog'</span><span class="token punctuation">,</span><span class="token string">'dog'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+<span class="token comment">#输出['cog', 'dog', 'fog']</span>
+c<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'now'</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">'south'</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">'hurry'</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+<span class="token comment">#输出"why"</span>
+d<span class="token operator">=</span><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'owls'</span><span class="token punctuation">:</span><span class="token string">'good'</span><span class="token punctuation">,</span><span class="token string">'more owls'</span><span class="token punctuation">:</span><span class="token string">'not so good'</span><span class="token punctuation">}</span><span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span>
+<span class="token comment">#输出"not so good"</span>
+f<span class="token operator">=</span><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token string">"cinema"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+f1<span class="token operator">=</span><span class="token string">"nic"</span> <span class="token keyword">not</span> <span class="token keyword">in</span> f
+<span class="token keyword">print</span><span class="token punctuation">(</span>f1<span class="token punctuation">)</span>
+<span class="token comment">#输出True</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">[</span>i<span class="token operator">%</span><span class="token number">2</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">#输出[]</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
