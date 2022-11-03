@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: augwewe 
-heroImage: /logo.png
+heroImage: https://img-blog.csdnimg.cn/50204645e14649189a95217e24da7c94.png
 heroText: augwewe
 bgImage: https://img-blog.csdnimg.cn/ecead46ad8734b4496ec4f069edbea16.jpeg
 tagline: <font color="white"> keep hungry keep foolish </font>
