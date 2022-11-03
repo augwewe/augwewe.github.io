@@ -8,7 +8,7 @@ export default defineUserConfig({
       'script',
       {
         type:"text/javascript",
-        src:"/js/baidu.js"
+        src:"/ js/baidu.js"
       }
       ]
   ],
