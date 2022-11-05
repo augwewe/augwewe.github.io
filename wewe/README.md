@@ -5,7 +5,7 @@ icon: home
 title: augwewe 
 heroImage: https://img-blog.csdnimg.cn/50204645e14649189a95217e24da7c94.png
 heroText: augwewe
-bgImage: https://img-blog.csdnimg.cn/ecead46ad8734b4496ec4f069edbea16.jpeg
+bgImage: https://img-blog.csdnimg.cn/460a56ab41aa427cb31b03adb2c7e2f7.jpeg
 tagline: <font color="white"> keep hungry keep foolish </font>
 heroFullScreen: true
 projects:

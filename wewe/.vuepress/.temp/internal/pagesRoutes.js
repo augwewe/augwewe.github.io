@@ -1,7 +1,7 @@
 export const pagesRoutes = [
   ["v-184f4da6","/intro.html",{"title":"关于博主","icon":"home","type":"article","readingTime":{"minutes":0.15,"words":44},"excerpt":"Intro Page Place your introducation and profile here.","date":"2022-09-04T12:11:00.000Z","localizedDate":"2022年9月4日"},["/intro","/intro.md"]],
   ["v-8daa1a0e","/",{"title":"augwewe","icon":"home","type":"home","readingTime":{"minutes":0.38,"words":115},"excerpt":""},["/index.html","/README.md"]],
-  ["v-711c2fc6","/Blog/2022/mywriter.html",{"title":"python Note","icon":"vue","type":"article","readingTime":{"minutes":0.2,"words":59},"excerpt":"","author":"cava","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true,"isEncrypted":true},["/Blog/2022/mywriter","/Blog/2022/mywriter.md"]],
+  ["v-711c2fc6","/Blog/2022/mywriter.html",{"title":"python 自动化","icon":"vue","type":"article","readingTime":{"minutes":1.19,"words":357},"excerpt":"","author":"cava","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true,"isEncrypted":true},["/Blog/2022/mywriter","/Blog/2022/mywriter.md"]],
   ["v-2a67d123","/Blog/2022/mywriter2.html",{"title":"python Note","icon":"vue","type":"article","readingTime":{"minutes":0.46,"words":137},"excerpt":"python 基础练习","author":"cava","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true},["/Blog/2022/mywriter2","/Blog/2022/mywriter2.md"]],
   ["v-b7228aa4","/Blog/2022/page-edit.html",{"title":"文章编写笔记","icon":"vue","type":"article","readingTime":{"minutes":0.23,"words":70},"excerpt":"你好，我是小可爱。你是谁呢。 步骤","author":"小可爱","date":"2022-10-30T12:04:21.000Z","localizedDate":"2022年10月30日","category":["notebook","VuePress"],"tag":["Vue","VuePress"],"sticky":false,"star":false,"isOriginal":true},["/Blog/2022/page-edit","/Blog/2022/page-edit.md"]],
   ["v-3706649a","/404.html",{"title":"","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/404"]],
@@ -16,4 +16,5 @@ export const pagesRoutes = [
   ["v-b302da92","/tag/vue/",{"title":"Vue 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vue/index.html"]],
   ["v-43d7543a","/category/vuepress/",{"title":"VuePress 分类","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/category/vuepress/index.html"]],
   ["v-ed16b278","/tag/vuepress/",{"title":"VuePress 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vuepress/index.html"]],
+  ["v-a9cdf166","/Blog/2022/.~mywriter.html",{"title":"","type":"article","readingTime":{"minutes":0,"words":0},"excerpt":""},["/Blog/2022/.~mywriter","/Blog/2022/.~mywriter.md"]],
 ]
