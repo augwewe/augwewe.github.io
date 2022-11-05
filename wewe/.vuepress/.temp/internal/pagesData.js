@@ -7,8 +7,6 @@ export const pagesData = {
   "v-711c2fc6": () => import(/* webpackChunkName: "v-711c2fc6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter.html.js").then(({ data }) => data),
   // path: /Blog/2022/mywriter2.html
   "v-2a67d123": () => import(/* webpackChunkName: "v-2a67d123" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter2.html.js").then(({ data }) => data),
-  // path: /Blog/2022/page-edit.html
-  "v-b7228aa4": () => import(/* webpackChunkName: "v-b7228aa4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/page-edit.html.js").then(({ data }) => data),
   // path: /Blog/2022/rule.html
   "v-0f102de0": () => import(/* webpackChunkName: "v-0f102de0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/rule.html.js").then(({ data }) => data),
   // path: /404.html

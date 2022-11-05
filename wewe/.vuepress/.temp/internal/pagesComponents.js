@@ -9,8 +9,6 @@ export const pagesComponents = {
   "v-711c2fc6": defineAsyncComponent(() => import(/* webpackChunkName: "v-711c2fc6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter.html.vue")),
   // path: /Blog/2022/mywriter2.html
   "v-2a67d123": defineAsyncComponent(() => import(/* webpackChunkName: "v-2a67d123" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter2.html.vue")),
-  // path: /Blog/2022/page-edit.html
-  "v-b7228aa4": defineAsyncComponent(() => import(/* webpackChunkName: "v-b7228aa4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/page-edit.html.vue")),
   // path: /Blog/2022/rule.html
   "v-0f102de0": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f102de0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/rule.html.vue")),
   // path: /404.html
