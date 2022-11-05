@@ -44,21 +44,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "文章编写笔记",
-    "headers": [
-      {
-        "level": 2,
-        "title": "步骤",
-        "slug": "步骤",
-        "link": "#步骤",
-        "children": []
-      }
-    ],
-    "path": "/Blog/2022/page-edit.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "正则表达式",
     "headers": [
       {

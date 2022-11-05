@@ -62,7 +62,7 @@ export default hopeTheme({
     config: {
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
-      "/Blog/2022/mywriter.html":["721721"]
+      //"/Blog/2022/mywriter.html":["721721"]
     },
   },
 
