@@ -14,13 +14,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "python Note",
+    "title": "python 自动化",
     "headers": [
       {
         "level": 2,
-        "title": "步骤",
-        "slug": "步骤",
-        "link": "#步骤",
+        "title": "xls&xlsx",
+        "slug": "xls-xlsx",
+        "link": "#xls-xlsx",
         "children": []
       }
     ],
@@ -55,6 +55,64 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/page-edit.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "正则表达式",
+    "headers": [
+      {
+        "level": 2,
+        "title": "正则表达式",
+        "slug": "正则表达式",
+        "link": "#正则表达式",
+        "children": [
+          {
+            "level": 3,
+            "title": "模式",
+            "slug": "模式",
+            "link": "#模式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "常规匹配",
+            "slug": "常规匹配",
+            "link": "#常规匹配",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "atttention:",
+            "slug": "atttention",
+            "link": "#atttention",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "泛匹配",
+            "slug": "泛匹配",
+            "link": "#泛匹配",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "匹配特定目标",
+            "slug": "匹配特定目标",
+            "link": "#匹配特定目标",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "贪婪匹配",
+            "slug": "贪婪匹配",
+            "link": "#贪婪匹配",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/rule.html",
     "pathLocale": "/",
     "extraFields": []
   },
