@@ -26,7 +26,68 @@ backToTop: true
 toc: true
 ---
 
-## xls&xlsx
+### 读取excel
+
+```python
+#导入模块
+import xlrd,xlwt
+#打开文件
+wb = xlrd.open_workbook("../school/cava.xls")
+#获取全部的表
+sheets=wb.sheets(
+wb.sheet_by_name()
+#获取所有的行和列
+rows=sheets.nrows
+cols=sheets.ncols
+#获取文件中的表格
+#1.通过索引
+sheet = wb.sheet_by_index(0)
+#2.通过表格名
+sheet=wb.sheet_by_name("marm")
+#第一列所有的值
+print(sheet.col_values(0))
+#第一行所有的值
+print(sheet.row_values(0))
+#获取表格全部数据
+for row in range(rows):
+	for col in range(cols):
+ 		value = sheet.cell_value(row, col)
+        print(value, end="\t")#调整格式，使得数据以在表格中的样式显示在打印台
+    print()
+#例子:向表格第一行添加数据
+head_data=['name','sex','age']
+pos=0
+for in head_data:
+    sheet.write(0,pos,i)#sheet.write(行，列，数据)
+    pos+=1
+wb.save("othername.xls") 
+
+```
+
+### 追加表格 
+
+```py
+#导入模块
+import xlutils,xlrd
+from faker import Faker
+from xlutils.copy import copy
+faker = Faker()
+#打开表格
+wb = xlrd.open_workbook("my.xls")
+xwb = copy(wb)
+#追加的表格
+sheet = xwb.get_sheet("sheet1 ")
+#获取每一行的数据
+rows = sheet.get_rows()
+#获取全部行数
+print(len(rows))
+for row in range(len(rows), len(rows) + 1000):
+    for col in range(0, 6):
+        sheet.write(row, col, faker.name())#写入追加的数据
+xwb.save("cava1.xls") #需要新命名表格
+```
+
+### xls&xlsx
 
 一、.xls中最多存入的数据条数：column(256),row(65536)
 

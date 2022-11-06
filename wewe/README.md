@@ -10,7 +10,7 @@ tagline: <font color="white"> keep hungry keep foolish </font>
 heroFullScreen: true
 projects:
   - icon: zixun10
-    name: project name
+    name: python基础知识
     desc: project detailed description
     link: https://your.project.link
 
@@ -33,4 +33,3 @@ projects:
 footer: customize your footer text
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=7719117287&auto=1&height=32"></iframe>

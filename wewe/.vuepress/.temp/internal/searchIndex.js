@@ -17,7 +17,21 @@ export const searchIndex = [
     "title": "python 自动化",
     "headers": [
       {
-        "level": 2,
+        "level": 3,
+        "title": "读取excel",
+        "slug": "读取excel",
+        "link": "#读取excel",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "追加表格",
+        "slug": "追加表格",
+        "link": "#追加表格",
+        "children": []
+      },
+      {
+        "level": 3,
         "title": "xls&xlsx",
         "slug": "xls-xlsx",
         "link": "#xls-xlsx",
