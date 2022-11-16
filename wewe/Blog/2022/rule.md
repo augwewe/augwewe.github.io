@@ -114,3 +114,59 @@ print(result.group())
 print(result.group(1))
 ```
 
+### 换行输出
+
+```python
+content='''Hello 1234567 Word_This
+is a Regex Demo
+'''
+pattern="^h.*\s(\d+)\s.*Demo$"#
+result=re.match(pattern,content,re.S|re.I)#re.S可以匹配到换行,若开始字母是小写，且没有加re.I,就不会有输出，re.S是忽略大小写（不论开始字母是大写或小写都可以输出）
+print(result)
+print(result.group())
+print(result.group(1))
+```
+
+### groups()返回所有
+
+```python
+#groups()返回元组
+content="Hello 123 4567 Word_This is a Regex Demo"
+pattern="^H.*\s(\d+)\s.*Demo$"#
+result=re.match(pattern,content)
+print(result)
+print(result.groups())
+```
+
+### 转义 - 原样输出特殊符号
+
+``` python
+#转义
+import  re
+content="hello$6.66"
+result=re.match("hello\$6.66",content)#$默认结束，加上\转义后原样输出,.原样输出也需要转义
+print(result)
+```
+
+### search方法
+
+```python
+#search方法,不会因原字符开头和结尾不符合匹配而影响到结果
+content='''Hello 1234567 Word_This
+is a Regex Demo
+'''
+pattern="^h.*\s(\d+)\s.*Demo$"#
+result=re.search(pattern,content,re.S|re.I)#re.S可以匹配到换行,若开始字母是小写，且没有加re.I,就不会有输出，re.S是忽略大小写（不论开始字母是大写或小写都可以输出）
+print(result)
+#最好不要加^ $开始和结束符号
+```
+
+```python
+content="Extra strings Hello 1234567 Word_This is a 666 Regex Demo Extra strings"
+pattern="\d+"
+result=re.search(pattern,content)
+# result=re.search(pattern,content)输出1234567
+# result=re.match(pattern,content)#None
+print(result)
+```
+

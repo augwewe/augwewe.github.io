@@ -62,6 +62,43 @@ result<span class="token operator">=</span>re<span class="token punctuation">.</
 <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="换行输出" tabindex="-1"><a class="header-anchor" href="#换行输出" aria-hidden="true">#</a> 换行输出</h3>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>content<span class="token operator">=</span><span class="token triple-quoted-string string">'''Hello 1234567 Word_This
+is a Regex Demo
+'''</span>
+pattern<span class="token operator">=</span><span class="token string">"^h.*\s(\d+)\s.*Demo$"</span><span class="token comment">#</span>
+result<span class="token operator">=</span>re<span class="token punctuation">.</span><span class="token keyword">match</span><span class="token punctuation">(</span>pattern<span class="token punctuation">,</span>content<span class="token punctuation">,</span>re<span class="token punctuation">.</span>S<span class="token operator">|</span>re<span class="token punctuation">.</span>I<span class="token punctuation">)</span><span class="token comment">#re.S可以匹配到换行,若开始字母是小写，且没有加re.I,就不会有输出，re.S是忽略大小写（不论开始字母是大写或小写都可以输出）</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="groups-返回所有" tabindex="-1"><a class="header-anchor" href="#groups-返回所有" aria-hidden="true">#</a> groups()返回所有</h3>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#groups()返回元组</span>
+content<span class="token operator">=</span><span class="token string">"Hello 123 4567 Word_This is a Regex Demo"</span>
+pattern<span class="token operator">=</span><span class="token string">"^H.*\s(\d+)\s.*Demo$"</span><span class="token comment">#</span>
+result<span class="token operator">=</span>re<span class="token punctuation">.</span><span class="token keyword">match</span><span class="token punctuation">(</span>pattern<span class="token punctuation">,</span>content<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>groups<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="转义-原样输出特殊符号" tabindex="-1"><a class="header-anchor" href="#转义-原样输出特殊符号" aria-hidden="true">#</a> 转义 - 原样输出特殊符号</h3>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#转义</span>
+<span class="token keyword">import</span>  re
+content<span class="token operator">=</span><span class="token string">"hello$6.66"</span>
+result<span class="token operator">=</span>re<span class="token punctuation">.</span><span class="token keyword">match</span><span class="token punctuation">(</span><span class="token string">"hello\$6.66"</span><span class="token punctuation">,</span>content<span class="token punctuation">)</span><span class="token comment">#$默认结束，加上\转义后原样输出,.原样输出也需要转义</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="search方法" tabindex="-1"><a class="header-anchor" href="#search方法" aria-hidden="true">#</a> search方法</h3>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#search方法,不会因原字符开头和结尾不符合匹配而影响到结果</span>
+content<span class="token operator">=</span><span class="token triple-quoted-string string">'''Hello 1234567 Word_This
+is a Regex Demo
+'''</span>
+pattern<span class="token operator">=</span><span class="token string">"^h.*\s(\d+)\s.*Demo$"</span><span class="token comment">#</span>
+result<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span>content<span class="token punctuation">,</span>re<span class="token punctuation">.</span>S<span class="token operator">|</span>re<span class="token punctuation">.</span>I<span class="token punctuation">)</span><span class="token comment">#re.S可以匹配到换行,若开始字母是小写，且没有加re.I,就不会有输出，re.S是忽略大小写（不论开始字母是大写或小写都可以输出）</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token comment">#最好不要加^ $开始和结束符号</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>content<span class="token operator">=</span><span class="token string">"Extra strings Hello 1234567 Word_This is a 666 Regex Demo Extra strings"</span>
+pattern<span class="token operator">=</span><span class="token string">"\d+"</span>
+result<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span>content<span class="token punctuation">)</span>
+<span class="token comment"># result=re.search(pattern,content)输出1234567</span>
+<span class="token comment"># result=re.match(pattern,content)#None</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

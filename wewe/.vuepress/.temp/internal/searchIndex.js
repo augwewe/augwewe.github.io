@@ -32,6 +32,27 @@ export const searchIndex = [
       },
       {
         "level": 3,
+        "title": "os模块部分内容",
+        "slug": "os模块部分内容",
+        "link": "#os模块部分内容",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法二",
+        "slug": "方法二",
+        "link": "#方法二",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法三",
+        "slug": "方法三",
+        "link": "#方法三",
+        "children": []
+      },
+      {
+        "level": 3,
         "title": "xls&xlsx",
         "slug": "xls-xlsx",
         "link": "#xls-xlsx",
@@ -107,11 +128,54 @@ export const searchIndex = [
             "slug": "贪婪匹配",
             "link": "#贪婪匹配",
             "children": []
+          },
+          {
+            "level": 3,
+            "title": "换行输出",
+            "slug": "换行输出",
+            "link": "#换行输出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "groups()返回所有",
+            "slug": "groups-返回所有",
+            "link": "#groups-返回所有",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "转义 - 原样输出特殊符号",
+            "slug": "转义-原样输出特殊符号",
+            "link": "#转义-原样输出特殊符号",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "search方法",
+            "slug": "search方法",
+            "link": "#search方法",
+            "children": []
           }
         ]
       }
     ],
     "path": "/Blog/2022/rule.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "正则表达式",
+    "headers": [
+      {
+        "level": 3,
+        "title": "生成词云",
+        "slug": "生成词云",
+        "link": "#生成词云",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/sendemail.html",
     "pathLocale": "/",
     "extraFields": []
   },

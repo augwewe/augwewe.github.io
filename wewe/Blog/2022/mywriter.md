@@ -87,6 +87,33 @@ for row in range(len(rows), len(rows) + 1000):
 xwb.save("cava1.xls") #需要新命名表格
 ```
 
+###  os模块部分内容
+
+```python
+导入excel路径
+方法一
+path = "."  #当前路径,改变当前路径中的目录. 在data文件下
+    suffix=["xls"] 适合大项目
+    # print(list(os.walk(path)))
+    path_list=[]
+    # with open("data\\2022-10-客服部.xls","r",)
+    for dirpath,dirnames,filenames in os.walk(path):
+         for i in filenames:
+             if i.split(".")[-1] in suffix:
+                print(dirpath+"\\"+i)
+
+```
+
+
+
+### 方法二
+
+![image-20221115175917897](./mywriter.assets/image-20221115175917897.png)
+
+### 方法三
+
+![image-20221115183649716](./mywriter.assets/image-20221115183649716.png)
+
 ### xls&xlsx
 
 一、.xls中最多存入的数据条数：column(256),row(65536)
