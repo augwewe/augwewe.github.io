@@ -99,6 +99,113 @@ result<span class="token operator">=</span>re<span class="token punctuation">.</
 <span class="token comment"># result=re.search(pattern,content)输出1234567</span>
 <span class="token comment"># result=re.match(pattern,content)#None</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="sub方法" tabindex="-1"><a class="header-anchor" href="#sub方法" aria-hidden="true">#</a> sub方法</h3>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#sub，替换所有符合条件的 。2.将匹配的条件用括号引用，r'1\加上添加的内容',</span>
+content<span class="token operator">=</span><span class="token string">"Hello 1234567 Word_This is a Regex Demo"</span>
+content<span class="token operator">=</span>re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">"(\d+)"</span><span class="token punctuation">,</span><span class="token string">r"\1 666"</span><span class="token punctuation">,</span>content<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="excel数据清洗小案例" tabindex="-1"><a class="header-anchor" href="#excel数据清洗小案例" aria-hidden="true">#</a> excel数据清洗小案例</h3>
+<p>规范正则表达式</p>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> re
+
+<span class="token comment"># Detergent, Triton X-100, Emprove, 1 L</span>
+<span class="token comment"># Ethanol, Ethyl Alcohol Absolute 200 1L</span>
+<span class="token comment"># 4L Ethyl Alcohol Pure 200 Proof USP</span>
+<span class="token comment"># CIP 100, 1 gallon</span>
+<span class="token comment"># Bag, 50mL Labtainer BioProcess w/ Luer L</span>
+
+
+n1<span class="token operator">=</span><span class="token string">"Detergent, Triton X-100, Emprove, 1 L"</span>
+regex1<span class="token operator">=</span>n1<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"&amp;"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pattern1<span class="token operator">=</span><span class="token string">".*?(\d+(?:&amp;)?(GALLON|L|KG|ML|UL))"</span><span class="token comment">#gallon放在最前面，否则匹配到g就不会检测到gallon</span>
+result1<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern1<span class="token punctuation">,</span>regex1<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result1<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+n2<span class="token operator">=</span><span class="token string">"Ethanol, Ethyl Alcohol Absolute 200 1L"</span>
+regex2<span class="token operator">=</span>n2<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"&amp;"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pattern2<span class="token operator">=</span><span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span>
+result2<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern2<span class="token punctuation">,</span>regex2<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result2<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+n3<span class="token operator">=</span><span class="token string">"4L Ethyl Alcohol Pure 200 Proof USP"</span>
+regex3<span class="token operator">=</span>n3<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"&amp;"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pattern3<span class="token operator">=</span><span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span>
+result3<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern3<span class="token punctuation">,</span>regex3<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result3<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+n4<span class="token operator">=</span><span class="token string">"CIP 100, 1 gallon"</span>
+regex4<span class="token operator">=</span>n4<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"&amp;"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pattern4<span class="token operator">=</span><span class="token string">".*?(\d+(?:&amp;)?(GALLON|L|KG|ML|UL))"</span>
+result4<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern4<span class="token punctuation">,</span>regex4<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result4<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+n5<span class="token operator">=</span><span class="token string">"Bag, 50mL Labtainer BioProcess w/ Luer L"</span>
+regex5<span class="token operator">=</span>n5<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"&amp;"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pattern5<span class="token operator">=</span><span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span>
+result5<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern5<span class="token punctuation">,</span>regex5<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result5<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+regex_list<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">".*?(\d+(?:&amp;)?(GALLON|L|KG|ML|UL))"</span><span class="token punctuation">,</span>
+            <span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span><span class="token punctuation">,</span>
+            <span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span><span class="token punctuation">,</span>
+            <span class="token string">".*?(\d+(?:&amp;)?(GALLON|L|KG|ML|UL))"</span><span class="token punctuation">,</span>
+            <span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span>
+            <span class="token punctuation">]</span>
+new_regex<span class="token operator">=</span><span class="token builtin">set</span><span class="token punctuation">(</span>regex_list<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>new_regex<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> xlrd<span class="token punctuation">,</span>xlwt<span class="token punctuation">,</span>re
+
+wb<span class="token operator">=</span>xlrd<span class="token punctuation">.</span>open_workbook<span class="token punctuation">(</span><span class="token string">"MARA.xls"</span><span class="token punctuation">)</span>
+sheet <span class="token operator">=</span>wb<span class="token punctuation">.</span>sheet_by_name<span class="token punctuation">(</span><span class="token string">"marm"</span><span class="token punctuation">)</span>
+regex_list <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string">'.*?(?:,)?(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G))'</span><span class="token punctuation">,</span>
+    <span class="token string">'.*?(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G))'</span><span class="token punctuation">,</span>
+    <span class="token string">'(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G)).*?'</span><span class="token punctuation">,</span>
+    <span class="token string">'.*?(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G))'</span><span class="token punctuation">,</span>
+    <span class="token string">'.*?(\d+?(\.\d+)?(GALLON|L|KG|ML|G))'</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+
+M_data<span class="token operator">=</span>sheet<span class="token punctuation">.</span>col_values<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token comment">#序号</span>
+D_data<span class="token operator">=</span>sheet<span class="token punctuation">.</span>col_values<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token comment">#混乱的description</span>
+data_dict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">#将序号和description变成一一对应的字典</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>M_data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    data_dict<span class="token punctuation">[</span>M_data<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">=</span>D_data<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+<span class="token comment"># print(data_dict)</span>
+the_metrial<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+the_descripition<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> key<span class="token punctuation">,</span>value <span class="token keyword">in</span> data_dict<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> regex_list<span class="token punctuation">:</span>
+        test<span class="token operator">=</span>value<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"%"</span><span class="token punctuation">)</span>
+        result<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>i<span class="token punctuation">,</span>test<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">:</span>
+            the_metrial<span class="token punctuation">.</span>append<span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+            the_descripition<span class="token punctuation">.</span>append<span class="token punctuation">(</span>result<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+<span class="token comment">#打印测试查看保存的是否是符合正则表达式的key值</span>
+<span class="token comment"># print(the_descripition)</span>
+<span class="token comment"># print(the_metrial)</span>
+clean_description<span class="token operator">=</span><span class="token builtin">str</span><span class="token punctuation">(</span>the_descripition<span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"%"</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span>
+<span class="token comment"># print(type(clean_description))</span>
+<span class="token comment">#整理完毕，新建表格存入数据</span>
+wb2<span class="token operator">=</span>xlwt<span class="token punctuation">.</span>Workbook<span class="token punctuation">(</span><span class="token punctuation">)</span>
+sheet2<span class="token operator">=</span>wb2<span class="token punctuation">.</span>add_sheet<span class="token punctuation">(</span><span class="token string">"marm"</span><span class="token punctuation">)</span>
+head_data<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"Material"</span><span class="token punctuation">,</span><span class="token string">"Description"</span><span class="token punctuation">]</span>
+the_pos<span class="token operator">=</span><span class="token number">0</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> head_data<span class="token punctuation">:</span>
+    sheet2<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>the_pos<span class="token punctuation">,</span>i<span class="token punctuation">)</span>
+    the_pos<span class="token operator">+=</span><span class="token number">1</span>
+the_index<span class="token operator">=</span><span class="token number">1</span>
+<span class="token keyword">for</span> r <span class="token keyword">in</span> the_metrial<span class="token punctuation">:</span>
+    sheet2<span class="token punctuation">.</span>write<span class="token punctuation">(</span>the_index<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>r<span class="token punctuation">)</span>
+    the_index<span class="token operator">+=</span><span class="token number">1</span>
+the_count<span class="token operator">=</span><span class="token number">1</span>
+<span class="token keyword">for</span> k <span class="token keyword">in</span>  <span class="token builtin">eval</span><span class="token punctuation">(</span>clean_description<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    sheet2<span class="token punctuation">.</span>write<span class="token punctuation">(</span>the_count<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span>k<span class="token punctuation">)</span>
+    the_count<span class="token operator">+=</span><span class="token number">1</span>
+wb2<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">"Result_Mara.xls"</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出：</p>
+<img src="@source/Blog/2022/rule.assets/image-20221119111440378.png" alt="image-20221119111440378" style="zoom: 67%;" />
+</div></template>
 
 

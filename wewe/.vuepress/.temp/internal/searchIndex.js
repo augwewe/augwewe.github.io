@@ -156,6 +156,20 @@ export const searchIndex = [
             "slug": "search方法",
             "link": "#search方法",
             "children": []
+          },
+          {
+            "level": 3,
+            "title": "sub方法",
+            "slug": "sub方法",
+            "link": "#sub方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "excel数据清洗小案例",
+            "slug": "excel数据清洗小案例",
+            "link": "#excel数据清洗小案例",
+            "children": []
           }
         ]
       }

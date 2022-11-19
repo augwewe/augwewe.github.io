@@ -170,3 +170,123 @@ result=re.search(pattern,content)
 print(result)
 ```
 
+### sub方法
+
+```python
+#sub，替换所有符合条件的 。2.将匹配的条件用括号引用，r'1\加上添加的内容',
+content="Hello 1234567 Word_This is a Regex Demo"
+content=re.sub("(\d+)",r"\1 666",content)
+print(content)
+
+```
+
+###  excel数据清洗小案例
+
+规范正则表达式
+
+```python
+import re
+
+# Detergent, Triton X-100, Emprove, 1 L
+# Ethanol, Ethyl Alcohol Absolute 200 1L
+# 4L Ethyl Alcohol Pure 200 Proof USP
+# CIP 100, 1 gallon
+# Bag, 50mL Labtainer BioProcess w/ Luer L
+
+
+n1="Detergent, Triton X-100, Emprove, 1 L"
+regex1=n1.replace(" ","&").upper()
+pattern1=".*?(\d+(?:&)?(GALLON|L|KG|ML|UL))"#gallon放在最前面，否则匹配到g就不会检测到gallon
+result1=re.search(pattern1,regex1)
+print(result1.group(1))
+
+n2="Ethanol, Ethyl Alcohol Absolute 200 1L"
+regex2=n2.replace(" ","&").upper()
+pattern2=".*?(\d+(GALLON|L|KG|ML|UL))"
+result2=re.search(pattern2,regex2)
+print(result2.group(1))
+
+n3="4L Ethyl Alcohol Pure 200 Proof USP"
+regex3=n3.replace(" ","&").upper()
+pattern3=".*?(\d+(GALLON|L|KG|ML|UL))"
+result3=re.search(pattern3,regex3)
+print(result3.group(1))
+
+n4="CIP 100, 1 gallon"
+regex4=n4.replace(" ","&").upper()
+pattern4=".*?(\d+(?:&)?(GALLON|L|KG|ML|UL))"
+result4=re.search(pattern4,regex4)
+print(result4.group(1))
+
+n5="Bag, 50mL Labtainer BioProcess w/ Luer L"
+regex5=n5.replace(" ","&").upper()
+pattern5=".*?(\d+(GALLON|L|KG|ML|UL))"
+result5=re.search(pattern5,regex5)
+print(result5.group(1))
+
+regex_list=[".*?(\d+(?:&)?(GALLON|L|KG|ML|UL))",
+            ".*?(\d+(GALLON|L|KG|ML|UL))",
+            ".*?(\d+(GALLON|L|KG|ML|UL))",
+            ".*?(\d+(?:&)?(GALLON|L|KG|ML|UL))",
+            ".*?(\d+(GALLON|L|KG|ML|UL))"
+            ]
+new_regex=set(regex_list)
+print(new_regex)
+```
+
+```python
+import xlrd,xlwt,re
+
+wb=xlrd.open_workbook("MARA.xls")
+sheet =wb.sheet_by_name("marm")
+regex_list = [
+    '.*?(?:,)?(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G))',
+    '.*?(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G))',
+    '(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G)).*?',
+    '.*?(\d+?(\.\d+)?(%)?(GALLON|L|KG|ML|G))',
+    '.*?(\d+?(\.\d+)?(GALLON|L|KG|ML|G))',
+]
+
+M_data=sheet.col_values(0)[1:]#序号
+D_data=sheet.col_values(2)[1:]#混乱的description
+data_dict={} #将序号和description变成一一对应的字典
+for i in range(len(M_data)):
+    data_dict[M_data[i]]=D_data[i]
+# print(data_dict)
+the_metrial=[]
+the_descripition=[]
+for key,value in data_dict.items():
+    for i in regex_list:
+        test=value.upper().replace(" ","%")
+        result=re.search(i,test)
+        if result:
+            the_metrial.append(key)
+            the_descripition.append(result.group(1))
+            break
+#打印测试查看保存的是否是符合正则表达式的key值
+# print(the_descripition)
+# print(the_metrial)
+clean_description=str(the_descripition).replace("%","")
+# print(type(clean_description))
+#整理完毕，新建表格存入数据
+wb2=xlwt.Workbook()
+sheet2=wb2.add_sheet("marm")
+head_data=["Material","Description"]
+the_pos=0
+for i in head_data:
+    sheet2.write(0,the_pos,i)
+    the_pos+=1
+the_index=1
+for r in the_metrial:
+    sheet2.write(the_index,0,r)
+    the_index+=1
+the_count=1
+for k in  eval(clean_description):
+    sheet2.write(the_count,1,k)
+    the_count+=1
+wb2.save("Result_Mara.xls")
+```
+
+输出：
+
+<img src="./rule.assets/image-20221119111440378.png" alt="image-20221119111440378" style="zoom: 67%;" />
