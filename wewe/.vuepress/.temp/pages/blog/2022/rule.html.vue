@@ -124,7 +124,7 @@ result1<span class="token operator">=</span>re<span class="token punctuation">.<
 
 n2<span class="token operator">=</span><span class="token string">"Ethanol, Ethyl Alcohol Absolute 200 1L"</span>
 regex2<span class="token operator">=</span>n2<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token string">"&amp;"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
-pattern2<span class="token operator">=</span><span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span>
+pattern2<span class="token operator">=</span><span class="token string">".*?(\d+(GALLON|L|KG|ML|UL))"</span><span class="token comment">#|代表或，总结可能包含的单位</span>
 result2<span class="token operator">=</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>pattern2<span class="token punctuation">,</span>regex2<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>result2<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 

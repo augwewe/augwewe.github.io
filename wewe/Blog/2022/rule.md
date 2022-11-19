@@ -202,7 +202,7 @@ print(result1.group(1))
 
 n2="Ethanol, Ethyl Alcohol Absolute 200 1L"
 regex2=n2.replace(" ","&").upper()
-pattern2=".*?(\d+(GALLON|L|KG|ML|UL))"
+pattern2=".*?(\d+(GALLON|L|KG|ML|UL))"#|代表或，总结可能包含的单位
 result2=re.search(pattern2,regex2)
 print(result2.group(1))
 
