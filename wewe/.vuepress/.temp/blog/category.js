@@ -1,4 +1,4 @@
-export const categoryMap = {"category":{"/":{"path":"/category/","map":{"notebook":{"path":"/category/notebook/","keys":["v-711c2fc6","v-2a67d123","v-0f102de0","v-71f4efa2"]},"VuePress":{"path":"/category/vuepress/","keys":["v-711c2fc6","v-2a67d123","v-0f102de0","v-71f4efa2"]}}}},"tag":{"/":{"path":"/tag/","map":{"Vue":{"path":"/tag/vue/","keys":["v-711c2fc6","v-2a67d123","v-0f102de0","v-71f4efa2"]},"VuePress":{"path":"/tag/vuepress/","keys":["v-711c2fc6","v-2a67d123","v-0f102de0","v-71f4efa2"]}}}}}
+export const categoryMap = {"category":{"/":{"path":"/category/","map":{"notebook":{"path":"/category/notebook/","keys":["v-711c2fc6","v-2a67d123","v-157bfb4b","v-0f102de0","v-71f4efa2"]},"VuePress":{"path":"/category/vuepress/","keys":["v-711c2fc6","v-2a67d123","v-157bfb4b","v-0f102de0","v-71f4efa2"]}}}},"tag":{"/":{"path":"/tag/","map":{"Vue":{"path":"/tag/vue/","keys":["v-711c2fc6","v-2a67d123","v-157bfb4b","v-0f102de0","v-71f4efa2"]},"VuePress":{"path":"/tag/vuepress/","keys":["v-711c2fc6","v-2a67d123","v-157bfb4b","v-0f102de0","v-71f4efa2"]}}}}}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

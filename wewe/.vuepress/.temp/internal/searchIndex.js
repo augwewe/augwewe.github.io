@@ -82,6 +82,28 @@ export const searchIndex = [
     "title": "正则表达式",
     "headers": [
       {
+        "level": 3,
+        "title": "1. 网络爬虫类型",
+        "slug": "_1-网络爬虫类型",
+        "link": "#_1-网络爬虫类型",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Redis数据库",
+        "slug": "redis数据库",
+        "link": "#redis数据库",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/PythonCrawl.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "正则表达式",
+    "headers": [
+      {
         "level": 2,
         "title": "正则表达式",
         "slug": "正则表达式",
