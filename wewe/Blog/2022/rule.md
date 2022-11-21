@@ -1,4 +1,5 @@
 ---
+
 title: 正则表达式
 date: 2022-10-30 12:04:21
 author: cava
@@ -201,6 +202,51 @@ content="Hello 1234567 Word_This is a Regex Demo"
 content=re.sub("(\d+)",r"\1 666",content)
 print(content)
 
+```
+
+### 正则表达式小测试
+
+提取中文
+
+```python
+import re
+s='''<!DOCTYPE html> 
+<html>   
+<head>         
+<title>徐清风</title>   
+<head>   
+<body>         
+   <h2>               
+     <a>微信公众号:           
+     <em>转行学数据分析</em>           
+     </a>         
+   </h2>   
+</body> 
+</html>'''
+pattern="<html>.*?<title>(.*?)</title>.*?(?:\s+)?(?:<a>)(.*?):(?:\s+)(?:<em>)(.*?)</em>"
+n=re.findall(pattern,s,re.S)
+print(n)
+#输出[('徐清风', '微信公众号', '转行学数据分析')]
+```
+
+提取URL
+
+```python
+s1='<link rel="search" href="https://www.baidu.com"/> '
+pattern1='<link.*?href="(.*?)"/>'
+k=re.findall(pattern1,s1)
+print(k)
+#输出 ['https://www.baidu.com']
+```
+
+提取标签名
+
+```python
+s2="<groupId>QDReader.QDAarCenter</groupId>"
+pattern2="(<.*?>)\S+(</.*?>)"
+k1=re.findall(pattern2,s2)
+print(k1)
+#输出 [('<groupId>', '</groupId>')]
 ```
 
 ###  excel数据清洗小案例
