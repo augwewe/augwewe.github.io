@@ -230,3 +230,161 @@ Content-Type：也叫互联网媒体类型（Internet Media Type）或者 MIME �
 **点击上下箭头检查匹配的内容**
 
 ![image-20221121175421903](./PythonCrawl.assets/image-20221121175421903.png)
+
+## 线程
+
+### 全局解释器
+
+<img src="./PythonCrawl.assets/image-20221122150529578.png" alt="image-20221122150529578" style="zoom:67%;" />
+
+![image-20221122150602191](./PythonCrawl.assets/image-20221122150602191.png)
+
+一秒钟运行一个线程（一个程序）
+
+如上图所示，thread1和thread2,GIL锁被线程一拿走，且GIL锁只有一个，经过操作系统，在 cpu里执行，时间到了后，释放GIL锁，此时线程2拿到锁，跟线程1 的执行顺序一样。所以即使有2个程序在运行，但线程只有一个。若有其他线程，则会卡在python解释器里。
+
+![image-20221122151935405](./PythonCrawl.assets/image-20221122151935405.png)
+
+### 多线程
+
+![image-20221122154327669](./PythonCrawl.assets/image-20221122154327669.png)
+
+### 进程
+
+进程定义：一个进程可以做很多事情，并且同时做，互不干扰。
+
+线程：操作系统中最小的调度单位。
+
+**并发**：同一时刻只有一条指令执行，a->b,经过一会儿时间，b->a,同时推进，a和b互相切换，速度很快。
+
+并发在一核处理器的电脑中也能运行。
+
+**并行**：需要多个处理器，电脑只有一核处理器是不可以的；多个cpu中，同一时刻会有一个线程在运行就是并行
+
+<img src="./PythonCrawl.assets/image-20221122160228431.png" alt="image-20221122160228431" style="zoom:50%;" />
+
+### 多线程场景
+
+IO密集型，适合爬虫
+
+CPU密集型不适合多线程
+
+1.单线程
+
+```python
+import time
+def start():
+    for i in range(1000000):
+        i+=i
+    return
+#并不使用任何线程
+#time:0.3134646415710449
+def main():
+    start_time=time.time()
+    for i in range(10):
+        start()
+    print(time.time()-start_time)
+
+if __name__ == '__main__':
+    main()
+```
+
+2.多线程
+
+```python
+import time,threading
+def start():
+    for i in range(1000000):
+        i+=1
+    return
+
+def main():
+    start_time=time.time()#当前时间
+    thread_name_time={} #创建字典的目的，存储每一个线程以及他所对应的时间，key+value
+    for i in range(10):
+#每个线程顺序执行
+        thread=threading.Thread(target=start)#target写你要多线程运行的函数，不用加括号；加了括号调用的是函数运行完成后的值，此时每个线程中不能自己调用start()函数
+        thread.start() #开启线程后就要开始运行
+        thread_name_time[i]=thread #将数据添加入字典，用i做key值，目的，顺序执行
+    for i in range(10):
+        thread_name_time[i].join()#join目的：线程执行完才会执行后续部分
+    print(time.time()-start_time)
+
+if __name__ == '__main__':
+    main()
+#time:0.2631237506866455
+#和test1速度相差并不大，
+```
+
+3.非守护线程
+
+```python
+import time,threading
+
+def start(num):
+    time.sleep(num)
+    print(threading.current_thread().name)#当前线程的名字
+    print(threading.current_thread().is_alive())#当前线程是否存活
+    print(threading.current_thread().ident)#当前线程的编号
+
+print("start")
+#要用多线中的哪个函数，target=函数，name为名字
+# 不命名就是ident
+thread=threading.Thread(target=start,name="the_first_thread",args=(1,))
+#声明结束后要启动
+thread.start()#主线程不等待它执行完再执行stop,
+thread.join()
+print("stop")
+#非守护线程
+#主线程运行完才会运行子线程内容
+#不会随着主线程结束而结束，
+#join输出前
+#start
+#stop
+#the_first_thread
+#True
+#40128
+-------------------------------------
+#join输出后
+# start
+# the_first_thread
+# True
+# 4952
+# stop
+```
+
+```python
+import threading,time
+
+def target(second):
+    print(f'Threading {threading.current_thread().name} is run.')
+    print(f'Threading {threading.current_thread().name} sleep {second}s')#沉睡了几秒
+    time.sleep(second)
+    print(f'threading{threading.current_thread().name} ended')
+print(f'Threading {threading.current_thread().name} is running')
+for i in [1,5]:
+    #元组也可
+    t=threading.Thread(target=target,args=[i])
+    t.start()
+    t.join()#等待前面执行完
+print(f'Threading {threading.current_thread().name} is ended')
+#输出   join前
+# #Threading MainThread is running
+# Threading Thread-1 (target) is run.
+# Threading Thread-1 (target) sleep 1s
+# Threading Thread-2 (target) is run.
+# Threading Thread-2 (target) sleep 5s
+# Threading MainThread is ended
+# threadingThread-1 (target) ended
+# threadingThread-2 (target) ended
+#join
+# Threading MainThread is running
+# Threading Thread-1 (target) is run.
+# Threading Thread-1 (target) sleep 1s
+# threadingThread-1 (target) ended
+# Threading Thread-2 (target) is run.
+# Threading Thread-2 (target) sleep 5s
+# threadingThread-2 (target) ended
+# Threading MainThread is ended
+```
+
