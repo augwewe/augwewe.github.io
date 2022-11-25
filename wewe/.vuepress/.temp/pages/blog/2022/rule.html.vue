@@ -1,7 +1,111 @@
 <template><div><h2 id="正则表达式" tabindex="-1"><a class="header-anchor" href="#正则表达式" aria-hidden="true">#</a> 正则表达式</h2>
 <h3 id="模式" tabindex="-1"><a class="header-anchor" href="#模式" aria-hidden="true">#</a> 模式</h3>
-<p><img src="@source/Blog/2022/rule.assets/n1.png" alt="n1" loading="lazy"></p>
-<p><img src="@source/Blog/2022/rule.assets/n2.png" alt="n2" loading="lazy"></p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\w</td>
+<td>匹配字母数字及下划线</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配非字母数字下划线</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意空白字符，等价于 [\t\n\r\f].</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任意非空字符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>匹配任意数字，等价于 [0-9]</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配任意非数字</td>
+</tr>
+<tr>
+<td>\A</td>
+<td>匹配字符串开始</td>
+</tr>
+<tr>
+<td>\Z</td>
+<td>匹配字符串结束，如果是存在换行，只匹配到换行前的结束字符串</td>
+</tr>
+<tr>
+<td>\z</td>
+<td>匹配字符串结束</td>
+</tr>
+<tr>
+<td>\G</td>
+<td>匹配最后匹配完成的位置</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>匹配一个换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>匹配一个制表符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配字符串的开头</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配字符串的末尾。</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。</td>
+</tr>
+<tr>
+<td>[...]</td>
+<td>用来表示一组字符,单独列出：[amk] 匹配 'a'，'m'或'k'</td>
+</tr>
+<tr>
+<td>[^...]</td>
+<td>不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配0个或多个的表达式。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配1个或多个的表达式。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式</td>
+</tr>
+<tr>
+<td n=""></td>
+<td>精确匹配n个前面表达式。</td>
+</tr>
+<tr>
+<td n,="" m=""></td>
+<td>匹配 n 到 m 次由前面的正则表达式定义的片段，贪婪方式</td>
+</tr>
+<tr>
+<td>a|b</td>
+<td>匹配a或b</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>匹配括号内的表达式，也表示一个组</td>
+</tr>
+</tbody>
+</table>
 <h3 id="常规匹配" tabindex="-1"><a class="header-anchor" href="#常规匹配" aria-hidden="true">#</a> 常规匹配</h3>
 <h3 id="atttention" tabindex="-1"><a class="header-anchor" href="#atttention" aria-hidden="true">#</a> atttention:</h3>
 <p>re.match(pattern,string,flag=0)</p>
@@ -105,6 +209,38 @@ content<span class="token operator">=</span><span class="token string">"Hello 12
 content<span class="token operator">=</span>re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">"(\d+)"</span><span class="token punctuation">,</span><span class="token string">r"\1 666"</span><span class="token punctuation">,</span>content<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span>
 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="正则表达式小测试" tabindex="-1"><a class="header-anchor" href="#正则表达式小测试" aria-hidden="true">#</a> 正则表达式小测试</h3>
+<p>提取中文</p>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> re
+s<span class="token operator">=</span><span class="token triple-quoted-string string">'''&lt;!DOCTYPE html> 
+&lt;html>   
+&lt;head>         
+&lt;title>徐清风&lt;/title>   
+&lt;head>   
+&lt;body>         
+   &lt;h2>               
+     &lt;a>微信公众号:           
+     &lt;em>转行学数据分析&lt;/em>           
+     &lt;/a>         
+   &lt;/h2>   
+&lt;/body> 
+&lt;/html>'''</span>
+pattern<span class="token operator">=</span><span class="token string">"&lt;html>.*?&lt;title>(.*?)&lt;/title>.*?(?:\s+)?(?:&lt;a>)(.*?):(?:\s+)(?:&lt;em>)(.*?)&lt;/em>"</span>
+n<span class="token operator">=</span>re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span>s<span class="token punctuation">,</span>re<span class="token punctuation">.</span>S<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+<span class="token comment">#输出[('徐清风', '微信公众号', '转行学数据分析')]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>提取URL</p>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>s1<span class="token operator">=</span><span class="token string">'&lt;link rel="search" href="https://www.baidu.com"/> '</span>
+pattern1<span class="token operator">=</span><span class="token string">'&lt;link.*?href="(.*?)"/>'</span>
+k<span class="token operator">=</span>re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>pattern1<span class="token punctuation">,</span>s1<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span>
+<span class="token comment">#输出 ['https://www.baidu.com']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>提取标签名</p>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>s2<span class="token operator">=</span><span class="token string">"&lt;groupId>QDReader.QDAarCenter&lt;/groupId>"</span>
+pattern2<span class="token operator">=</span><span class="token string">"(&lt;.*?>)\S+(&lt;/.*?>)"</span>
+k1<span class="token operator">=</span>re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>pattern2<span class="token punctuation">,</span>s2<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>k1<span class="token punctuation">)</span>
+<span class="token comment">#输出 [('&lt;groupId>', '&lt;/groupId>')]</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="excel数据清洗小案例" tabindex="-1"><a class="header-anchor" href="#excel数据清洗小案例" aria-hidden="true">#</a> excel数据清洗小案例</h3>
 <p>规范正则表达式</p>
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> re

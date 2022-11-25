@@ -388,3 +388,401 @@ print(f'Threading {threading.current_thread().name} is ended')
 # Threading MainThread is ended
 ```
 
+4.守护线程
+
+定义：若该线程被设置为守护线程，在主线程结束后即使该线程还没有运行完它也会被强制结束
+
+守护线程设置方法：在start之前添加 daemon=True
+
+```python
+def target(second):
+    print(f'Threading {threading.current_thread().name}is run')
+    print(f'Threading {threading.current_thread().name} is sleep {second}s')#沉睡的秒数
+    time.sleep(second)
+    print(f'threading{threading.current_thread().name} ended')
+print(f'Threading{threading.current_thread().name} is running')
+for i in [1,6]:
+    l=threading.Thread(target=target,args=[i])
+    l.daemon=True
+    l.start()
+print(f'Threading {threading.current_thread().name} is ended')
+#输出
+# ThreadingMainThread is running
+# Threading Thread-1 (target)is run
+# Threading Thread-1 (target) is sleep 1s
+# Threading Thread-2 (target)is run
+# Threading Thread-2 (target) is sleep 6s
+# Threading MainThread is ended
+
+#原先应该是显示thread-2 ended后，才显示 Threading MainThread is ended
+```
+
+5.互斥锁（浅浅了解一下）
+
+```python
+import threading
+import time
+
+count = 0
+
+
+class MyThread(threading.Thread):
+    def __init__(self):
+        threading.Thread.__init__(self)
+
+    def run(self):
+        global count
+        temp = count + 1
+        time.sleep(0.001)
+        count = temp
+
+
+threads = []
+for _ in range(1000):
+    thread = MyThread()
+    thread.start()
+    threads.append(thread)
+
+for thread in threads:
+    thread.join()
+print(f'Final count: {count}')
+#输出
+#Final count: 69 
+```
+
+因为 count 这个值是共享的，每个线程都可以在执行 temp = count 这行代码时拿到当前 count 的值，但是这些线程中的一些线程可能是并发或者并行执行的，这就导致不同的线程拿到的可能是同一个 count 值，最后导致有些线程的 count 的加 1 操作并没有生效，导致最后的结果偏小。
+
+所以，如果多个线程同时对某个数据进行读取或修改，就会出现不可预料的结果。为了避免这种情况，我们需要对多个线程进行同步，要实现同步，我们可以对需要操作的数据进行加锁保护，这里就需要用到 `threading.Lock` 了
+
+5.1加互斥锁
+
+**tips:注意最后释放锁，否则会造成死锁**
+
+```python
+import threading
+import time
+
+lock = threading.Lock() # 创建一个最简单的 读写锁
+number = 0
+
+def addNumber():
+    global number
+    for i in range(1000000):
+        lock.acquire() # 先获取
+        number += 1
+        # 中间的这个过程让他强制有这个计算和赋值的过程，也就是让他执行完这两个操作，后再切换。
+        # 这样就不会完成计算后，还没来的及赋值就跑到下一个去了。
+        # 这样也就防止了线程不安全的情况
+        lock.release() # 再释放
+
+def downNumber():
+    global number
+    for i in range(1000000):
+        lock.acquire()
+        number -= 1
+        lock.release()
+
+print("start") # 输出一个开始
+thread = threading.Thread(target = addNumber) #开启一个线程（声明）
+thread2 = threading.Thread(target = downNumber) # 开启第二个线程（声明）
+thread.start() # 开始
+thread2.start() # 开始
+thread.join()
+thread2.join()
+# join 阻塞在这里，直到我们得阻塞线程执行完毕才会向下执行
+print("外", number)
+print("stop")
+
+# 输出
+start
+外 0
+stop
+
+```
+
+6.线程池
+
+可以提前定义大概需要多少线程
+
+ ```python
+ import time
+ import threadpool
+ 
+ def get_html(url):
+     time.sleep(3)
+     print(url)
+ start_time=time.time()
+ #建立线程池
+ urls=[i for i in range(100)]
+ pool=threadpool.ThreadPool(10)
+ #提交任务给线程池
+ requests=threadpool.makeRequests(get_html,urls)
+ #
+ for req in requests:
+     pool.putRequest(req)
+ pool.wait()
+ ```
+
+### 多进程
+
+回顾：一个进程中有多个线程，同一时刻只能有一个线程运行，在python中的多线程并不能完全发挥多核优势。
+
+对于多进程来说，每个进程都有属于自己的GIL,多进程运行不受GIL影响，所以它能更好地发挥多核 的优势。
+
+1.创建进程比较消耗资源
+
+2.多线程和多进程相互结合比较适合大型爬虫项目
+
+3.多进程的好处，多进程中多个线程可以同时运行
+
+**4.多进程是并发执行**
+
+
+
+**多进程和多线程的对比**
+
+对于爬虫这种IO密集型任务来说，多线程和多进程影响差别不大。但是对于计算密集型任务，多进程的多核运行效率会有较高的提升。
+
+python内置库中实现多进程的方法：multiprocessing
+
+<img src="./PythonCrawl.assets/image-20221125103423866.png" alt="image-20221125103423866" style="zoom: 67%;" />
+
+**process类**
+
+
+
+多进程示例：
+
+```python
+import  multiprocessing
+#多进程
+def process(index):
+    print(f'Process:{index}')
+
+if __name__ == '__main__':
+
+    for i in range(5):
+        p = multiprocessing.Process(target=process,args=(i,))
+        p.start()
+#输出，几乎是同时输出
+# Process:1
+# Process:0
+# Process:2
+# Process:3
+# Process:4
+```
+
+在cpu核数足够的情况下，不同的进程会分配给不同的cpu核来运行，实现真正的并行执行
+
+在 multiprocessing中有提供方法：cpu_conut来获取当前机器 cpu 的核心数量，通过  active_children 方法来获取当前还在运行的所有进程。
+
+示例：
+
+```python
+import multiprocessing,time
+
+def process(index):
+    time.sleep(index)
+    print(f"Process:{index}")
+
+
+if __name__ == '__main__':
+    for i in range(5):
+        p=multiprocessing.Process(target=process,args=(i,))
+        p.start()
+    print(f"cpu number:{multiprocessing.cpu_count()}")
+          #cpu内核个数
+    for k in multiprocessing.active_children():
+        #子进程，类似多线程中的子线程
+        print(f"child process name:{k.name} id : {k.pid}")
+    print("process ended")
+#输出
+# cpu number:12
+# child process name:Process-1 id : 76188
+# child process name:Process-3 id : 73780
+# child process name:Process-2 id : 63316
+# child process name:Process-5 id : 74288
+# child process name:Process-4 id : 75304
+# process ended
+# Process:0
+# Process:1
+# Process:2
+# Process:3
+# Process:4
+```
+
+守护进程
+
+```python
+from multiprocessing import Process
+import time
+
+class MyProcess(Process):
+    def __init__(self,loop):
+        Process.__init__(self)
+        self.loop=loop
+    def run(self):
+        for count in range(self.loop):
+            time.sleep(1)
+            print(f"pid:{self.pid} LoopCount : {count}")
+if __name__ == '__main__':
+    # print("the main process start")
+    process=[]
+    for i in range(3,5):
+        p=MyProcess(i)
+        # process.append(i)
+        p.daemon=True
+        p.start()
+    # for p in process:
+    #     p.join(1)
+    print("main process ended")
+#输出
+#main process ended
+```
+
+上述程序中，主进程只输出了字符串就结束，同时子进程也结束，可以有效地防止无控制生成子进程，主进程结束后，子进程也会关闭，避免独立的子进程运行。
+
+等待子进程运行完后主进程再结束
+
+```python
+from multiprocessing import Process
+import time
+
+class MyProcess(Process):
+    def __init__(self,loop):
+        Process.__init__(self)
+        self.loop=loop
+    def run(self):
+        for count in range(self.loop):
+            time.sleep(1)
+            print(f"pid:{self.pid} LoopCount : {count}")
+if __name__ == '__main__':
+    # print("the main process start")
+    process=[]
+    for i in range(3,5):
+        p=MyProcess(i)
+        process.append(i)
+        p.daemon=True
+        p.start()
+     for p in process:
+         p.join(1)#join方法中加上父进程等待子进程运行的最长时间，预防主进程无限等待子进程
+    print("main process ended")
+#输出
+#the main process start
+#pid:79156 LoopCount : 0
+#pid:80512 LoopCount : 0
+#pid:80512 LoopCount : 1pid:79156 LoopCount : 1
+
+#pid:80512 LoopCount : 2pid:79156 LoopCount : 2
+
+#main process ended
+#父进程等待子进程结束后再结束
+```
+
+终止进程
+
+```python
+import multiprocessing,time
+
+def process():
+    print("starting")
+    time.sleep(5)
+    print("finshed")
+
+if __name__ == '__main__':
+    p=multiprocessing.Process(target=process)
+    print("before:",p,p.is_alive())
+
+    p.start()
+    print("during",p,p.is_alive())
+
+    p.terminate()
+    print("terminate:",p,p.is_alive())
+
+    p.join()
+    print("joined:",p,p.is_alive())
+#输出
+# before: <Process name='Process-1' parent=71916 initial> False
+# during <Process name='Process-1' pid=68076 parent=71916 started> True
+# terminate: <Process name='Process-1' pid=68076 parent=71916 started> True
+# joined: <Process name='Process-1' pid=68076 parent=71916 stopped exitcode=-SIGTERM> False
+```
+
+进程互斥锁
+
+1.不加锁的示例
+
+```python
+from multiprocessing import  Process,Lock
+import time
+
+class Myprocess(Process):
+    def __init__(self,loop,lock):
+        Process.__init__(self)
+        self.loop=loop
+        self.lock=lock
+    def run(self) :
+        for count in range(self.loop):
+            time.sleep(0.1)
+            print(f"pid:{self.pid}  LoopCount:{count}")
+
+if __name__ == '__main__':
+    lock=Lock()
+    for i in range(10,15):
+        p=Myprocess(i,lock)
+        p.start()
+#输出
+
+# pid:57708  LoopCount:0
+# pid:61308  LoopCount:0
+# pid:75420  LoopCount:0
+# pid:75748  LoopCount:0
+# pid:72032  LoopCount:0
+# pid:57708  LoopCount:1
+# pid:75420  LoopCount:1pid:61308  LoopCount:1
+# 
+# pid:75748  LoopCount:1
+# pid:72032  LoopCount:1
+
+```
+
+从上述程序中可以看出，有不换行的输出
+
+如何换行输出？
+
+示例2：
+
+```python
+from multiprocessing import  Process,Lock
+import time
+
+class Myprocess(Process):
+    def __init__(self,loop,lock):
+        Process.__init__(self)
+        self.loop=loop
+        self.lock=lock
+    def run(self) :
+        for count in range(self.loop):
+            time.sleep(0.1)
+            self.lock.acquire()
+            print(f"pid:{self.pid}  LoopCount:{count}")
+            self.lock.release()
+if __name__ == '__main__':
+    lock=Lock()
+    for i in range(10,15):
+        p=Myprocess(i,lock)
+        p.start()
+#输出
+#pid:35836  LoopCount:0
+#pid:83824  LoopCount:0
+#pid:80204  LoopCount:0
+#pid:73364  LoopCount:0
+#pid:78224  LoopCount:0
+#pid:83824  LoopCount:1
+#pid:80204  LoopCount:1
+```
+
+
+
+
+
