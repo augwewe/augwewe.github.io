@@ -21,12 +21,12 @@ export const zhSidebar = sidebar({
   ],
   "/Blog/2022":[
     {
-      text:"基础篇1",
+      text:"Python基础",
       icon:" ",
       children:[""]
     },
     {
-      text:"基础篇2",
+      text:"PythonCrawl",
       icon:"",
       children:[""]
     }

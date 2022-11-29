@@ -68,9 +68,16 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "python 基础练习",
-        "slug": "python-基础练习",
-        "link": "#python-基础练习",
+        "title": "猫眼Top100榜第1页数据爬取",
+        "slug": "猫眼top100榜第1页数据爬取",
+        "link": "#猫眼top100榜第1页数据爬取",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "补充知识点",
+        "slug": "补充知识点",
+        "link": "#补充知识点",
         "children": []
       }
     ],
@@ -354,6 +361,21 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/sendemail.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python Note",
+    "headers": [
+      {
+        "level": 2,
+        "title": "python 基础练习",
+        "slug": "python-基础练习",
+        "link": "#python-基础练习",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/TianMao.html",
     "pathLocale": "/",
     "extraFields": []
   },
