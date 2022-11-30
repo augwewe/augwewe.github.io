@@ -64,28 +64,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "python Note",
-    "headers": [
-      {
-        "level": 2,
-        "title": "猫眼Top100榜第1页数据爬取",
-        "slug": "猫眼top100榜第1页数据爬取",
-        "link": "#猫眼top100榜第1页数据爬取",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "补充知识点",
-        "slug": "补充知识点",
-        "link": "#补充知识点",
-        "children": []
-      }
-    ],
-    "path": "/Blog/2022/mywriter2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "PythonCrawl",
     "headers": [
       {
@@ -350,32 +328,177 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "正则表达式",
+    "title": "TianMaoTop100",
     "headers": [
       {
-        "level": 3,
-        "title": "生成词云",
-        "slug": "生成词云",
-        "link": "#生成词云",
+        "level": 2,
+        "title": "1.验证获取的URL是否已经请求",
+        "slug": "_1-验证获取的url是否已经请求",
+        "link": "#_1-验证获取的url是否已经请求",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1定义asking_url_list, 请求过的url存放于此列表中",
+            "slug": "_1-1定义asking-url-list-请求过的url存放于此列表中",
+            "link": "#_1-1定义asking-url-list-请求过的url存放于此列表中",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2验证url",
+            "slug": "_1-2验证url",
+            "link": "#_1-2验证url",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2. 是否存在文件\"html\"",
+        "slug": "_2-是否存在文件-html",
+        "link": "#_2-是否存在文件-html",
+        "children": [
+          {
+            "level": 3,
+            "title": "2.1代码",
+            "slug": "_2-1代码",
+            "link": "#_2-1代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.解析url",
+        "slug": "_3-解析url",
+        "link": "#_3-解析url",
+        "children": [
+          {
+            "level": 3,
+            "title": "3.1path",
+            "slug": "_3-1path",
+            "link": "#_3-1path",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.2解析url",
+            "slug": "_3-2解析url",
+            "link": "#_3-2解析url",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4.\" 引擎\"",
+        "slug": "_4-引擎",
+        "link": "#_4-引擎",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.捕获url,定义保存文件名格式",
+        "slug": "_5-捕获url-定义保存文件名格式",
+        "link": "#_5-捕获url-定义保存文件名格式",
         "children": []
       }
     ],
-    "path": "/Blog/2022/sendemail.html",
+    "path": "/Blog/2022/TianMaoAnalysi.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "python Note",
+    "title": "猫眼Top100榜单",
     "headers": [
       {
         "level": 2,
-        "title": "python 基础练习",
-        "slug": "python-基础练习",
-        "link": "#python-基础练习",
+        "title": "1.流程图",
+        "slug": "_1-流程图",
+        "link": "#_1-流程图",
         "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.代码",
+        "slug": "_2-代码",
+        "link": "#_2-代码",
+        "children": [
+          {
+            "level": 3,
+            "title": "2.1请求网站",
+            "slug": "_2-1请求网站",
+            "link": "#_2-1请求网站",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.2执行请求",
+            "slug": "_2-2执行请求",
+            "link": "#_2-2执行请求",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.3解析器",
+            "slug": "_2-3解析器",
+            "link": "#_2-3解析器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.4 验证URL",
+            "slug": "_2-4-验证url",
+            "link": "#_2-4-验证url",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.5 保存文件",
+            "slug": "_2-5-保存文件",
+            "link": "#_2-5-保存文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.6\"引擎\"",
+            "slug": "_2-6-引擎",
+            "link": "#_2-6-引擎",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.7 完整代码",
+            "slug": "_2-7-完整代码",
+            "link": "#_2-7-完整代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3.补充知识点",
+        "slug": "_3-补充知识点",
+        "link": "#_3-补充知识点",
+        "children": [
+          {
+            "level": 3,
+            "title": "3.1 补充 os",
+            "slug": "_3-1-补充-os",
+            "link": "#_3-1-补充-os",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.2获取文件下的目录文件名",
+            "slug": "_3-2获取文件下的目录文件名",
+            "link": "#_3-2获取文件下的目录文件名",
+            "children": []
+          }
+        ]
       }
     ],
-    "path": "/Blog/2022/TianMao.html",
+    "path": "/Blog/2022/TianMaoCrawl.html",
     "pathLocale": "/",
     "extraFields": []
   },

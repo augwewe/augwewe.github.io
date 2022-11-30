@@ -1,5 +1,5 @@
 ---
-title: python Note
+title: 猫眼Top100榜单
 date: 2022-11-28 12:04:21
 author: cava
 isOriginal: true
@@ -26,15 +26,15 @@ backToTop: true
 toc: true
 ---
 
-## 猫眼Top100榜第1页数据爬取
+猫眼Top100榜第1页数据爬取
 
-**1.流程图**
+## 1.流程图
 
-<img src="./mywriter2.assets/image-20221128134326418.png" alt="image-20221128134326418" style="zoom: 67%;" />
+<img src="./TianMaoCrawl.assets/image-20221128134326418.png" alt="image-20221128134326418" style="zoom: 67%;" />
 
-**2.代码**
+## 2.代码
 
-请求网站；
+### 2.1请求网站
 
 ```python
 def __init__(self,url):
@@ -44,7 +44,9 @@ def __init__(self,url):
         }    
 ```
 
-执行请求，状态码为200则是请求成功;
+### 2.2执行请求
+
+状态码为200则是请求成功
 
 response.text返回响应的内容以文本形式编码
 
@@ -56,9 +58,9 @@ def req_fun(self,url):
         return None
 ```
 
-解析器；
+### 2.3解析器
 
-解析正在获取到的url（获取到"offset="后的参数），后续以此参数名作为文件名保存；
+解析正在获取到的url（获取到"offset="后的参数），后续以此参数名作为文件名保存
 
 ```python
 def url_parse(self,url:str):
@@ -67,6 +69,8 @@ def url_parse(self,url:str):
             return url_lst[-1]
         return "No Parse Parameter"
 ```
+
+### 2.4 验证URL
 
 请求的url是否已经存在于目录文件中，将文件下的所有目录文件整合成一个列表，判断请求的url是否已存在于此列表中
 
@@ -79,7 +83,9 @@ def have_asked(self,asking):
         return True
 ```
 
-保存文件：若在”html"文件，将url保存（写入）至文件”html"中,若不存在,则创建该文件。
+### 2.5 保存文件
+
+若在”html"文件，将url保存（写入）至文件”html"中,若不存在,则创建该文件。
 
 ```python
 def save_html(self,content,filename,mkdir_r="html"):
@@ -91,7 +97,9 @@ def save_html(self,content,filename,mkdir_r="html"):
 
 ```
 
-"引擎"，处理url
+### 2.6"引擎"
+
+处理url
 
 ```python
  def engine(self):
@@ -103,7 +111,7 @@ def save_html(self,content,filename,mkdir_r="html"):
         print(f"Requests url {self.url}已经请求过了")
 ```
 
-完整代码
+### 2.7 完整代码
 
 ```python
 import re,requests,os
@@ -148,9 +156,9 @@ if __name__ == '__main__':
     maoyan.engine()
 ```
 
-## 补充知识点
+## 3.补充知识点
 
-**2.1 补充：os**
+### 3.1 补充 os
 
 案例：在demo文件下创建10个‘txt'文件
 
@@ -161,7 +169,7 @@ import  os
       f.close()
 ```
 
-**2.2获取文件下的目录文件名**
+### 3.2获取文件下的目录文件名
 
 写法1
 
@@ -178,7 +186,7 @@ print(new_list)
 #输出：[['0.txt', '1.txt', '2.txt', '3.txt', '4.txt', '5.txt', '6.txt', '7.txt', '8.txt', '9.txt']]
 ```
 
-写法2（列表推导式）
+写法2（列表推导式;列表生成式）
 
  ```python
  #eg3,等同于eg2:

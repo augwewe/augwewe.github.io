@@ -7,16 +7,14 @@ export const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.vue")),
   // path: /Blog/2022/mywriter.html
   "v-711c2fc6": defineAsyncComponent(() => import(/* webpackChunkName: "v-711c2fc6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter.html.vue")),
-  // path: /Blog/2022/mywriter2.html
-  "v-2a67d123": defineAsyncComponent(() => import(/* webpackChunkName: "v-2a67d123" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/mywriter2.html.vue")),
   // path: /Blog/2022/PythonCrawl.html
   "v-157bfb4b": defineAsyncComponent(() => import(/* webpackChunkName: "v-157bfb4b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/PythonCrawl.html.vue")),
   // path: /Blog/2022/rule.html
   "v-0f102de0": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f102de0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/rule.html.vue")),
-  // path: /Blog/2022/sendemail.html
-  "v-71f4efa2": defineAsyncComponent(() => import(/* webpackChunkName: "v-71f4efa2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/sendemail.html.vue")),
-  // path: /Blog/2022/TianMao.html
-  "v-510ceac6": defineAsyncComponent(() => import(/* webpackChunkName: "v-510ceac6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/TianMao.html.vue")),
+  // path: /Blog/2022/TianMaoAnalysi.html
+  "v-a17546c4": defineAsyncComponent(() => import(/* webpackChunkName: "v-a17546c4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/TianMaoAnalysi.html.vue")),
+  // path: /Blog/2022/TianMaoCrawl.html
+  "v-b0ed2c24": defineAsyncComponent(() => import(/* webpackChunkName: "v-b0ed2c24" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/TianMaoCrawl.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/404.html.vue")),
   // path: /category/

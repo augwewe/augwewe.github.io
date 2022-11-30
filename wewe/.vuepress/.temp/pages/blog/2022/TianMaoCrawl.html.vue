@@ -1,6 +1,6 @@
 <template><div><p>猫眼Top100榜第1页数据爬取</p>
 <h2 id="_1-流程图" tabindex="-1"><a class="header-anchor" href="#_1-流程图" aria-hidden="true">#</a> 1.流程图</h2>
-<img src="@source/Blog/2022/mywriter2.assets/image-20221128134326418.png" alt="image-20221128134326418" style="zoom: 67%;" />
+<img src="@source/Blog/2022/TianMaoCrawl.assets/image-20221128134326418.png" alt="image-20221128134326418" style="zoom: 67%;" />
 <h2 id="_2-代码" tabindex="-1"><a class="header-anchor" href="#_2-代码" aria-hidden="true">#</a> 2.代码</h2>
 <h3 id="_2-1请求网站" tabindex="-1"><a class="header-anchor" href="#_2-1请求网站" aria-hidden="true">#</a> 2.1请求网站</h3>
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
