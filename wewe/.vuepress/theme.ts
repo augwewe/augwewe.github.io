@@ -63,7 +63,8 @@ export default hopeTheme({
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
       //"/Blog/2022/mywriter.html":["721721"]
-      "/Blog/2022/mywriter2.html":["831831"]
+      "/Blog/2022/TianMaoAnalysi.html":["831831"],
+      "/Blog/2022/TianMaoCrawl.html":["831831"]
     },
   },
 

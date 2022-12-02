@@ -328,7 +328,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "TianMaoTop100",
+    "title": "猫眼Top100榜单分析-进阶",
     "headers": [
       {
         "level": 2,
@@ -409,7 +409,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "猫眼Top100榜单",
+    "title": "猫眼Top100榜单第1页数据爬取",
     "headers": [
       {
         "level": 2,
