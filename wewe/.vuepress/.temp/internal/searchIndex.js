@@ -64,6 +64,29 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "笔趣阁-盗墓笔记小说页面爬取",
+    "headers": [
+      {
+        "level": 2,
+        "title": "遇到的问题并解决",
+        "slug": "遇到的问题并解决",
+        "link": "#遇到的问题并解决",
+        "children": [
+          {
+            "level": 3,
+            "title": "写请求头的注意事项",
+            "slug": "写请求头的注意事项",
+            "link": "#写请求头的注意事项",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/NovelCrawl.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "PythonCrawl",
     "headers": [
       {
@@ -499,6 +522,35 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/TianMaoCrawl.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "猫眼Top100榜单分析-保存（JSON)",
+    "headers": [
+      {
+        "level": 3,
+        "title": "1.解析url内容优化",
+        "slug": "_1-解析url内容优化",
+        "link": "#_1-解析url内容优化",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "2.将解析后的url内容存储为JSON格式",
+        "slug": "_2-将解析后的url内容存储为json格式",
+        "link": "#_2-将解析后的url内容存储为json格式",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "3.运行解析",
+        "slug": "_3-运行解析",
+        "link": "#_3-运行解析",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/TianMaoSave.html",
     "pathLocale": "/",
     "extraFields": []
   },
