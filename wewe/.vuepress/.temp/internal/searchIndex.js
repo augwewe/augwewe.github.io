@@ -14,49 +14,22 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "python 自动化",
+    "title": "异常捕获",
     "headers": [
       {
-        "level": 3,
-        "title": "读取excel",
-        "slug": "读取excel",
-        "link": "#读取excel",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "追加表格",
-        "slug": "追加表格",
-        "link": "#追加表格",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "os模块部分内容",
-        "slug": "os模块部分内容",
-        "link": "#os模块部分内容",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "方法二",
-        "slug": "方法二",
-        "link": "#方法二",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "方法三",
-        "slug": "方法三",
-        "link": "#方法三",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "xls&xlsx",
-        "slug": "xls-xlsx",
-        "link": "#xls-xlsx",
-        "children": []
+        "level": 2,
+        "title": "异常捕获",
+        "slug": "异常捕获",
+        "link": "#异常捕获",
+        "children": [
+          {
+            "level": 3,
+            "title": "try ......exception",
+            "slug": "try-exception",
+            "link": "#try-exception",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/Blog/2022/mywriter.html",
@@ -352,6 +325,13 @@ export const searchIndex = [
   },
   {
     "title": "猫眼Top100榜单分析-进阶",
+    "headers": [],
+    "path": "/Blog/2022/ScrapeMovie.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "猫眼Top100榜单分析-进阶",
     "headers": [
       {
         "level": 2,
@@ -548,9 +528,73 @@ export const searchIndex = [
         "slug": "_3-运行解析",
         "link": "#_3-运行解析",
         "children": []
+      },
+      {
+        "level": 3,
+        "title": "4.完整代码（进度至保存为json格式）",
+        "slug": "_4-完整代码-进度至保存为json格式",
+        "link": "#_4-完整代码-进度至保存为json格式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "补充：JSON在线工具",
+        "slug": "补充-json在线工具",
+        "link": "#补充-json在线工具",
+        "children": []
       }
     ],
     "path": "/Blog/2022/TianMaoSave.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python 自动化",
+    "headers": [
+      {
+        "level": 3,
+        "title": "读取excel",
+        "slug": "读取excel",
+        "link": "#读取excel",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "追加表格",
+        "slug": "追加表格",
+        "link": "#追加表格",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "os模块部分内容",
+        "slug": "os模块部分内容",
+        "link": "#os模块部分内容",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法二",
+        "slug": "方法二",
+        "link": "#方法二",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法三",
+        "slug": "方法三",
+        "link": "#方法三",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "xls&xlsx",
+        "slug": "xls-xlsx",
+        "link": "#xls-xlsx",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/try_exception.html",
     "pathLocale": "/",
     "extraFields": []
   },
