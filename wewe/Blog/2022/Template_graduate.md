@@ -23,7 +23,7 @@ comment: true
 lastUpdated: true
 editLink: False
 backToTop: true
-toc: tru
+toc: true
 ---
 
 
