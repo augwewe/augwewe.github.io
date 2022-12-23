@@ -486,13 +486,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Template",
-    "headers": [],
-    "path": "/Blog/2022/Template_graduate.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "猫眼Top100榜单分析-进阶",
     "headers": [
       {
@@ -711,15 +704,8 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "异常捕获Try..exception",
     "headers": [
-      {
-        "level": 2,
-        "title": "ya---title: 异常捕获date: 2022-10-30 12:04:21author: cavaisOriginal: truecategory:- notebook- VuePresstag:- Vue- VuePressicon: vuesticky: falsestar: falsepassword: falsearticle: truetimeline: trueimage: falsenavbar: truesidebarIcon: trueheaderDepth: 5comment: truelastUpdated: trueeditLink: FalsebackToTop: truetoc: true",
-        "slug": "ya-title-异常捕获date-2022-10-30-12-04-21author-cavaisoriginal-truecategory-notebook-vuepresstag-vue-vuepressicon-vuesticky-falsestar-falsepassword-falsearticle-truetimeline-trueimage-falsenavbar-truesidebaricon-trueheaderdepth-5comment-truelastupdated-trueeditlink-falsebacktotop-truetoc-true",
-        "link": "#ya-title-异常捕获date-2022-10-30-12-04-21author-cavaisoriginal-truecategory-notebook-vuepresstag-vue-vuepressicon-vuesticky-falsestar-falsepassword-falsearticle-truetimeline-trueimage-falsenavbar-truesidebaricon-trueheaderdepth-5comment-truelastupdated-trueeditlink-falsebacktotop-truetoc-true",
-        "children": []
-      },
       {
         "level": 2,
         "title": "异常捕获",
@@ -728,7 +714,7 @@ export const searchIndex = [
         "children": [
           {
             "level": 3,
-            "title": "try ......exception",
+            "title": "try........exception",
             "slug": "try-exception",
             "link": "#try-exception",
             "children": []
@@ -736,7 +722,22 @@ export const searchIndex = [
         ]
       }
     ],
-    "path": "/Blog/2022/try_exception1.html",
+    "path": "/Blog/2022/Try_Exception.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Template",
+    "headers": [
+      {
+        "level": 3,
+        "title": "请求url(包含异常捕获)",
+        "slug": "请求url-包含异常捕获",
+        "link": "#请求url-包含异常捕获",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Gra/Template_graduate.html",
     "pathLocale": "/",
     "extraFields": []
   },

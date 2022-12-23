@@ -21,9 +21,10 @@ export const zhSidebar = sidebar({
   ],
   "/Blog/2022":[
     {
-      text:"Python基础",
+      text:"graduate",
       icon:" ",
-      children:[""]
+      children:[""],
+      link:"/Blog/2022/Gra/Template_graduate.html"
     },
     {
       text:"PythonCrawl",
