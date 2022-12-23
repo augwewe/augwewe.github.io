@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as t,c as r}from"./app.4904cb3a.js";const a={};function _(c,o){return t(),r("div")}const l=e(a,[["render",_],["__file","Template_graduate.html.vue"]]);export{l as default};
