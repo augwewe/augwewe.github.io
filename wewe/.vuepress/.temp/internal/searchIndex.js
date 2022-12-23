@@ -14,25 +14,130 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "异常捕获",
+    "title": "PQuery 解析",
     "headers": [
       {
         "level": 2,
-        "title": "异常捕获",
-        "slug": "异常捕获",
-        "link": "#异常捕获",
+        "title": "PQuery",
+        "slug": "pquery",
+        "link": "#pquery",
         "children": [
           {
             "level": 3,
-            "title": "try ......exception",
-            "slug": "try-exception",
-            "link": "#try-exception",
+            "title": "1.1返回li标签",
+            "slug": "_1-1返回li标签",
+            "link": "#_1-1返回li标签",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2 返回网页”title\"",
+            "slug": "_1-2-返回网页-title",
+            "link": "#_1-2-返回网页-title",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.3 获取本地html",
+            "slug": "_1-3-获取本地html",
+            "link": "#_1-3-获取本地html",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.4选择器,提取li标签/提取文本(text.())/查看输出type",
+            "slug": "_1-4选择器-提取li标签-提取文本-text-查看输出type",
+            "link": "#_1-4选择器-提取li标签-提取文本-text-查看输出type",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.5遍历li,并获取其中的文本",
+            "slug": "_1-5遍历li-并获取其中的文本",
+            "link": "#_1-5遍历li-并获取其中的文本",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "获取电影名",
+            "slug": "获取电影名",
+            "link": "#获取电影名",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6 find&children",
+            "slug": "_1-6-find-children",
+            "link": "#_1-6-find-children",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.1 parent & parents",
+            "slug": "_1-6-1-parent-parents",
+            "link": "#_1-6-1-parent-parents",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.2 siblings 兄弟节点",
+            "slug": "_1-6-2-siblings-兄弟节点",
+            "link": "#_1-6-2-siblings-兄弟节点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.3 items 遍历获取li标签",
+            "slug": "_1-6-3-items-遍历获取li标签",
+            "link": "#_1-6-3-items-遍历获取li标签",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.4 attr 获取href 首个/遍历获取所有",
+            "slug": "_1-6-4-attr-获取href-首个-遍历获取所有",
+            "link": "#_1-6-4-attr-获取href-首个-遍历获取所有",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.5获取标签中的纯文字文本 ，html文本；text(),html()",
+            "slug": "_1-6-5获取标签中的纯文字文本-html文本-text-html",
+            "link": "#_1-6-5获取标签中的纯文字文本-html文本-text-html",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.6 添加/删除节点 remove_class/add_class",
+            "slug": "_1-6-6-添加-删除节点-remove-class-add-class",
+            "link": "#_1-6-6-添加-删除节点-remove-class-add-class",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.6.7 attr 添加属性,text()改变节点纯文字内容，html()改变html文本内容",
+            "slug": "_1-6-7-attr-添加属性-text-改变节点纯文字内容-html-改变html文本内容",
+            "link": "#_1-6-7-attr-添加属性-text-改变节点纯文字内容-html-改变html文本内容",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.7 remove",
+            "slug": "_1-7-remove",
+            "link": "#_1-7-remove",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.8 类选择器",
+            "slug": "_1-8-类选择器",
+            "link": "#_1-8-类选择器",
             "children": []
           }
         ]
       }
     ],
-    "path": "/Blog/2022/mywriter.html",
+    "path": "/Blog/2022/AskUrl_Temp.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -217,6 +322,56 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "python 自动化",
+    "headers": [
+      {
+        "level": 3,
+        "title": "读取excel",
+        "slug": "读取excel",
+        "link": "#读取excel",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "追加表格",
+        "slug": "追加表格",
+        "link": "#追加表格",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "os模块部分内容",
+        "slug": "os模块部分内容",
+        "link": "#os模块部分内容",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法二",
+        "slug": "方法二",
+        "link": "#方法二",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法三",
+        "slug": "方法三",
+        "link": "#方法三",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "xls&xlsx",
+        "slug": "xls-xlsx",
+        "link": "#xls-xlsx",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/read_Excel.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "正则表达式",
     "headers": [
       {
@@ -327,6 +482,13 @@ export const searchIndex = [
     "title": "猫眼Top100榜单分析-进阶",
     "headers": [],
     "path": "/Blog/2022/ScrapeMovie.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Template",
+    "headers": [],
+    "path": "/Blog/2022/Template_graduate.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -549,52 +711,32 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "python 自动化",
+    "title": "",
     "headers": [
       {
-        "level": 3,
-        "title": "读取excel",
-        "slug": "读取excel",
-        "link": "#读取excel",
+        "level": 2,
+        "title": "ya---title: 异常捕获date: 2022-10-30 12:04:21author: cavaisOriginal: truecategory:- notebook- VuePresstag:- Vue- VuePressicon: vuesticky: falsestar: falsepassword: falsearticle: truetimeline: trueimage: falsenavbar: truesidebarIcon: trueheaderDepth: 5comment: truelastUpdated: trueeditLink: FalsebackToTop: truetoc: true",
+        "slug": "ya-title-异常捕获date-2022-10-30-12-04-21author-cavaisoriginal-truecategory-notebook-vuepresstag-vue-vuepressicon-vuesticky-falsestar-falsepassword-falsearticle-truetimeline-trueimage-falsenavbar-truesidebaricon-trueheaderdepth-5comment-truelastupdated-trueeditlink-falsebacktotop-truetoc-true",
+        "link": "#ya-title-异常捕获date-2022-10-30-12-04-21author-cavaisoriginal-truecategory-notebook-vuepresstag-vue-vuepressicon-vuesticky-falsestar-falsepassword-falsearticle-truetimeline-trueimage-falsenavbar-truesidebaricon-trueheaderdepth-5comment-truelastupdated-trueeditlink-falsebacktotop-truetoc-true",
         "children": []
       },
       {
-        "level": 3,
-        "title": "追加表格",
-        "slug": "追加表格",
-        "link": "#追加表格",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "os模块部分内容",
-        "slug": "os模块部分内容",
-        "link": "#os模块部分内容",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "方法二",
-        "slug": "方法二",
-        "link": "#方法二",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "方法三",
-        "slug": "方法三",
-        "link": "#方法三",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "xls&xlsx",
-        "slug": "xls-xlsx",
-        "link": "#xls-xlsx",
-        "children": []
+        "level": 2,
+        "title": "异常捕获",
+        "slug": "异常捕获",
+        "link": "#异常捕获",
+        "children": [
+          {
+            "level": 3,
+            "title": "try ......exception",
+            "slug": "try-exception",
+            "link": "#try-exception",
+            "children": []
+          }
+        ]
       }
     ],
-    "path": "/Blog/2022/try_exception.html",
+    "path": "/Blog/2022/try_exception1.html",
     "pathLocale": "/",
     "extraFields": []
   },
