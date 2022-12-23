@@ -22,7 +22,7 @@ export const zhNavbar = navbar([
           },
           {
             text:"Gra",icon:"extend",link:"/Blog/2022/Gra/Template_graduate.html"
-          },
+          }
         ]
       },
       {
