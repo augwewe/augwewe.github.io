@@ -68,7 +68,8 @@ export default hopeTheme({
       "/Blog/2022/NovelCrawl.html":["831831"],
       "/Blog/2022/TianMaoSave.html":["831831"],
       "/Blog/2022/ScrapeMovie.html":["831831"],
-      "/Blog/2022/AskUrl_Temp.html":["831831"]
+      "/Blog/2022/AskUrl_Temp.html":["831831"],
+      "/Blog/2022/PythonCrawl.html":["831831"]
     },
   },
 
