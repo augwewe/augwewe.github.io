@@ -19,17 +19,12 @@ export const zhSidebar = sidebar({
     "intro",
     "slides",
   ],
-  "/Blog/2022":[
+  "/Blog/2022/Gra":[
     {
       text:"graduate",
       icon:" ",
       children:[""],
       link:"/Blog/2022/Gra/Template_graduate.html"
     },
-    {
-      text:"PythonCrawl",
-      icon:"",
-      children:[""]
-    }
   ]
 });
