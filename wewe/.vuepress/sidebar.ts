@@ -30,14 +30,14 @@ export const zhSidebar = sidebar({
     {
       text:"网络爬虫技术原理",
       icon:" ",
-      children:["AskUrl_Temp.html","rule.html","PythonCrawl.html"]
+      children:["AskUrl_Temp.html","rule.html"]
     },
   ],
   "/Blog/2022/Crawl/practice":[
     {
       text:"网络爬虫实战",
       icon:" ",
-      children:["ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html"]
+      children:["ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html","PythonCrawl.html"]
     },
   ]
 });
