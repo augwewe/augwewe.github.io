@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
             text:"python自动化",icon:"extend",link:"/Blog/2022/Python/Automation"
           },
           {
-            text:"Gra",icon:"extend",link:"/Blog/2022/Gra/Template_graduate.html"
+            text:"graduate",icon:"extend",link:"/Blog/2022/Gra/Template_graduate.html"
           },
         ]
       },
