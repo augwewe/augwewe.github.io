@@ -29,7 +29,7 @@ export const zhNavbar = navbar([
         text:"news",
         children: [
           {
-            text:"daliy news",link:""
+            text:"daliy_news",link:""
           }
         ]
       }
