@@ -26,18 +26,11 @@ export const zhSidebar = sidebar({
       children:["Template_graduate.html","Try_Exception.html"]
     },
   ],
-  "/Blog/2022/Crawl/foundation":[
+  "/Blog/2022/Crawl/":[
     {
       text:"网络爬虫技术原理",
       icon:" ",
-      children:["AskUrl_Temp.html","rule.html"]
+      children:["AskUrl_Temp.html","rule.html","ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html"]
     },
   ],
-  "/Blog/2022/Crawl/practice":[
-    {
-      text:"网络爬虫实战",
-      icon:" ",
-      children:["ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html"]
-    },
-  ]
 });

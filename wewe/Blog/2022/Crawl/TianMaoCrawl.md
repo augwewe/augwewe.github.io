@@ -30,7 +30,7 @@ toc: true
 
 ## 1.流程图
 
-<img src="../../TianMaoCrawl.assets/image-20221128134326418.png" alt="image-20221128134326418" style="zoom: 67%;" />
+<img src="../TianMaoCrawl.assets/image-20221128134326418.png" alt="image-20221128134326418" style="zoom: 67%;" />
 
 ## 2.代码
 
