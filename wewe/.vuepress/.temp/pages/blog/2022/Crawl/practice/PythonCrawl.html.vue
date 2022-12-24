@@ -24,7 +24,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text1<span class="token punctuation">)</span><span class="token operator">==</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text2<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token comment">#返回True则表示存在重复内容</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="redis数据库" tabindex="-1"><a class="header-anchor" href="#redis数据库" aria-hidden="true">#</a> Redis数据库</h3>
-<p>tips:内存爆满问题，注意要及时备份</p>
+<p>tips:内存爆满问题，注意要及时备份。</p>
 <p><strong>广度优先算法</strong></p>
 <p>每一层都取完再取下一层</p>
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221119221146502.png" alt="image-20221119221146502" style="zoom:50%;" />

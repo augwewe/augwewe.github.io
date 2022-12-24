@@ -85,7 +85,7 @@ print(hash(text1)==hash(text2))
 
 ### Redis数据库
 
-tips:内存爆满问题，注意要及时备份
+tips:内存爆满问题，注意要及时备份。
 
 **广度优先算法**
 
