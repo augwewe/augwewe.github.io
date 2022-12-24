@@ -1,9 +1,9 @@
 <template><div><h1 id="网络爬虫" tabindex="-1"><a class="header-anchor" href="#网络爬虫" aria-hidden="true">#</a> 网络爬虫</h1>
 <p>定义：当今最大的网络是互联网，最大的爬虫是各类搜索引擎：谷歌，百度。网路爬虫按照一定的规则爬取所需要的信息的程序，通过URl的请求来实现。在包含广泛信息时，我们就需要一些聚焦于某一方面的信息的爬虫来提供服务，例如某一类型的书。</p>
 <h3 id="_1-网络爬虫类型" tabindex="-1"><a class="header-anchor" href="#_1-网络爬虫类型" aria-hidden="true">#</a> 1. 网络爬虫类型</h3>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171231536.png" alt="image-20221119171231536" loading="lazy"></p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171113993.png" alt="image-20221119171113993" style="zoom: 67%;" />
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171549635.png" alt="image-20221119171549635" style="zoom: 67%;" />
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221119171231536.png" alt="image-20221119171231536" loading="lazy"></p>
+<img src="@source/Blog/PythonCrawl.assets/image-20221119171113993.png" alt="image-20221119171113993" style="zoom: 67%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221119171549635.png" alt="image-20221119171549635" style="zoom: 67%;" />
 <p><strong>查看User-Agent方式，右键-检查-NetWork</strong></p>
 <p>全网爬虫：谷歌百度搜索引擎</p>
 <p>主题爬虫：某一类型信息的，比如新闻类</p>
@@ -12,7 +12,7 @@
 <p>前提环境：第一次抓取微博热搜榜的全部新闻可能需要的工作量是24小时，如重复此工作量去操作达到需求，后果是效率低，且会有重复的数据。</p>
 <p>解决策略：增量式爬虫，如何处理新数据？</p>
 <p>​					将新旧数据进行比较 ，如python列表知识中的语法点：#value in xx , 类似来进行判断，来保证数据的唯一性（达到了数据不重复的目的）</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171753590.png" alt="image-20221119171753590" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221119171753590.png" alt="image-20221119171753590" style="zoom:50%;" />
 <p>1.URL 通过value in xx来比较查看</p>
 <p>2.内容（哈希）</p>
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#哈希解析</span>
@@ -24,19 +24,19 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text1<span class="token punctuation">)</span><span class="token operator">==</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text2<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token comment">#返回True则表示存在重复内容</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="redis数据库" tabindex="-1"><a class="header-anchor" href="#redis数据库" aria-hidden="true">#</a> Redis数据库</h3>
-<p>tips:内存爆满问题，注意要及时备份。</p>
+<p>tips:内存爆满问题，注意要及时备份</p>
 <p><strong>广度优先算法</strong></p>
 <p>每一层都取完再取下一层</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221119221146502.png" alt="image-20221119221146502" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221119221146502.png" alt="image-20221119221146502" style="zoom:50%;" />
 <p><strong>深度优先算法</strong></p>
 <p>从开始取到最后一个节点</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221119221250774.png" alt="image-20221119221250774" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221119221250774.png" alt="image-20221119221250774" style="zoom:50%;" />
 <h3 id="ajax" tabindex="-1"><a class="header-anchor" href="#ajax" aria-hidden="true">#</a> ajax</h3>
 <p>百度搜索图片<img src="@source/Blog/2022/Gra/PythonCrawl.assets/image-20221120181835251.png" alt="image-20221120181835251" style="zoom:50%;" /></p>
 <p>往下滑动的同时，会看到左边数据有增加，但是页面并不会改变</p>
 <h3 id="字体反爬虫" tabindex="-1"><a class="header-anchor" href="#字体反爬虫" aria-hidden="true">#</a> 字体反爬虫</h3>
 <p>实习僧网页：</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221120182927938.png" alt="image-20221120182927938" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221120182927938.png" alt="image-20221120182927938" style="zoom:50%;" />
 <p>由于对方设置了css文件规则，我们爬取到的数据内容只会显示，xx天xx周</p>
 <p>规则？本地电脑：11-a  对方电脑: 11-B</p>
 <h2 id="http" tabindex="-1"><a class="header-anchor" href="#http" aria-hidden="true">#</a> HTTP</h2>
@@ -44,7 +44,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>豆瓣有自己的图标，指向唯一访问模式</p>
 <p>查看图标方式：网址+favicon.ico</p>
 <p>如下图所示</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221120183346849.png" alt="image-20221120183346849" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221120183346849.png" alt="image-20221120183346849" style="zoom:50%;" />
 <p><strong>2.超文本</strong></p>
 <p>检查-Elements当前渲染后</p>
 <p>源代码-没有经过渲染的，一些css内容。。。。</p>
@@ -57,8 +57,8 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>2.确认网站的真实性，凡是使用了 HTTPS 的网站，都可以通过点击浏览器地址栏的锁头标志来查看网站认证之后的真实信息，也可以通过 CA 机构颁发的安全签章来查询。</p>
 <p>不通过SSL加密，通过浏览器访问网站时就会出现“该网站不安全”的提示，失去客户访问流量</p>
 <h3 id="http请求过程" tabindex="-1"><a class="header-anchor" href="#http请求过程" aria-hidden="true">#</a> HTTP请求过程</h3>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221120205744260.png" alt="image-20221120205744260" style="zoom:50%;" />
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221120205815329.png" alt="image-20221120205815329"  />
+<img src="@source/Blog/PythonCrawl.assets/image-20221120205744260.png" alt="image-20221120205744260" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221120205815329.png" alt="image-20221120205815329"  />
 <p>第一列 Name：请求的名称，一般会将 URL 的最后一部分内容当作名称。</p>
 <p>第二列 Status：响应的状态码，这里显示为 200，代表响应是正常的。通过状态码，我们可以判断发送了请求之后是否得到了正常的响应。</p>
 <p>第三列 Type：请求的文档类型。这里为 document，代表我们这次请求的是一个 HTML 文档，内容就是一些 HTML 代码。</p>
@@ -68,7 +68,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>第七列 Waterfall：网络请求的可视化瀑布流。</p>
 <h3 id="post和get区别是什么" tabindex="-1"><a class="header-anchor" href="#post和get区别是什么" aria-hidden="true">#</a> post和get区别是什么？</h3>
 <p>都是获得数据，get是下载，得到内容。用户登陆是使用post,因为get会显示登陆的密码信息，不安全</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221120213922697.png" alt="image-20221120213922697" style="zoom: 50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221120213922697.png" alt="image-20221120213922697" style="zoom: 50%;" />
 <h3 id="请求头" tabindex="-1"><a class="header-anchor" href="#请求头" aria-hidden="true">#</a> 请求头</h3>
 <p>Accept：请求报头域，用于指定客户端可接受哪些类型的信息。</p>
 <p>Accept-Language：指定客户端可接受的语言类型。</p>
@@ -79,39 +79,39 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>User-Agent：简称 UA，它是一个特殊的字符串头，可以使服务器识别客户使用的操作系统及版本、浏览器及版本等信息。在做爬虫时加上此信息，可以伪装为浏览器；如果不加，很可能会被识别出为爬虫。</p>
 <p>Content-Type：也叫互联网媒体类型（Internet Media Type）或者 MIME 类型，在 HTTP 协议消息头中，它用来表示具体请求中的媒体类型信息。例如，text/html 代表 HTML 格式，image/gif 代表 GIF 图片，application/json 代表 JSON 类型，更多对应关系可以查看此对照表：</p>
 <h3 id="响应" tabindex="-1"><a class="header-anchor" href="#响应" aria-hidden="true">#</a> 响应</h3>
-<img src="@source/Blog/2022/PythonCrawl.assets/Cgq2xl5XTQSAfWsUAAa-jFIsTTw064.2d57e938.png" alt="img" style="zoom: 33%;" />
+<img src="@source/Blog/PythonCrawl.assets/Cgq2xl5XTQSAfWsUAAa-jFIsTTw064.2d57e938.png" alt="img" style="zoom: 33%;" />
 <h3 id="session" tabindex="-1"><a class="header-anchor" href="#session" aria-hidden="true">#</a> session</h3>
 <h3 id="cookie" tabindex="-1"><a class="header-anchor" href="#cookie" aria-hidden="true">#</a> Cookie</h3>
 <p>记住用户信息</p>
 <h3 id="dns" tabindex="-1"><a class="header-anchor" href="#dns" aria-hidden="true">#</a> DNS</h3>
 <p>浏览器缓存</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121002817352.png" alt="image-20221121002817352" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221121002817352.png" alt="image-20221121002817352" loading="lazy"></p>
 <h3 id="页面呈现" tabindex="-1"><a class="header-anchor" href="#页面呈现" aria-hidden="true">#</a> 页面呈现</h3>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121005418250.png" alt="image-20221121005418250" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221121005418250.png" alt="image-20221121005418250" loading="lazy"></p>
 <h3 id="网页匹配css-内容" tabindex="-1"><a class="header-anchor" href="#网页匹配css-内容" aria-hidden="true">#</a> 网页匹配css 内容</h3>
 <p><strong>tips:先用选择器定位要匹配的内容，再从它的上一级开始匹配</strong></p>
 <p>案例1：</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175216475.png" alt="image-20221121175216475" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221121175216475.png" alt="image-20221121175216475" loading="lazy"></p>
 <p>案例2：</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175353470.png" alt="image-20221121175353470" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221121175353470.png" alt="image-20221121175353470" loading="lazy"></p>
 <p><strong>点击上下箭头检查匹配的内容</strong></p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175421903.png" alt="image-20221121175421903" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221121175421903.png" alt="image-20221121175421903" loading="lazy"></p>
 <h2 id="线程" tabindex="-1"><a class="header-anchor" href="#线程" aria-hidden="true">#</a> 线程</h2>
 <h3 id="全局解释器" tabindex="-1"><a class="header-anchor" href="#全局解释器" aria-hidden="true">#</a> 全局解释器</h3>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221122150529578.png" alt="image-20221122150529578" style="zoom:67%;" />
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122150602191.png" alt="image-20221122150602191" loading="lazy"></p>
+<img src="@source/Blog/PythonCrawl.assets/image-20221122150529578.png" alt="image-20221122150529578" style="zoom:67%;" />
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221122150602191.png" alt="image-20221122150602191" loading="lazy"></p>
 <p>一秒钟运行一个线程（一个程序）</p>
 <p>如上图所示，thread1和thread2,GIL锁被线程一拿走，且GIL锁只有一个，经过操作系统，在 cpu里执行，时间到了后，释放GIL锁，此时线程2拿到锁，跟线程1 的执行顺序一样。所以即使有2个程序在运行，但线程只有一个。若有其他线程，则会卡在python解释器里。</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122151935405.png" alt="image-20221122151935405" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221122151935405.png" alt="image-20221122151935405" loading="lazy"></p>
 <h3 id="多线程" tabindex="-1"><a class="header-anchor" href="#多线程" aria-hidden="true">#</a> 多线程</h3>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122154327669.png" alt="image-20221122154327669" loading="lazy"></p>
+<p><img src="@source/Blog/PythonCrawl.assets/image-20221122154327669.png" alt="image-20221122154327669" loading="lazy"></p>
 <h3 id="进程" tabindex="-1"><a class="header-anchor" href="#进程" aria-hidden="true">#</a> 进程</h3>
 <p>进程定义：一个进程可以做很多事情，并且同时做，互不干扰。</p>
 <p>线程：操作系统中最小的调度单位。</p>
 <p><strong>并发</strong>：同一时刻只有一条指令执行，a-&gt;b,经过一会儿时间，b-&gt;a,同时推进，a和b互相切换，速度很快。</p>
 <p>并发在一核处理器的电脑中也能运行。</p>
 <p><strong>并行</strong>：需要多个处理器，电脑只有一核处理器是不可以的；多个cpu中，同一时刻会有一个线程在运行就是并行</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221122160228431.png" alt="image-20221122160228431" style="zoom:50%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221122160228431.png" alt="image-20221122160228431" style="zoom:50%;" />
 <h3 id="多线程场景" tabindex="-1"><a class="header-anchor" href="#多线程场景" aria-hidden="true">#</a> 多线程场景</h3>
 <p>IO密集型，适合爬虫</p>
 <p>CPU密集型不适合多线程</p>
@@ -342,7 +342,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 <p><strong>多进程和多线程的对比</strong></p>
 <p>对于爬虫这种IO密集型任务来说，多线程和多进程影响差别不大。但是对于计算密集型任务，多进程的多核运行效率会有较高的提升。</p>
 <p>python内置库中实现多进程的方法：multiprocessing</p>
-<img src="@source/Blog/2022/PythonCrawl.assets/image-20221125103423866.png" alt="image-20221125103423866" style="zoom: 67%;" />
+<img src="@source/Blog/PythonCrawl.assets/image-20221125103423866.png" alt="image-20221125103423866" style="zoom: 67%;" />
 <p><strong>process类</strong></p>
 <p>多进程示例：</p>
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span>  multiprocessing
