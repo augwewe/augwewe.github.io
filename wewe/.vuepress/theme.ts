@@ -70,7 +70,7 @@ export default hopeTheme({
       "/Blog/2022/Crawl/ScrapeMovie.html":["831831"],
       "/Blog/2022/Crawl/AskUrl_Temp.html":["831831"],
       "/Blog/2022/Crawl/Python_Crawl.html":["831831"],
-      "/Blog/2022/Gra/Template_graduate.html":["722721"]
+      "/Blog/2022/Gra/Template_graduate.html":["723721"]
     },
   },
 
