@@ -51,4 +51,6 @@ export const pagesData = {
   "v-43d7543a": () => import(/* webpackChunkName: "v-43d7543a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/category/vuepress/index.html.js").then(({ data }) => data),
   // path: /tag/vuepress/
   "v-ed16b278": () => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/.~PythonCrawl.html
+  "v-f520e656": () => import(/* webpackChunkName: "v-f520e656" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/.~PythonCrawl.html.js").then(({ data }) => data),
 }

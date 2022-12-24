@@ -25,4 +25,5 @@ export const pagesRoutes = [
   ["v-b302da92","/tag/vue/",{"title":"Vue 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vue/index.html"]],
   ["v-43d7543a","/category/vuepress/",{"title":"VuePress 分类","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/category/vuepress/index.html"]],
   ["v-ed16b278","/tag/vuepress/",{"title":"VuePress 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/vuepress/index.html"]],
+  ["v-f520e656","/Blog/2022/Crawl/foundation/.~PythonCrawl.html",{"title":"","type":"article","readingTime":{"minutes":0,"words":0},"excerpt":""},["/Blog/2022/Crawl/foundation/.~PythonCrawl","/Blog/2022/Crawl/foundation/.~PythonCrawl.md"]],
 ]
