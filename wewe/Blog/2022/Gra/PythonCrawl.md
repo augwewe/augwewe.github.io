@@ -36,11 +36,11 @@ toc: true
 
 
 
-![image-20221119171231536](../../PythonCrawl.assets/image-20221119171231536.png)
+![image-20221119171231536](../PythonCrawl.assets/image-20221119171231536.png)
 
-<img src="../../PythonCrawl.assets/image-20221119171113993.png" alt="image-20221119171113993" style="zoom: 67%;" />
+<img src="../PythonCrawl.assets/image-20221119171113993.png" alt="image-20221119171113993" style="zoom: 67%;" />
 
-<img src="../../PythonCrawl.assets/image-20221119171549635.png" alt="image-20221119171549635" style="zoom: 67%;" />
+<img src="../PythonCrawl.assets/image-20221119171549635.png" alt="image-20221119171549635" style="zoom: 67%;" />
 
 **查看User-Agent方式，右键-检查-NetWork**
 
@@ -60,7 +60,7 @@ toc: true
 
 ​					将新旧数据进行比较 ，如python列表知识中的语法点：#value in xx , 类似来进行判断，来保证数据的唯一性（达到了数据不重复的目的）
 
-<img src="../../PythonCrawl.assets/image-20221119171753590.png" alt="image-20221119171753590" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221119171753590.png" alt="image-20221119171753590" style="zoom:50%;" />
 
 1.URL 通过value in xx来比较查看
 
@@ -91,13 +91,13 @@ tips:内存爆满问题，注意要及时备份。
 
 每一层都取完再取下一层
 
-<img src="../../PythonCrawl.assets/image-20221119221146502.png" alt="image-20221119221146502" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221119221146502.png" alt="image-20221119221146502" style="zoom:50%;" />
 
 **深度优先算法**
 
 从开始取到最后一个节点
 
-<img src="../../PythonCrawl.assets/image-20221119221250774.png" alt="image-20221119221250774" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221119221250774.png" alt="image-20221119221250774" style="zoom:50%;" />
 
 ### ajax
 
@@ -109,7 +109,7 @@ tips:内存爆满问题，注意要及时备份。
 
 实习僧网页：
 
-<img src="../../PythonCrawl.assets/image-20221120182927938.png" alt="image-20221120182927938" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221120182927938.png" alt="image-20221120182927938" style="zoom:50%;" />
 
 由于对方设置了css文件规则，我们爬取到的数据内容只会显示，xx天xx周
 
@@ -125,7 +125,7 @@ tips:内存爆满问题，注意要及时备份。
 
 如下图所示
 
-<img src="../../PythonCrawl.assets/image-20221120183346849.png" alt="image-20221120183346849" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221120183346849.png" alt="image-20221120183346849" style="zoom:50%;" />
 
  **2.超文本**
 
@@ -151,9 +151,9 @@ HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL �
 
 ### HTTP请求过程
 
-<img src="../../PythonCrawl.assets/image-20221120205744260.png" alt="image-20221120205744260" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221120205744260.png" alt="image-20221120205744260" style="zoom:50%;" />
 
-<img src="../../PythonCrawl.assets/image-20221120205815329.png" alt="image-20221120205815329"  />
+<img src="../PythonCrawl.assets/image-20221120205815329.png" alt="image-20221120205815329"  />
 
 第一列 Name：请求的名称，一般会将 URL 的最后一部分内容当作名称。
 
@@ -173,7 +173,7 @@ HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL �
 
 都是获得数据，get是下载，得到内容。用户登陆是使用post,因为get会显示登陆的密码信息，不安全
 
-<img src="../../PythonCrawl.assets/image-20221120213922697.png" alt="image-20221120213922697" style="zoom: 50%;" />
+<img src="../PythonCrawl.assets/image-20221120213922697.png" alt="image-20221120213922697" style="zoom: 50%;" />
 
 ### 请求头
 
@@ -197,7 +197,7 @@ Content-Type：也叫互联网媒体类型（Internet Media Type）或者 MIME �
 
 ### 响应
 
-<img src="../../PythonCrawl.assets/Cgq2xl5XTQSAfWsUAAa-jFIsTTw064.2d57e938.png" alt="img" style="zoom: 33%;" />
+<img src="../PythonCrawl.assets/Cgq2xl5XTQSAfWsUAAa-jFIsTTw064.2d57e938.png" alt="img" style="zoom: 33%;" />
 
 ### session
 
@@ -209,13 +209,13 @@ Content-Type：也叫互联网媒体类型（Internet Media Type）或者 MIME �
 
 浏览器缓存
 
-![image-20221121002817352](../../PythonCrawl.assets/image-20221121002817352.png)
+![image-20221121002817352](../PythonCrawl.assets/image-20221121002817352.png)
 
 
 
 ### 页面呈现
 
-![image-20221121005418250](../../PythonCrawl.assets/image-20221121005418250.png)
+![image-20221121005418250](../PythonCrawl.assets/image-20221121005418250.png)
 
 ### 网页匹配css 内容
 
@@ -223,33 +223,33 @@ Content-Type：也叫互联网媒体类型（Internet Media Type）或者 MIME �
 
 案例1：
 
-![image-20221121175216475](../../PythonCrawl.assets/image-20221121175216475.png)
+![image-20221121175216475](../PythonCrawl.assets/image-20221121175216475.png)
 
 案例2：
 
-![image-20221121175353470](../../PythonCrawl.assets/image-20221121175353470.png)
+![image-20221121175353470](../PythonCrawl.assets/image-20221121175353470.png)
 
 **点击上下箭头检查匹配的内容**
 
-![image-20221121175421903](../../PythonCrawl.assets/image-20221121175421903.png)
+![image-20221121175421903](../PythonCrawl.assets/image-20221121175421903.png)
 
 ## 线程
 
 ### 全局解释器
 
-<img src="../../PythonCrawl.assets/image-20221122150529578.png" alt="image-20221122150529578" style="zoom:67%;" />
+<img src="../PythonCrawl.assets/image-20221122150529578.png" alt="image-20221122150529578" style="zoom:67%;" />
 
-![image-20221122150602191](../../PythonCrawl.assets/image-20221122150602191.png)
+![image-20221122150602191](../PythonCrawl.assets/image-20221122150602191.png)
 
 一秒钟运行一个线程（一个程序）
 
 如上图所示，thread1和thread2,GIL锁被线程一拿走，且GIL锁只有一个，经过操作系统，在 cpu里执行，时间到了后，释放GIL锁，此时线程2拿到锁，跟线程1 的执行顺序一样。所以即使有2个程序在运行，但线程只有一个。若有其他线程，则会卡在python解释器里。
 
-![image-20221122151935405](../../PythonCrawl.assets/image-20221122151935405.png)
+![image-20221122151935405](../PythonCrawl.assets/image-20221122151935405.png)
 
 ### 多线程
 
-![image-20221122154327669](../../PythonCrawl.assets/image-20221122154327669.png)
+![image-20221122154327669](../PythonCrawl.assets/image-20221122154327669.png)
 
 ### 进程
 
@@ -263,7 +263,7 @@ Content-Type：也叫互联网媒体类型（Internet Media Type）或者 MIME �
 
 **并行**：需要多个处理器，电脑只有一核处理器是不可以的；多个cpu中，同一时刻会有一个线程在运行就是并行
 
-<img src="../../PythonCrawl.assets/image-20221122160228431.png" alt="image-20221122160228431" style="zoom:50%;" />
+<img src="../PythonCrawl.assets/image-20221122160228431.png" alt="image-20221122160228431" style="zoom:50%;" />
 
 ### 多线程场景
 
@@ -547,7 +547,7 @@ stop
 
 python内置库中实现多进程的方法：multiprocessing
 
-<img src="../../PythonCrawl.assets/image-20221125103423866.png" alt="image-20221125103423866" style="zoom: 67%;" />
+<img src="../PythonCrawl.assets/image-20221125103423866.png" alt="image-20221125103423866" style="zoom: 67%;" />
 
 **process类**
 
