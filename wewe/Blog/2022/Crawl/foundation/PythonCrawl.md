@@ -1,5 +1,5 @@
 ---
-title:  PythonCrawl
+title: PythonCrawl
 date: 2022-11-1 12:04:21
 author: cava
 isOriginal: true
