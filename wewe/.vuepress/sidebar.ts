@@ -37,7 +37,7 @@ export const zhSidebar = sidebar({
     {
       text:"网络爬虫实战",
       icon:" ",
-      children:["NovelCrawl.html","ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html"]
+      children:["ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html"]
     },
   ]
 });
