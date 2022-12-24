@@ -51,6 +51,6 @@ export const pagesData = {
   "v-ed16b278": () => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/.~PythonCrawl.html
   "v-6ba64cd8": () => import(/* webpackChunkName: "v-6ba64cd8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/.~PythonCrawl.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
-  "v-1bc4bef6": () => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/Python_Crawl.html
+  "v-58ca11de": () => import(/* webpackChunkName: "v-58ca11de" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/Python_Crawl.html.js").then(({ data }) => data),
 }

@@ -53,6 +53,6 @@ export const pagesComponents = {
   "v-ed16b278": defineAsyncComponent(() => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.vue")),
   // path: /Blog/2022/Gra/.~PythonCrawl.html
   "v-6ba64cd8": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ba64cd8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/.~PythonCrawl.html.vue")),
-  // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
-  "v-1bc4bef6": defineAsyncComponent(() => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.vue")),
+  // path: /Blog/2022/Crawl/foundation/Python_Crawl.html
+  "v-58ca11de": defineAsyncComponent(() => import(/* webpackChunkName: "v-58ca11de" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/Python_Crawl.html.vue")),
 }
