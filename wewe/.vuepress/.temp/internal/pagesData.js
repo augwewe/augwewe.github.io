@@ -5,8 +5,6 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Try_Exception.html
   "v-3d348e0b": () => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Gra/PythonCrawl.html
-  "v-0ef51104": () => import(/* webpackChunkName: "v-0ef51104" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/PythonCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Template_graduate.html
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
@@ -53,4 +51,6 @@ export const pagesData = {
   "v-ed16b278": () => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/.~PythonCrawl.html
   "v-6ba64cd8": () => import(/* webpackChunkName: "v-6ba64cd8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/.~PythonCrawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
+  "v-1bc4bef6": () => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.js").then(({ data }) => data),
 }
