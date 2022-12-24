@@ -19,12 +19,25 @@ export const zhSidebar = sidebar({
     "intro",
     "slides",
   ],
-  "请求头":[
+  "/Blog/2022/Gra":[
     {
-      text:"graduate",
+      text:"NewsProject",
       icon:" ",
-      children:[""],
-      link:"http://localhost:8080/Blog/2022/Gra/Template_graduate.html"
+      children:["Template_graduate.html","Try_Exception.html"]
+    },
+  ],
+  "/Blog/2022/Crawl/foundation":[
+    {
+      text:"网络爬虫技术原理",
+      icon:" ",
+      children:["AskUrl_Temp.html","rule.html","PythonCrawl.html"]
+    },
+  ],
+  "/Blog/2022/Crawl/practice":[
+    {
+      text:"网络爬虫实战",
+      icon:" ",
+      children:["NovelCrawl.html","ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html"]
     },
   ]
 });

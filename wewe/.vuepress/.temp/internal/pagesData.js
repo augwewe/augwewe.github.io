@@ -3,28 +3,30 @@ export const pagesData = {
   "v-184f4da6": () => import(/* webpackChunkName: "v-184f4da6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/intro.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/AskUrl_Temp.html
-  "v-0e22ce4e": () => import(/* webpackChunkName: "v-0e22ce4e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/AskUrl_Temp.html.js").then(({ data }) => data),
-  // path: /Blog/2022/NovelCrawl.html
-  "v-62970491": () => import(/* webpackChunkName: "v-62970491" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/NovelCrawl.html.js").then(({ data }) => data),
-  // path: /Blog/2022/PythonCrawl.html
-  "v-157bfb4b": () => import(/* webpackChunkName: "v-157bfb4b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/PythonCrawl.html.js").then(({ data }) => data),
-  // path: /Blog/2022/read_Excel.html
-  "v-f70d01a4": () => import(/* webpackChunkName: "v-f70d01a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/read_Excel.html.js").then(({ data }) => data),
-  // path: /Blog/2022/rule.html
-  "v-0f102de0": () => import(/* webpackChunkName: "v-0f102de0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/rule.html.js").then(({ data }) => data),
-  // path: /Blog/2022/ScrapeMovie.html
-  "v-32a49c8c": () => import(/* webpackChunkName: "v-32a49c8c" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/ScrapeMovie.html.js").then(({ data }) => data),
-  // path: /Blog/2022/TianMaoAnalysi.html
-  "v-a17546c4": () => import(/* webpackChunkName: "v-a17546c4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/TianMaoAnalysi.html.js").then(({ data }) => data),
-  // path: /Blog/2022/TianMaoCrawl.html
-  "v-b0ed2c24": () => import(/* webpackChunkName: "v-b0ed2c24" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/TianMaoCrawl.html.js").then(({ data }) => data),
-  // path: /Blog/2022/TianMaoSave.html
-  "v-03f1cd20": () => import(/* webpackChunkName: "v-03f1cd20" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/TianMaoSave.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Try_Exception.html
+  "v-3d348e0b": () => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Template_graduate.html
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": () => import(/* webpackChunkName: "v-8681ccf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Python_Automation/read_Excel.html
+  "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
+  "v-54df83da": () => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
+  "v-1bc4bef6": () => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/rule.html
+  "v-5ff095e6": () => import(/* webpackChunkName: "v-5ff095e6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/rule.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/practice/NovelCrawl.html
+  "v-328841df": () => import(/* webpackChunkName: "v-328841df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/NovelCrawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/practice/ScrapeMovie.html
+  "v-14e41e2c": () => import(/* webpackChunkName: "v-14e41e2c" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/ScrapeMovie.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/practice/TianMaoAnalysi.html
+  "v-7e9b42ec": () => import(/* webpackChunkName: "v-7e9b42ec" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/TianMaoAnalysi.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/practice/TianMaoCrawl.html
+  "v-40208bbc": () => import(/* webpackChunkName: "v-40208bbc" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/TianMaoCrawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/practice/TianMaoSave.html
+  "v-32283992": () => import(/* webpackChunkName: "v-32283992" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/TianMaoSave.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /category/
