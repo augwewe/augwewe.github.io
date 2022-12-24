@@ -26,7 +26,7 @@ export const zhSidebar = sidebar({
       children:["Template_graduate.html","Try_Exception.html"]
     },
   ],
-  "/Blog/2022/Crawl/":[
+  "/Blog/2022/Crawl":[
     {
       text:"网络爬虫技术原理",
       icon:" ",
