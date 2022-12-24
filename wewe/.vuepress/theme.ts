@@ -71,7 +71,7 @@ export default hopeTheme({
       "/Blog/2022/Crawl/AskUrl_Temp.html":["831831"],
       "/Blog/2022/Crawl/rule.html":["831831"],
       "/Blog/2022/Crawl/Python_Crawl.html":["831831"],
-      "/Blog/2022/Gra/Template_graduate.html":["721721"]
+      "/Blog/2022/Gra/Template_graduate.html":["72721"]
     },
   },
 
