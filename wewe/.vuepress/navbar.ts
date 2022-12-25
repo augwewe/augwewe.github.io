@@ -29,7 +29,7 @@ export const zhNavbar = navbar([
         text:"news",
         children: [
           {
-            text:"myplog.",link:""
+            text:"网络爬虫原理.",link:"/Blog/2022/Crawl/foundation/Python_Crawl.html"
           }
         ]
       }
