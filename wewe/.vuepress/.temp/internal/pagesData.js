@@ -15,14 +15,14 @@ export const pagesData = {
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": () => import(/* webpackChunkName: "v-8681ccf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Python_Automation/read_Excel.html
-  "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
   "v-54df83da": () => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/Python_Crawl.html
   "v-58ca11de": () => import(/* webpackChunkName: "v-58ca11de" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/Python_Crawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/rule.html
   "v-5ff095e6": () => import(/* webpackChunkName: "v-5ff095e6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/rule.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Python_Automation/read_Excel.html
+  "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/practice/NovelCrawl.html
   "v-328841df": () => import(/* webpackChunkName: "v-328841df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/NovelCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/practice/ScrapeMovie.html
