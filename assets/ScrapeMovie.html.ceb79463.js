@@ -1,4 +1,4 @@
-import{_ as n}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as s,c as a,d as t}from"./app.ac36e997.js";const p={},e=t(`<div class="language-python ext-py line-numbers-mode"><pre class="language-python"><code><span class="token comment"># -*- coding: utf-8 -*-</span>
+import{_ as n}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as s,c as a,d as t}from"./app.ca89cfc2.js";const p={},e=t(`<div class="language-python ext-py line-numbers-mode"><pre class="language-python"><code><span class="token comment"># -*- coding: utf-8 -*-</span>
 <span class="token comment"># @Time    : 2022/11/26 12:06</span>
 <span class="token comment"># @Author  :augwewe</span>
 <span class="token comment"># @FileName: Ask_URL.py</span>
