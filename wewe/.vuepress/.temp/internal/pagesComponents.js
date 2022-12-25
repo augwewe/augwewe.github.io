@@ -21,14 +21,14 @@ export const pagesComponents = {
   "v-33daf4df": defineAsyncComponent(() => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.vue")),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": defineAsyncComponent(() => import(/* webpackChunkName: "v-8681ccf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.vue")),
+  // path: /Blog/2022/Python_Automation/read_Excel.html
+  "v-772d5e8e": defineAsyncComponent(() => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.vue")),
   // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
   "v-54df83da": defineAsyncComponent(() => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.vue")),
   // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
   "v-1bc4bef6": defineAsyncComponent(() => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.vue")),
   // path: /Blog/2022/Crawl/foundation/rule.html
   "v-5ff095e6": defineAsyncComponent(() => import(/* webpackChunkName: "v-5ff095e6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/rule.html.vue")),
-  // path: /Blog/2022/Python_Automation/read_Excel.html
-  "v-772d5e8e": defineAsyncComponent(() => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/404.html.vue")),
   // path: /category/

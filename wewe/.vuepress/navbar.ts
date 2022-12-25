@@ -24,7 +24,7 @@ export const zhNavbar = navbar([
             text:"graduate",icon:"extend",link:"/Blog/2022/Gra/Template_graduate.html"
           },
           {
-            text:"网络爬虫技术原理",icon:"extend",link:"/Blog/2022/Crwal/foundation/PythonCrawl.html"
+            text:"网络爬虫技术原理",icon:"extend",link:"/Blog/2022/Crawl/foundation/PythonCrawl.html"
           },
           {
             text:"网络爬虫实战",icon:"extend",link:"/Blog/2022/Crawl/TianMaoCrawl.html"
