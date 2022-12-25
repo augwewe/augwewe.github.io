@@ -32,7 +32,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>从开始取到最后一个节点</p>
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221119221250774.png" alt="image-20221119221250774" style="zoom:50%;" />
 <h3 id="ajax" tabindex="-1"><a class="header-anchor" href="#ajax" aria-hidden="true">#</a> ajax</h3>
-<p>百度搜索图片<img src="@source/Blog/2022/Crawl/PythonCrawl.assets/image-20221120181835251.png" alt="image-20221120181835251" style="zoom:50%;" /></p>
+<p>百度搜索图片</p>
 <p>往下滑动的同时，会看到左边数据有增加，但是页面并不会改变</p>
 <h3 id="字体反爬虫" tabindex="-1"><a class="header-anchor" href="#字体反爬虫" aria-hidden="true">#</a> 字体反爬虫</h3>
 <p>实习僧网页：</p>
@@ -49,7 +49,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>检查-Elements当前渲染后</p>
 <p>源代码-没有经过渲染的，一些css内容。。。。</p>
 <h2 id="http-https" tabindex="-1"><a class="header-anchor" href="#http-https" aria-hidden="true">#</a> HTTP&amp;HTTPS</h2>
-<p>HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL 加密的，它的主要作用可以分为两种：</p>
+<p>HTTP 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL 加密的，它的主要作用可以分为两种：</p>
 <p>1.建立一个信息安全通道，来保证数据传输的安全。</p>
 <p>2.确认网站的真实性，凡是使用了 HTTPS 的网站，都可以通过点击浏览器地址栏的锁头标志来查看网站认证之后的真实信息，也可以通过 CA 机构颁发的安全签章来查询。</p>
 <p>HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL 加密的，它的主要作用可以分为两种：</p>

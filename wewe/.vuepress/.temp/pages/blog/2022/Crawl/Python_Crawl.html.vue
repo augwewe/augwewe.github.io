@@ -32,7 +32,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>从开始取到最后一个节点</p>
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221119221250774.png" alt="image-20221119221250774" style="zoom:50%;" />
 <h3 id="ajax" tabindex="-1"><a class="header-anchor" href="#ajax" aria-hidden="true">#</a> ajax</h3>
-<p>百度搜索图片<img src="@source/Blog/2022/Crawl/PythonCrawl.assets/image-20221120181835251.png" alt="image-20221120181835251" style="zoom:50%;" /></p>
+<p>百度搜索图片</p>
 <p>往下滑动的同时，会看到左边数据有增加，但是页面并不会改变</p>
 <h3 id="字体反爬虫" tabindex="-1"><a class="header-anchor" href="#字体反爬虫" aria-hidden="true">#</a> 字体反爬虫</h3>
 <p>实习僧网页：</p>

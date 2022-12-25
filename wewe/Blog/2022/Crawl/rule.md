@@ -358,4 +358,4 @@ wb2.save("Result_Mara.xls")
 
 输出：
 
-<img src="../../rule.assets/image-20221119111440378.png" alt="image-20221119111440378" style="zoom: 67%;" />
+<img src="../rule.assets/image-20221119111440378.png" alt="image-20221119111440378" style="zoom: 67%;" />

@@ -5,6 +5,14 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Try_Exception.html
   "v-3d348e0b": () => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/AskUrl_Temp.html
+  "v-225d4c21": () => import(/* webpackChunkName: "v-225d4c21" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/AskUrl_Temp.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/NovelCrawl.html
+  "v-3260c849": () => import(/* webpackChunkName: "v-3260c849" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/NovelCrawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/rule.html
+  "v-48f5c8d0": () => import(/* webpackChunkName: "v-48f5c8d0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/rule.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/ScrapeMovie.html
+  "v-101c6502": () => import(/* webpackChunkName: "v-101c6502" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/ScrapeMovie.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/TianMaoAnalysi.html
   "v-38968456": () => import(/* webpackChunkName: "v-38968456" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoAnalysi.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/TianMaoCrawl.html
@@ -15,18 +23,8 @@ export const pagesData = {
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": () => import(/* webpackChunkName: "v-8681ccf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
-  "v-54df83da": () => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/Python_Crawl.html
-  "v-58ca11de": () => import(/* webpackChunkName: "v-58ca11de" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/Python_Crawl.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/rule.html
-  "v-5ff095e6": () => import(/* webpackChunkName: "v-5ff095e6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/rule.html.js").then(({ data }) => data),
   // path: /Blog/2022/Python_Automation/read_Excel.html
   "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/practice/NovelCrawl.html
-  "v-328841df": () => import(/* webpackChunkName: "v-328841df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/NovelCrawl.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/practice/ScrapeMovie.html
-  "v-14e41e2c": () => import(/* webpackChunkName: "v-14e41e2c" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/practice/ScrapeMovie.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /category/
@@ -51,6 +49,6 @@ export const pagesData = {
   "v-43d7543a": () => import(/* webpackChunkName: "v-43d7543a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/category/vuepress/index.html.js").then(({ data }) => data),
   // path: /tag/vuepress/
   "v-ed16b278": () => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/.~Python_Crawl.html
-  "v-2fb5af8e": () => import(/* webpackChunkName: "v-2fb5af8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/.~Python_Crawl.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/PythonCrawl.html
+  "v-3eeaae93": () => import(/* webpackChunkName: "v-3eeaae93" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/PythonCrawl.html.js").then(({ data }) => data),
 }
