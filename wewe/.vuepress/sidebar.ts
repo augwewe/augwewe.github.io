@@ -26,4 +26,18 @@ export const zhSidebar = sidebar({
       children:["Template_graduate.html","Try_Exception.html"]
     },
   ],
+  "/Blog/2022/Crawl/foundation":[
+    {
+      text:"网络爬虫原理",
+      icon:" ",
+      children:["PythonCrawl.html","rule.html","AskUrl_Temp.html"]
+    },
+  ],
+  "/Blog/2022/Crawl":[
+    {
+      text:"网络爬虫实战",
+      icon:" ",
+      children:["NovelCrawl.html"]
+    },
+  ],
 });
