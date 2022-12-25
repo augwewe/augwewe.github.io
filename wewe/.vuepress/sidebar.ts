@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
   ],
   "/Blog/2022/Gra":[
     {
-      text:"NewsProject",
+      text:"NewProject",
       icon:" ",
       children:["Template_graduate.html","Try_Exception.html"]
     },
