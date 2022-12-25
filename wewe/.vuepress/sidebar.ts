@@ -26,11 +26,5 @@ export const zhSidebar = sidebar({
       children:["Template_graduate.html","Try_Exception.html"]
     },
   ],
-  "/Blog/2022/Crawl":[
-    {
-      text:"网络爬虫技术原理",
-      icon:" ",
-      children:["Python_Crawl.html","AskUrl_Temp.html","rule.html","ScrapeMovie.html","TianMaoAnalysi.html","TianMaoCrawl.html","TianMaoSave.html",]
-    },
-  ],
+  
 });
