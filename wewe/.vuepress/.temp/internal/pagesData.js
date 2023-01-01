@@ -25,6 +25,8 @@ export const pagesData = {
   "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
   "v-54df83da": () => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/CrawlBase.html
+  "v-66e7d778": () => import(/* webpackChunkName: "v-66e7d778" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/CrawlBase.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
   "v-1bc4bef6": () => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/rule.html

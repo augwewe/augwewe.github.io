@@ -508,6 +508,21 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "爬虫数据获取至SQLite",
+    "headers": [
+      {
+        "level": 3,
+        "title": "数据存储至SQLite中",
+        "slug": "数据存储至sqlite中",
+        "link": "#数据存储至sqlite中",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Crawl/foundation/CrawlBase.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "爬虫原理知识",
     "headers": [
       {
