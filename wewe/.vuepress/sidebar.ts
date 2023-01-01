@@ -28,7 +28,7 @@ export const zhSidebar = sidebar({
   ],
   "/Blog/2022/Crawl/foundation":[
     {
-      text:"网络爬虫原理",
+      text:"网络爬虫技术原理",
       icon:" ",
       children:["PythonCrawl.html","rule.html","AskUrl_Temp.html"]
     },
