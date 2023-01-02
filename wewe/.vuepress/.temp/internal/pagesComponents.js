@@ -5,10 +5,10 @@ export const pagesComponents = {
   "v-184f4da6": defineAsyncComponent(() => import(/* webpackChunkName: "v-184f4da6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/intro.html.vue")),
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.vue")),
-  // path: /Blog/2022/Try_Exception.html
-  "v-3d348e0b": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.vue")),
   // path: /Blog/MyPlog/MyDay.html
   "v-eb26daf8": defineAsyncComponent(() => import(/* webpackChunkName: "v-eb26daf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/MyPlog/MyDay.html.vue")),
+  // path: /Blog/2022/Try_Exception.html
+  "v-3d348e0b": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.vue")),
   // path: /Blog/2022/Crawl/NovelCrawl.html
   "v-3260c849": defineAsyncComponent(() => import(/* webpackChunkName: "v-3260c849" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/NovelCrawl.html.vue")),
   // path: /Blog/2022/Crawl/ScrapeMovie.html
@@ -19,6 +19,8 @@ export const pagesComponents = {
   "v-a81dc0b4": defineAsyncComponent(() => import(/* webpackChunkName: "v-a81dc0b4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoCrawl.html.vue")),
   // path: /Blog/2022/Crawl/TianMaoSave.html
   "v-2d608068": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d608068" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoSave.html.vue")),
+  // path: /Blog/2022/Gra/About_Request.html
+  "v-75757bb2": defineAsyncComponent(() => import(/* webpackChunkName: "v-75757bb2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_Request.html.vue")),
   // path: /Blog/2022/Gra/Template_graduate.html
   "v-33daf4df": defineAsyncComponent(() => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.vue")),
   // path: /Blog/2022/Gra/Try_Exception.html

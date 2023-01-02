@@ -3,10 +3,10 @@ export const pagesData = {
   "v-184f4da6": () => import(/* webpackChunkName: "v-184f4da6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/intro.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Try_Exception.html
-  "v-3d348e0b": () => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.js").then(({ data }) => data),
   // path: /Blog/MyPlog/MyDay.html
   "v-eb26daf8": () => import(/* webpackChunkName: "v-eb26daf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/MyPlog/MyDay.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Try_Exception.html
+  "v-3d348e0b": () => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/NovelCrawl.html
   "v-3260c849": () => import(/* webpackChunkName: "v-3260c849" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/NovelCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/ScrapeMovie.html
@@ -17,6 +17,8 @@ export const pagesData = {
   "v-a81dc0b4": () => import(/* webpackChunkName: "v-a81dc0b4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/TianMaoSave.html
   "v-2d608068": () => import(/* webpackChunkName: "v-2d608068" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoSave.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/About_Request.html
+  "v-75757bb2": () => import(/* webpackChunkName: "v-75757bb2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_Request.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Template_graduate.html
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
