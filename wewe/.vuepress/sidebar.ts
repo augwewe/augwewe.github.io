@@ -40,4 +40,11 @@ export const zhSidebar = sidebar({
       children:["NovelCrawl.html","ScrapeMovie.html","TianMaoCrawl.html","TianMaoAnalysi.html","TianMaoSave.html"]
     },
   ],
+  "/Blog/2022/MongoDB_":[
+    {
+      text:"MongoDB教程",
+      icon:" ",
+      children:["MGdb.html"]
+    },
+  ],
 });

@@ -14,13 +14,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/Blog/MyPlog/MyDay.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "异常捕获Try..exception",
     "headers": [
       {
@@ -44,77 +37,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "request",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.获取request 以文本形式",
-        "slug": "_1-获取request-以文本形式",
-        "link": "#_1-获取request-以文本形式",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1 文本保存",
-            "slug": "_1-1-文本保存",
-            "link": "#_1-1-文本保存",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.2 二进制文件（音频，图片）",
-            "slug": "_1-2-二进制文件-音频-图片",
-            "link": "#_1-2-二进制文件-音频-图片",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.测试工具：可以看到请求头等信息",
-            "slug": "_2-测试工具-可以看到请求头等信息",
-            "link": "#_2-测试工具-可以看到请求头等信息",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/Gra/About_Request.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "请求头定义模板",
-    "headers": [
-      {
-        "level": 3,
-        "title": "请求url(包含异常捕获)",
-        "slug": "请求url-包含异常捕获",
-        "link": "#请求url-包含异常捕获",
-        "children": []
-      }
-    ],
-    "path": "/Blog/2022/Gra/Template_graduate.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "异常捕获Try..exception",
-    "headers": [
-      {
-        "level": 2,
-        "title": "异常捕获",
-        "slug": "异常捕获",
-        "link": "#异常捕获",
-        "children": [
-          {
-            "level": 3,
-            "title": "try........exception",
-            "slug": "try-exception",
-            "link": "#try-exception",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/Gra/Try_Exception.html",
+    "title": "",
+    "headers": [],
+    "path": "/Blog/MyPlog/MyDay.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -363,6 +288,125 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/Crawl/TianMaoSave.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "request",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.获取request 以文本形式",
+        "slug": "_1-获取request-以文本形式",
+        "link": "#_1-获取request-以文本形式",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1 文本保存",
+            "slug": "_1-1-文本保存",
+            "link": "#_1-1-文本保存",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2 二进制文件（音频，图片）",
+            "slug": "_1-2-二进制文件-音频-图片",
+            "link": "#_1-2-二进制文件-音频-图片",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.测试工具：可以看到请求头等信息",
+            "slug": "_2-测试工具-可以看到请求头等信息",
+            "link": "#_2-测试工具-可以看到请求头等信息",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/Gra/About_Request.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "请求头定义模板",
+    "headers": [
+      {
+        "level": 3,
+        "title": "请求url(包含异常捕获)",
+        "slug": "请求url-包含异常捕获",
+        "link": "#请求url-包含异常捕获",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Gra/Template_graduate.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "异常捕获Try..exception",
+    "headers": [
+      {
+        "level": 2,
+        "title": "异常捕获",
+        "slug": "异常捕获",
+        "link": "#异常捕获",
+        "children": [
+          {
+            "level": 3,
+            "title": "try........exception",
+            "slug": "try-exception",
+            "link": "#try-exception",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/Gra/Try_Exception.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MongoDB教程 6.0版",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MongoDB 6.0教程",
+        "slug": "mongodb-6-0教程",
+        "link": "#mongodb-6-0教程",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1下载MongoDB",
+            "slug": "_1-1下载mongodb",
+            "link": "#_1-1下载mongodb",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2环境变量配置",
+            "slug": "_1-2环境变量配置",
+            "link": "#_1-2环境变量配置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.3 下载MongoDB.Shell",
+            "slug": "_1-3-下载mongodb-shell",
+            "link": "#_1-3-下载mongodb-shell",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.3 启动MongoDB 服务",
+            "slug": "_1-3-启动mongodb-服务",
+            "link": "#_1-3-启动mongodb-服务",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/MongoDB_/MGdb.html",
     "pathLocale": "/",
     "extraFields": []
   },

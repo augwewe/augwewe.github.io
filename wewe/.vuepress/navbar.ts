@@ -29,6 +29,10 @@ export const zhNavbar = navbar([
           {
             text:"网络爬虫实战",icon:"extend",link:"/Blog/2022/Crawl/TianMaoCrawl.html"
           },
+          {
+            text:"MongoDB",icon:"extend",link:"/Blog/2022/MongoDB_/MGdb.html"
+          },
+
         ]
       },
       {
