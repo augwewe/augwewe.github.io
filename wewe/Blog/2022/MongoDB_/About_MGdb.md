@@ -1,5 +1,5 @@
 ---
-title: MongoDB教程 6.0版
+title: pymongo
 date: 2023-1-3 13:04:21
 author: cava
 isOriginal: true

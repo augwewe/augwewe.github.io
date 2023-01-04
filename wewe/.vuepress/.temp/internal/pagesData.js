@@ -71,4 +71,6 @@ export const pagesData = {
   "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
   // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
   "v-66f1a1a4": () => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.js").then(({ data }) => data),
+  // path: /Blog/2022/MongoDB_/.~About_MGdb.html
+  "v-6aaf5a7a": () => import(/* webpackChunkName: "v-6aaf5a7a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/.~About_MGdb.html.js").then(({ data }) => data),
 }
