@@ -371,6 +371,64 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
+        "title": "MongoDB-pymongo",
+        "slug": "mongodb-pymongo",
+        "link": "#mongodb-pymongo",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.连接数据库",
+            "slug": "_1-连接数据库",
+            "link": "#_1-连接数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.指定数据库",
+            "slug": "_2-指定数据库",
+            "link": "#_2-指定数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.指定集合（数据表）",
+            "slug": "_3-指定集合-数据表",
+            "link": "#_3-指定集合-数据表",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4.插入数据",
+            "slug": "_4-插入数据",
+            "link": "#_4-插入数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5.查询数据",
+            "slug": "_5-查询数据",
+            "link": "#_5-查询数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "6.查询数据范围（int)",
+            "slug": "_6-查询数据范围-int",
+            "link": "#_6-查询数据范围-int",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/MongoDB_/About_MGdb.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MongoDB教程 6.0版",
+    "headers": [
+      {
+        "level": 2,
         "title": "MongoDB 6.0教程",
         "slug": "mongodb-6-0教程",
         "link": "#mongodb-6-0教程",
@@ -398,9 +456,9 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "1.3 启动MongoDB 服务",
-            "slug": "_1-3-启动mongodb-服务",
-            "link": "#_1-3-启动mongodb-服务",
+            "title": "1.4 启动MongoDB 服务",
+            "slug": "_1-4-启动mongodb-服务",
+            "link": "#_1-4-启动mongodb-服务",
             "children": []
           }
         ]
@@ -948,6 +1006,41 @@ export const searchIndex = [
     "title": "VuePress 标签",
     "headers": [],
     "path": "/tag/vuepress/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "爬虫技术 标签",
+    "headers": [],
+    "path": "/tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "爬虫技术 猫眼电影 标签",
+    "headers": [],
+    "path": "/tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python 标签",
+    "headers": [],
+    "path": "/tag/python/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MongoDB 标签",
+    "headers": [],
+    "path": "/tag/mongodb/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "正则表达式 标签",
+    "headers": [],
+    "path": "/tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/",
     "pathLocale": "/",
     "extraFields": []
   }

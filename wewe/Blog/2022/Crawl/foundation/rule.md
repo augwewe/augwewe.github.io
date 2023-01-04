@@ -6,10 +6,9 @@ author: cava
 isOriginal: true
 category: 
     - notebook
-    - VuePress
 tag:
-    - Vue
-    - VuePress
+    - python
+    - 正则表达式
 icon: vue
 sticky: false
 star: false

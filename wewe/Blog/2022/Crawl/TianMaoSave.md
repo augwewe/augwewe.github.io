@@ -5,10 +5,8 @@ author: cava
 isOriginal: true
 category: 
     - notebook
-    - VuePress
 tag:
-    - Vue
-    - VuePress
+    - 爬虫技术 猫眼电影
 icon: vue
 sticky: false
 star: false

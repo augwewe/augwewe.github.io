@@ -42,9 +42,9 @@ export const zhSidebar = sidebar({
   ],
   "/Blog/2022/MongoDB_":[
     {
-      text:"MongoDB教程",
+      text:"MongoDB",
       icon:" ",
-      children:["MGdb.html"]
+      children:["MGdb.html","About_MGdb.html"]
     },
   ],
 });

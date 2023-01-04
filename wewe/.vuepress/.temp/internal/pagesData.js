@@ -23,6 +23,8 @@ export const pagesData = {
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": () => import(/* webpackChunkName: "v-8681ccf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.js").then(({ data }) => data),
+  // path: /Blog/2022/MongoDB_/About_MGdb.html
+  "v-576fad4a": () => import(/* webpackChunkName: "v-576fad4a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/About_MGdb.html.js").then(({ data }) => data),
   // path: /Blog/2022/MongoDB_/MGdb.html
   "v-65fa83dc": () => import(/* webpackChunkName: "v-65fa83dc" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/MGdb.html.js").then(({ data }) => data),
   // path: /Blog/2022/Python_Automation/read_Excel.html
@@ -59,6 +61,14 @@ export const pagesData = {
   "v-43d7543a": () => import(/* webpackChunkName: "v-43d7543a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/category/vuepress/index.html.js").then(({ data }) => data),
   // path: /tag/vuepress/
   "v-ed16b278": () => import(/* webpackChunkName: "v-ed16b278" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/vuepress/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/MongoDB_/.~MGdb.html
-  "v-190fd50c": () => import(/* webpackChunkName: "v-190fd50c" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/.~MGdb.html.js").then(({ data }) => data),
+  // path: /tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/
+  "v-42619dd5": () => import(/* webpackChunkName: "v-42619dd5" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术/index.html.js").then(({ data }) => data),
+  // path: /tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/
+  "v-c457ce30": () => import(/* webpackChunkName: "v-c457ce30" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术-猫眼电影/index.html.js").then(({ data }) => data),
+  // path: /tag/python/
+  "v-245f5676": () => import(/* webpackChunkName: "v-245f5676" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/python/index.html.js").then(({ data }) => data),
+  // path: /tag/mongodb/
+  "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
+  // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
+  "v-66f1a1a4": () => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.js").then(({ data }) => data),
 }
