@@ -37,7 +37,7 @@ export const zhSidebar = sidebar({
     {
       text:"网络爬虫实战",
       icon:" ",
-      children:["NovelCrawl.html","ScrapeMovie.html","TianMaoCrawl.html","TianMaoAnalysi.html","TianMaoSave.html"]
+      children:["NovelCrawl.html","ScrapeMovie.html","TianMaoCrawl.html","TianMaoAnalysi.html","TianMaoSave.html","Img_Save.html"]
     },
   ],
   "/Blog/2022/MongoDB_":[

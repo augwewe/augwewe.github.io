@@ -14,6 +14,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "",
+    "headers": [],
+    "path": "/Blog/MyPlog/MyDay.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "异常捕获Try..exception",
     "headers": [
       {
@@ -37,9 +44,17 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/Blog/MyPlog/MyDay.html",
+    "title": "存储网页所有图片",
+    "headers": [
+      {
+        "level": 3,
+        "title": "爬虫技术-存储网页所有图片",
+        "slug": "爬虫技术-存储网页所有图片",
+        "link": "#爬虫技术-存储网页所有图片",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Crawl/Img_Save.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -367,7 +382,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "MongoDB教程 6.0版",
+    "title": "pymongo",
     "headers": [
       {
         "level": 2,

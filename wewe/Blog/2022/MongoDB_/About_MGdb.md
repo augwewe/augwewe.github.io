@@ -29,14 +29,14 @@ toc: true
 
 导入库 import pymongo
 
-### 1.连接数据库
+### 1. 连接数据库
 
 ```python
 client=pymongo.MongoClient(host="localhost",port=27017)
 client=pymongo.MongoClient('mongodb://localhost:27017/')
 ```
 
-### 2.指定数据库
+### 2. 指定数据库
 
 不存在该数据库会自动创建
 
@@ -45,14 +45,14 @@ db=client.first
 db=client['first']
 ```
 
-### 3.指定集合（数据表）
+### 3. 指定集合（数据表）
 
 ```python
 collections=db.info
 collections=db['info']
 ```
 
-### 4.插入数据
+### 4. 插入数据
 
 ```python
 info={
@@ -65,7 +65,7 @@ result=collections.insert_one(info)
 print(result)
 ```
 
-#### 4.1批量插入数据(insert_one)
+#### 4.1 批量插入数据(insert_one)
 
 ```python
  for num in range(1,501):
@@ -77,7 +77,7 @@ print(result)
      collections.insert_one(info_second)
 ```
 
-#### 4.2批量插入数据(insert_many)
+#### 4.2 批量插入数据(insert_many)
 
 ```python
 result=collections.insert_many([info,info_student])
@@ -93,7 +93,7 @@ for i in range(1,501):
  collections.insert_many(new_list)
 ```
 
-### 5.查询数据
+### 5. 查询数据
 
 ```python
 from bson.objectid import ObjectId
@@ -105,7 +105,7 @@ result2=collections.find({"name":"xiaoyi"})
 result3=collections.find_one({"_id":ObjectId("63b4dee4d36d58d5a24b4172")})
 ```
 
-### 6.查询数据范围（int)
+### 6. 查询数据范围（int)
 
 <img src="./About_MGdb.assets/image-20230105010554145.png" alt="image-20230105010554145" style="zoom: 50%;" />
 
@@ -113,10 +113,19 @@ result3=collections.find_one({"_id":ObjectId("63b4dee4d36d58d5a24b4172")})
 result=collections.find_one({"birth":{"$gt":8888}})
 result=collections.find_one({"birth":{"$in":[8888,20000]}})
 result=collections.find_one({"birth":{"$lt":10000}})
-result=collections.find_one({"birth":{"$lte":8888}})
+result=collections.find_one({"birth":{"$lte":8888##}})
 ```
 
+### 7. 查询数据范围(各类属性)
 
+<img src="./About_MGdb.assets/image-20230105235613406.png" alt="image-20230105235613406" style="zoom: 33%;" />
+
+```python
+result=collections.find_one({"name":{"$regex":"^h.*"}})
+result=collections.find_one({"birth":{"$type":"int"}})
+result=collections.find_one({"name":{"$exists":True}})
+print(result)
+```
 
 
 
