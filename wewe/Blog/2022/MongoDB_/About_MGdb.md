@@ -127,6 +127,68 @@ result=collections.find_one({"name":{"$exists":True}})
 print(result)
 ```
 
+### 8. 统计
+
+```python
+counts=collections.count_documents({"sex":{"$ne":"girl"}})
+print(counts)
+result=collections.find({"sex":{"$ne":"girl"}})
+num=0
+for i in result:
+    print(i)
+    num+=1
+print(num)
+```
+
+### 9.排序
+
+字符首字母大小/字符串大小
+
+```python
+result=collections.find().sort("birth",pymongo.ASCENDING)#升序
+result=collections.find().sort("name",pymongo.DESCENDING)#降序
+for i in result:
+    print(i)
+```
+
+### 10. 偏移
+
+```python
+result=collections.find().sort("birth",pymongo.ASCENDING).skip(2)
+跳过前两条数据，从第三条开始获取
+result=collections.find().sort("birth",pymongo.ASCENDING).skip(2).limit(2)
+跳过前两条,且只往后获取2条
+for i in result:
+    print(i)
+```
+
+### 11.数据更新update  $set
+
+```python
+condition={"name":"mike"}
+student=collections.find_one(condition)
+student["birth"]=24
+result=collections.update_one(condition,{"$set":student})
+print(result)
+```
+
+### 12. 指定某个数据增加
+
+```python
+condition={"birth":{"$gt":7}}
+result=collections.update_one(condition,{"$inc":{"birth":4}})
+result=collections.update_many(condition,{"$inc":{"birth":4}})
+print(result)
+```
+
+### 13. 数据删减
+
+```python
+condition={"birth":{"$gt":30}}
+result=collections.delete_one(condition)
+result=collections.delete_many(condition)
+```
+
 
 
 

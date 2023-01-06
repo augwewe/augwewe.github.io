@@ -3,10 +3,10 @@ export const pagesData = {
   "v-184f4da6": () => import(/* webpackChunkName: "v-184f4da6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/intro.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /Blog/MyPlog/MyDay.html
-  "v-eb26daf8": () => import(/* webpackChunkName: "v-eb26daf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/MyPlog/MyDay.html.js").then(({ data }) => data),
   // path: /Blog/2022/Try_Exception.html
   "v-3d348e0b": () => import(/* webpackChunkName: "v-3d348e0b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Try_Exception.html.js").then(({ data }) => data),
+  // path: /Blog/MyPlog/MyDay.html
+  "v-eb26daf8": () => import(/* webpackChunkName: "v-eb26daf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/MyPlog/MyDay.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/Img_Save.html
   "v-1a65e30a": () => import(/* webpackChunkName: "v-1a65e30a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/Img_Save.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/NovelCrawl.html
@@ -73,8 +73,4 @@ export const pagesData = {
   "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
   // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
   "v-66f1a1a4": () => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/.~Img_Save.html
-  "v-1de69fab": () => import(/* webpackChunkName: "v-1de69fab" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/.~Img_Save.html.js").then(({ data }) => data),
-  // path: /Blog/2022/MongoDB_/.~About_MGdb.html
-  "v-6aaf5a7a": () => import(/* webpackChunkName: "v-6aaf5a7a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/.~About_MGdb.html.js").then(({ data }) => data),
 }
