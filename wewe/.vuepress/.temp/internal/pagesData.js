@@ -33,10 +33,6 @@ export const pagesData = {
   "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
   "v-54df83da": () => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/CrawlBase.html
-  "v-66e7d778": () => import(/* webpackChunkName: "v-66e7d778" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/CrawlBase.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/DelayWait.html
-  "v-4f0b4578": () => import(/* webpackChunkName: "v-4f0b4578" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/DelayWait.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
   "v-1bc4bef6": () => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/rule.html
@@ -75,4 +71,8 @@ export const pagesData = {
   "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
   // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
   "v-66f1a1a4": () => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/CrawlBase.html
+  "v-0f8f5bb7": () => import(/* webpackChunkName: "v-0f8f5bb7" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/CrawlBase.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/DelayWait.html
+  "v-109a6c92": () => import(/* webpackChunkName: "v-109a6c92" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/DelayWait.html.js").then(({ data }) => data),
 }

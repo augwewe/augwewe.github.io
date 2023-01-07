@@ -35,10 +35,6 @@ export const pagesComponents = {
   "v-772d5e8e": defineAsyncComponent(() => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.vue")),
   // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
   "v-54df83da": defineAsyncComponent(() => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.vue")),
-  // path: /Blog/2022/Crawl/foundation/CrawlBase.html
-  "v-66e7d778": defineAsyncComponent(() => import(/* webpackChunkName: "v-66e7d778" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/CrawlBase.html.vue")),
-  // path: /Blog/2022/Crawl/foundation/DelayWait.html
-  "v-4f0b4578": defineAsyncComponent(() => import(/* webpackChunkName: "v-4f0b4578" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/DelayWait.html.vue")),
   // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
   "v-1bc4bef6": defineAsyncComponent(() => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.vue")),
   // path: /Blog/2022/Crawl/foundation/rule.html
@@ -77,4 +73,8 @@ export const pagesComponents = {
   "v-794d224b": defineAsyncComponent(() => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.vue")),
   // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
   "v-66f1a1a4": defineAsyncComponent(() => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.vue")),
+  // path: /Blog/2022/Gra/CrawlBase.html
+  "v-0f8f5bb7": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f8f5bb7" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/CrawlBase.html.vue")),
+  // path: /Blog/2022/Gra/DelayWait.html
+  "v-109a6c92": defineAsyncComponent(() => import(/* webpackChunkName: "v-109a6c92" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/DelayWait.html.vue")),
 }
