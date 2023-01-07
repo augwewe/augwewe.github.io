@@ -740,6 +740,21 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "延迟插件",
+    "headers": [
+      {
+        "level": 3,
+        "title": "延迟插件",
+        "slug": "延迟插件",
+        "link": "#延迟插件",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Crawl/foundation/DelayWait.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "爬虫原理知识",
     "headers": [
       {

@@ -23,7 +23,7 @@ export const zhSidebar = sidebar({
     {
       text:"NewsProject",
       icon:" ",
-      children:["Template_graduate.html","Try_Exception.html","CrawlBase.html","About_Request.html"]
+      children:["Template_graduate.html","Try_Exception.html","CrawlBase.html","About_Request.html","DelayWait.html"]
     },
   ],
   "/Blog/2022/Crawl/foundation":[
