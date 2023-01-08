@@ -21,12 +21,14 @@ export const pagesComponents = {
   "v-a81dc0b4": defineAsyncComponent(() => import(/* webpackChunkName: "v-a81dc0b4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoCrawl.html.vue")),
   // path: /Blog/2022/Crawl/TianMaoSave.html
   "v-2d608068": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d608068" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoSave.html.vue")),
+  // path: /Blog/2022/Gra/About_pymysql.html
+  "v-9623f7b0": defineAsyncComponent(() => import(/* webpackChunkName: "v-9623f7b0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_pymysql.html.vue")),
   // path: /Blog/2022/Gra/About_Request.html
   "v-75757bb2": defineAsyncComponent(() => import(/* webpackChunkName: "v-75757bb2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_Request.html.vue")),
   // path: /Blog/2022/Gra/CrawlBase.html
   "v-0f8f5bb7": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f8f5bb7" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/CrawlBase.html.vue")),
-  // path: /Blog/2022/Gra/DelayWait.html
-  "v-109a6c92": defineAsyncComponent(() => import(/* webpackChunkName: "v-109a6c92" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/DelayWait.html.vue")),
+  // path: /Blog/2022/Gra/Delay_Wait.html
+  "v-74d7881c": defineAsyncComponent(() => import(/* webpackChunkName: "v-74d7881c" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Delay_Wait.html.vue")),
   // path: /Blog/2022/Gra/Template_graduate.html
   "v-33daf4df": defineAsyncComponent(() => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.vue")),
   // path: /Blog/2022/Gra/Try_Exception.html
@@ -71,10 +73,14 @@ export const pagesComponents = {
   "v-42619dd5": defineAsyncComponent(() => import(/* webpackChunkName: "v-42619dd5" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术/index.html.vue")),
   // path: /tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/
   "v-c457ce30": defineAsyncComponent(() => import(/* webpackChunkName: "v-c457ce30" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术-猫眼电影/index.html.vue")),
+  // path: /tag/%E6%95%B0%E6%8D%AE%E5%BA%93/
+  "v-25365ef3": defineAsyncComponent(() => import(/* webpackChunkName: "v-25365ef3" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/数据库/index.html.vue")),
   // path: /tag/python/
   "v-245f5676": defineAsyncComponent(() => import(/* webpackChunkName: "v-245f5676" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/python/index.html.vue")),
   // path: /tag/mongodb/
   "v-794d224b": defineAsyncComponent(() => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.vue")),
   // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
   "v-66f1a1a4": defineAsyncComponent(() => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.vue")),
+  // path: /Blog/2022/Gra/.~About_pymysql.html
+  "v-fd542e90": defineAsyncComponent(() => import(/* webpackChunkName: "v-fd542e90" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/.~About_pymysql.html.vue")),
 }

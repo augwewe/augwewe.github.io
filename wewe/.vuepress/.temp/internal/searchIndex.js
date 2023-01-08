@@ -321,6 +321,71 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "MySql",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Python 之站在高层框架下的 SQLAIchemy 操作 MySQL（关系型数据库)",
+        "slug": "python-之站在高层框架下的-sqlaichemy-操作-mysql-关系型数据库",
+        "link": "#python-之站在高层框架下的-sqlaichemy-操作-mysql-关系型数据库",
+        "children": [
+          {
+            "level": 3,
+            "title": "定义",
+            "slug": "定义",
+            "link": "#定义",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数据库命令",
+            "slug": "数据库命令",
+            "link": "#数据库命令",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "sqlalchemy",
+            "slug": "sqlalchemy",
+            "link": "#sqlalchemy",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "事务",
+            "slug": "事务",
+            "link": "#事务",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数据类型",
+            "slug": "数据类型",
+            "link": "#数据类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "索引",
+            "slug": "索引",
+            "link": "#索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数据增删改查",
+            "slug": "数据增删改查",
+            "link": "#数据增删改查",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/Gra/About_pymysql.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "request",
     "headers": [
       {
@@ -383,7 +448,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/Blog/2022/Gra/DelayWait.html",
+    "path": "/Blog/2022/Gra/Delay_Wait.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1113,6 +1178,13 @@ export const searchIndex = [
     "title": "爬虫技术 猫眼电影 标签",
     "headers": [],
     "path": "/tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数据库 标签",
+    "headers": [],
+    "path": "/tag/%E6%95%B0%E6%8D%AE%E5%BA%93/",
     "pathLocale": "/",
     "extraFields": []
   },
