@@ -106,7 +106,7 @@ metadata = MetaData()
 test=Table("info",metadata,
            Column("id",Integer(),primary_key=True,autoincreament=True),
            Column("name",String(666)),
-           Column("data",DateTime(),default=datetime.now,onupdate=datetime.now),
+     	Column("data",DateTime(),default=datetime.now,onupdate=datetime.now),
            Column("main",Boolean(),defalut=False)
            )
 metadata.create_all(enging)
@@ -173,6 +173,155 @@ except:
 | **第五** | **通过使用索引，可以在查询的过程中，使用优化隐藏器，提高系统的性能。** |
 
 ### 数据增删改查
+
+**插入数据**
+
+```python
+engine.execute("insert into user(name) values('wewe')")
+engine.execute("insert into user(name) values('xiaoyi')")
+```
+
+```
+INSERT INTO TABLE (KEY1,KEYA) VALUES (VALUE1,VALUE2);  # 增加语句
+
+UPDATE TABLE SET KEY=VALUE, KEY=VALUE WHERE···;          # 修改语句
+
+SELECT * FROM TABLE;   # 查询语句
+
+DELETE FROM TABLE WHERE ···;     # 删除语句
+```
+
+**删除数据**
+
+删除全部数据
+
+```python
+engine.execute("delete from user")
+```
+
+删除指定数据
+
+```python
+engine.execute("delete from user where id = 1")
+```
+
+**更新数据**
+
+````python
+#方法1
+# engine.execute("update user set id = 2,name='python' where id =2")
+#方法2
+# engine.execute("update user set name = 'haha' where id = 3 ")
+#方法3
+# engine.execute("update user set name ='san'")
+````
+
+**查看数据**
+
+```python
+content=engine.execute("select * from user")
+for i  in content:
+    print(i)
+输出---------------------------------------------
+(2, 'san')
+(3, 'san')
+(4, 'wewe')
+```
+
+不适用sql语句
+
+方法2,采用python语言
+
+```python
+#插入数据
+conn=engine.connect()
+# conn.execute(user_table.insert(),{"教学表":"www"})
+# conn.close()
+#更新数据
+# conn.execute(user_table.update(),{"教学表":"cava"})
+# conn.close()
+#指定修改 id为xxx的数据
+#conn.execute(user_table.update().where(user_table.c.id==1).values(id=66))
+# conn.close()
+#修改数据
+# conn.execute(user_table.update().where(user_table.c.id==66).values(教学表="xiaoyi"))
+# conn.close()
+```
+
+方法3 
+
+**插入数据**
+
+```python
+stmt=insert(user_table).values(教学表="haha",id=67)
+compiled=stmt.compile()
+with engine.connect() as conn:
+    result=conn.execute(stmt)
+```
+
+```python
+with engine.connect() as conn:
+    result = conn.execute(
+        insert(user_table),
+        [
+            {"id": 1, "教学表": "xi"},
+            {"id": 2, "教学表": "ha"},
+        ],
+    )
+```
+
+更新数据
+
+```python
+from sqlalchemy import update
+stmt = (
+    update(user_table)
+    .where(user_table.c.教学表 == "xi")
+    .values(id=1)
+)
+print(stmt)
+```
+
+### ORM类操纵数据
+
+```python
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import  declarative_base
+
+engine = create_engine(
+            "mysql+pymysql://root:admin@127.0.0.1:3306/xiaoyi",
+            max_overflow=5,
+            pool_size=10,
+            echo=True
+        )
+Base=declarative_base()
+
+class Host(Base):
+    __tablename__ = 'hosts'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    hostname = Column(String(64), unique=True, nullable=False)
+    ip_addr = Column(String(128), unique=True, nullable=False)
+    port = Column(Integer, default=22)
+    title = Column(String(200))
+
+# Base.metadata.create_all(engine)
+if __name__ == '__main__':
+    try:
+        Session = sessionmaker(bind=engine)
+        sess = Session()  # 创建实例
+        h = Host(hostname='test1', ip_addr="127.0.0.1")
+        h2 = Host(hostname='test2', ip_addr="192.168.0.1", port=8000)
+        h3 = Host(hostname='test3', ip_addr="192.168.1.1", port=8080)
+        sess.add(h)  # 每次添加一个
+        sess.add_all([h2, h3])  # 每次添加多个
+        #数据更新
+        res=sess.query(Host).filter(Host.id == 1).all()
+        for i in res:
+            print(i.hostname)
+        sess.commit()  # 事务提交，必须要有
+    except:
+        print("Error!")
+```
 
 
 

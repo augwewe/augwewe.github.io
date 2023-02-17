@@ -1,5 +1,5 @@
 ---
-title: PQuery 解析
+title: PyQuery 解析
 date: 2022-10-30 12:04:21
 author: cava
 isOriginal: true
@@ -7,6 +7,7 @@ category:
     - notebook
 tag:
     - 爬虫技术
+    - 网页源代码解析方式
 icon: vue
 sticky: false
 star: false
@@ -24,7 +25,7 @@ backToTop: true
 toc: true
 ---
 
-## PQuery
+## PyQuery
 
 ### 1.1返回li标签
 
@@ -57,7 +58,7 @@ print(doc("li"))
             <li class="item-100"><a href="link51.html">100 item</a></li>
 ```
 
-### 1.2 返回网页”title"
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-2-返回网页-title)1.2 返回网页”title"
 
 ```python
 doc=pq(url="https://ssr1.scrape.center/")
@@ -66,14 +67,14 @@ print(doc("title"))
 <title>Scrape | Movie</title>
 ```
 
-### 1.3 获取本地html
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-3-获取本地html)1.3 获取本地html
 
 ```python
 doc=pq(filename="1.html")
 print(doc)
 ```
 
-### 1.4选择器,提取li标签/提取文本(text.())/查看输出type
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-4选择器-提取li标签-提取文本-text-查看输出type)1.4选择器,提取li标签/提取文本(text.())/查看输出type
 
 ```python
 doc=pq(html)
@@ -82,7 +83,7 @@ print(type(doc("#container .list li.item-0 a")))
 <class 'pyquery.pyquery.PyQuery'>
 ```
 
-### 1.5遍历li,并获取其中的文本
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-5遍历li-并获取其中的文本)1.5遍历li,并获取其中的文本
 
 ```python
 the_li=doc("#container .list li").items()
@@ -97,7 +98,7 @@ fifth item
 100 item
 ```
 
-### 获取电影名
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#获取电影名)获取电影名
 
 之前采用正则表达式；这里打开之前已经保存的html文件
 
@@ -116,7 +117,7 @@ print(name_list)
 得到100个电影名的列表
 ```
 
-### 1.6 find&children
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-find-children)1.6 find&children
 
 find会返回list下的所有li标签;children返回下一层级所有，包括”ol“; children(”li“)只返回下一层级的li;children(".active")
 
@@ -143,9 +144,9 @@ print(the_children_li)
             <li class="item-0"><a href="link5.html">fifth item</a></li>
 ```
 
-### 1.6.1 parent & parents
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-1-parent-parents)1.6.1 parent & parents
 
- parent;会显示.list上一级标签
+parent;会显示.list上一级标签
 
 parents("") 指定获取哪个祖先节点的名字，不指定会返回两个结果
 
@@ -180,7 +181,7 @@ print(container)
 </div>
 ```
 
-### 1.6.2 siblings 兄弟节点
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-2-siblings-兄弟节点)1.6.2 siblings 兄弟节点
 
 上下级标签，不包括他本身
 
@@ -196,7 +197,7 @@ print(the_li.siblings())
             <ol><li class="item-100"><a href="link51.html">100 item</a></li></ol>
 ```
 
-### 1.6.3 items 遍历获取li标签
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-3-items-遍历获取li标签)1.6.3 items 遍历获取li标签
 
 ```python
 doc=pq(html)
@@ -212,7 +213,7 @@ for i in the_li.items():
 <li class="item-100"><a href="link51.html">100 item</a></li>
 ```
 
-### 1.6.4 attr 获取href 首个/遍历获取所有
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-4-attr-获取href-首个-遍历获取所有)1.6.4 attr 获取href 首个/遍历获取所有
 
 ```python
 the_li=doc("li a")
@@ -230,7 +231,7 @@ link5.html
 link51.html
 ```
 
-### 1.6.5获取标签中的纯文字文本 ，html文本；text(),html()
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-5获取标签中的纯文字文本-html文本-text-html)1.6.5获取标签中的纯文字文本 ，html文本；text(),html()
 
 ```python
 the_li=doc("li ")
@@ -253,22 +254,22 @@ fifth item
 <a href="link51.html">100 item</a>
 ```
 
-### 1.6.6 添加/删除节点 remove_class/add_class
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-6-添加-删除节点-remove-class-add-class)1.6.6 添加/删除节点 remove_class/add_class
 
- ```python
- doc=pq(html)
- the_li=doc(".item-1.active")
- print(the_li)
- print(the_li.remove_class("active"))
- ----------------------------------------
- <li class="item-1 active"><a href="link4.html">fourth item</a></li>
- <li class="item-1"><a href="link4.html">fourth item</a></li>
- #添加节点
- print(the_li.add_class("xiaoyi"))
- <li class="item-1 xiaoyi"><a href="link4.html">fourth item</a></li>
- ```
+```python
+doc=pq(html)
+the_li=doc(".item-1.active")
+print(the_li)
+print(the_li.remove_class("active"))
+----------------------------------------
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-1"><a href="link4.html">fourth item</a></li>
+#添加节点
+print(the_li.add_class("xiaoyi"))
+<li class="item-1 xiaoyi"><a href="link4.html">fourth item</a></li>
+```
 
-### 1.6.7 attr 添加属性,text()改变节点纯文字内容，html()改变html文本内容
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-6-7-attr-添加属性-text-改变节点纯文字内容-html-改变html文本内容)1.6.7 attr 添加属性,text()改变节点纯文字内容，html()改变html文本内容
 
 ```python
 doc=pq(html)
@@ -287,7 +288,7 @@ print(the_li.html("<span>hahaha</span>"))
 <li class="item-1 active" name="link"><span>hahaha</span></li>
 ```
 
-### 1.7 remove
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-7-remove)1.7 remove
 
 ```python
 html1="""
@@ -303,7 +304,7 @@ print(content.remove("p").text())
 Hello,World
 ```
 
-### 1.8 类选择器
+### [#](https://augwewe.cn/Blog/2022/Crawl/foundation/AskUrl_Temp.html#_1-8-类选择器)1.8 类选择器
 
 ```python
 html2 = '''
@@ -333,6 +334,28 @@ print(li)
 li = doc('li:contains(second)')
 print(li)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

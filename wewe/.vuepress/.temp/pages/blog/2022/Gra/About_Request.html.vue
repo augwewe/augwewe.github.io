@@ -18,6 +18,39 @@ r<span class="token operator">=</span>requests<span class="token punctuation">.<
     f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>r<span class="token punctuation">.</span>content<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-测试工具-可以看到请求头等信息" tabindex="-1"><a class="header-anchor" href="#_2-测试工具-可以看到请求头等信息" aria-hidden="true">#</a> 2.测试工具：可以看到请求头等信息</h3>
 <div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>url<span class="token operator">=</span><span class="token string">"http://httpbin.org/get"</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="请求头函数" tabindex="-1"><a class="header-anchor" href="#请求头函数" aria-hidden="true">#</a> 请求头函数</h3>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">ask_url</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>timeout<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span>binary<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>debug<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> status<span class="token punctuation">,</span>html<span class="token punctuation">,</span>redirected_url
+    the_headers<span class="token operator">=</span><span class="token punctuation">{</span>
+        <span class="token string">"User-Agent"</span><span class="token punctuation">:</span><span class="token string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> headers<span class="token punctuation">:</span>
+        the_headers<span class="token operator">=</span>headers
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        response<span class="token operator">=</span>requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span>the_headers<span class="token punctuation">,</span>timeout<span class="token operator">=</span>timeout<span class="token punctuation">)</span><span class="token comment">#设定超时时间，在10秒内如果目标网站没有成功就会报错，并不是无限制地去等待，提高了请求效率，</span>
+        <span class="token keyword">if</span> response<span class="token punctuation">.</span>status_code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">:</span><span class="token comment">#如果请求的目标url成功响应的话，会返回状态码为200</span>
+            <span class="token keyword">if</span> binary<span class="token punctuation">:</span>
+                html<span class="token operator">=</span>response<span class="token punctuation">.</span>content
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                encoding<span class="token operator">=</span>cchardet<span class="token punctuation">.</span>detect<span class="token punctuation">(</span>response<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'encoding'</span><span class="token punctuation">]</span>
+                html<span class="token operator">=</span>response<span class="token punctuation">.</span>content<span class="token punctuation">.</span>decode<span class="token punctuation">(</span>encoding<span class="token punctuation">)</span>
+            status<span class="token operator">=</span>response<span class="token punctuation">.</span>status_code
+            redirected_url<span class="token operator">=</span>response<span class="token punctuation">.</span>url<span class="token comment">#真实请求的url,重定向</span>
+
+    <span class="token keyword">except</span><span class="token punctuation">(</span>RequestException<span class="token punctuation">,</span>ProxyError<span class="token punctuation">,</span>SSLError<span class="token punctuation">)</span><span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> debug<span class="token punctuation">:</span>
+            traceback<span class="token punctuation">.</span>print_exc<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#如果报错，就将错误信息输出</span>
+        msg<span class="token operator">=</span><span class="token string">'Failed downled:{}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token comment">#将错误信息显示在打印台上，写一个字符串以说明没有成功下载的url</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> binary<span class="token punctuation">:</span> <span class="token comment">#这个判断的原因：在解析网页内容的时候需要进入函数中，如果不指定空字符串和空二进制文件，若没有数据则会返回None这个报错信息，若是空则是不需要进行处理。</span>
+            html<span class="token operator">=</span><span class="token string">b''</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            html<span class="token operator">=</span><span class="token string">''</span>
+        status<span class="token operator">=</span><span class="token number">0</span><span class="token comment">#如果出现报错，则会返回状态码为0</span>
+    <span class="token keyword">return</span> status<span class="token punctuation">,</span>html<span class="token punctuation">,</span>redirected_url<span class="token comment">#返回状态码，网页内容和重定向url</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>cchardet 是为什么，一个网页后缀html?后的参数即使去掉也可以重新访问</p>
+</div></template>
 
 

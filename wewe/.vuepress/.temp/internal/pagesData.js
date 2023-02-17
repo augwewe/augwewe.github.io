@@ -19,10 +19,16 @@ export const pagesData = {
   "v-a81dc0b4": () => import(/* webpackChunkName: "v-a81dc0b4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/TianMaoSave.html
   "v-2d608068": () => import(/* webpackChunkName: "v-2d608068" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoSave.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/About_aiottp.html
+  "v-daa77b70": () => import(/* webpackChunkName: "v-daa77b70" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_aiottp.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/About_Django.html
+  "v-6ca27956": () => import(/* webpackChunkName: "v-6ca27956" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_Django.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/About_pymysql.html
   "v-9623f7b0": () => import(/* webpackChunkName: "v-9623f7b0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_pymysql.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/About_Request.html
   "v-75757bb2": () => import(/* webpackChunkName: "v-75757bb2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_Request.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/AotherWay.html
+  "v-59e989a2": () => import(/* webpackChunkName: "v-59e989a2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/AotherWay.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/CrawlBase.html
   "v-0f8f5bb7": () => import(/* webpackChunkName: "v-0f8f5bb7" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/CrawlBase.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Delay_Wait.html
@@ -31,14 +37,20 @@ export const pagesData = {
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": () => import(/* webpackChunkName: "v-8681ccf8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/Untitled.html
+  "v-775fde44": () => import(/* webpackChunkName: "v-775fde44" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Untitled.html.js").then(({ data }) => data),
   // path: /Blog/2022/MongoDB_/About_MGdb.html
   "v-576fad4a": () => import(/* webpackChunkName: "v-576fad4a" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/About_MGdb.html.js").then(({ data }) => data),
   // path: /Blog/2022/MongoDB_/MGdb.html
   "v-65fa83dc": () => import(/* webpackChunkName: "v-65fa83dc" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/MGdb.html.js").then(({ data }) => data),
   // path: /Blog/2022/Python_Automation/read_Excel.html
   "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Crawl/foundation/AskUrl_Temp.html
-  "v-54df83da": () => import(/* webpackChunkName: "v-54df83da" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/AskUrl_Temp.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/Beautiful.html
+  "v-1713edc2": () => import(/* webpackChunkName: "v-1713edc2" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/Beautiful.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/Book1.html
+  "v-6499c3b0": () => import(/* webpackChunkName: "v-6499c3b0" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/Book1.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Crawl/foundation/PyQuery.html
+  "v-57b3f61e": () => import(/* webpackChunkName: "v-57b3f61e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PyQuery.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/PythonCrawl.html
   "v-1bc4bef6": () => import(/* webpackChunkName: "v-1bc4bef6" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/foundation/PythonCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/rule.html
@@ -71,14 +83,20 @@ export const pagesData = {
   "v-42619dd5": () => import(/* webpackChunkName: "v-42619dd5" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术/index.html.js").then(({ data }) => data),
   // path: /tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/
   "v-c457ce30": () => import(/* webpackChunkName: "v-c457ce30" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术-猫眼电影/index.html.js").then(({ data }) => data),
-  // path: /tag/%E6%95%B0%E6%8D%AE%E5%BA%93/
-  "v-25365ef3": () => import(/* webpackChunkName: "v-25365ef3" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/数据库/index.html.js").then(({ data }) => data),
   // path: /tag/python/
   "v-245f5676": () => import(/* webpackChunkName: "v-245f5676" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/python/index.html.js").then(({ data }) => data),
+  // path: /tag/%E7%88%AC%E8%99%AB/
+  "v-7e8edfe1": () => import(/* webpackChunkName: "v-7e8edfe1" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫/index.html.js").then(({ data }) => data),
+  // path: /tag/python-web%E6%A1%86%E6%9E%B6/
+  "v-5f4271f8": () => import(/* webpackChunkName: "v-5f4271f8" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/python-web框架/index.html.js").then(({ data }) => data),
+  // path: /tag/%E6%95%B0%E6%8D%AE%E5%BA%93/
+  "v-25365ef3": () => import(/* webpackChunkName: "v-25365ef3" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/数据库/index.html.js").then(({ data }) => data),
   // path: /tag/mongodb/
   "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
+  // path: /tag/%E7%BD%91%E9%A1%B5%E6%BA%90%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90%E6%96%B9%E5%BC%8F/
+  "v-5282eb78": () => import(/* webpackChunkName: "v-5282eb78" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/网页源代码解析方式/index.html.js").then(({ data }) => data),
+  // path: /tag/%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/
+  "v-43ec122e": () => import(/* webpackChunkName: "v-43ec122e" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫实战/index.html.js").then(({ data }) => data),
   // path: /tag/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/
   "v-66f1a1a4": () => import(/* webpackChunkName: "v-66f1a1a4" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/正则表达式/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Gra/.~About_pymysql.html
-  "v-fd542e90": () => import(/* webpackChunkName: "v-fd542e90" */"D:/myaugwewe/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/.~About_pymysql.html.js").then(({ data }) => data),
 }

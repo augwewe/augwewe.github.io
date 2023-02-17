@@ -72,7 +72,11 @@ export default hopeTheme({
       "/Blog/2022/Crawl/Python_Crawl.html":["831831"],
       "/Blog/2022/Gra/Template_graduate.html":["831831"],
       "/Blog/2022/Crawl/foundation/PythonCrawl.html":["831831"],
-      "Blog/2022/Gra/DelayWait.html":["831831"]
+      "Blog/2022/Gra/DelayWait.html":["831831"],
+      "Blog/2022/Gra/CrawlBase.html":["831831"],
+      "Blog/2022/Gra/About_Request.html":["831831"],
+      "Blog/2022/Gra/Delay_Wait.html":["831831"],
+      "Blog/2022/Gra/About_pymysql.html":["831831"]
     },
   },
 
