@@ -17,6 +17,10 @@ export const pagesData = {
   "v-a81dc0b4": () => import(/* webpackChunkName: "v-a81dc0b4" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoCrawl.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/TianMaoSave.html
   "v-2d608068": () => import(/* webpackChunkName: "v-2d608068" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/TianMaoSave.html.js").then(({ data }) => data),
+  // path: /Blog/2022/MongoDB_/About_MGdb.html
+  "v-576fad4a": () => import(/* webpackChunkName: "v-576fad4a" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/About_MGdb.html.js").then(({ data }) => data),
+  // path: /Blog/2022/MongoDB_/MGdb.html
+  "v-65fa83dc": () => import(/* webpackChunkName: "v-65fa83dc" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/MGdb.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/About_Django.html
   "v-6ca27956": () => import(/* webpackChunkName: "v-6ca27956" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/About_Django.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/About_Request.html
@@ -35,10 +39,6 @@ export const pagesData = {
   "v-33daf4df": () => import(/* webpackChunkName: "v-33daf4df" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Template_graduate.html.js").then(({ data }) => data),
   // path: /Blog/2022/Gra/Try_Exception.html
   "v-8681ccf8": () => import(/* webpackChunkName: "v-8681ccf8" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/Try_Exception.html.js").then(({ data }) => data),
-  // path: /Blog/2022/MongoDB_/About_MGdb.html
-  "v-576fad4a": () => import(/* webpackChunkName: "v-576fad4a" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/About_MGdb.html.js").then(({ data }) => data),
-  // path: /Blog/2022/MongoDB_/MGdb.html
-  "v-65fa83dc": () => import(/* webpackChunkName: "v-65fa83dc" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/MGdb.html.js").then(({ data }) => data),
   // path: /Blog/2022/Python_Automation/read_Excel.html
   "v-772d5e8e": () => import(/* webpackChunkName: "v-772d5e8e" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/read_Excel.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/Beautiful.html
@@ -59,10 +59,10 @@ export const pagesData = {
   "v-1297d554": () => import(/* webpackChunkName: "v-1297d554" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/
   "v-427c6536": () => import(/* webpackChunkName: "v-427c6536" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Crawl/index.html.js").then(({ data }) => data),
-  // path: /Blog/2022/Gra/
-  "v-471931d6": () => import(/* webpackChunkName: "v-471931d6" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/MongoDB_/
   "v-bac3cbf6": () => import(/* webpackChunkName: "v-bac3cbf6" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/MongoDB_/index.html.js").then(({ data }) => data),
+  // path: /Blog/2022/Gra/
+  "v-471931d6": () => import(/* webpackChunkName: "v-471931d6" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Gra/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Python_Automation/
   "v-f14b981c": () => import(/* webpackChunkName: "v-f14b981c" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/Blog/2022/Python_Automation/index.html.js").then(({ data }) => data),
   // path: /Blog/2022/Crawl/foundation/
@@ -89,6 +89,8 @@ export const pagesData = {
   "v-42619dd5": () => import(/* webpackChunkName: "v-42619dd5" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术/index.html.js").then(({ data }) => data),
   // path: /tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/
   "v-c457ce30": () => import(/* webpackChunkName: "v-c457ce30" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫技术-猫眼电影/index.html.js").then(({ data }) => data),
+  // path: /tag/mongodb/
+  "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
   // path: /tag/python-web%E6%A1%86%E6%9E%B6/
   "v-5f4271f8": () => import(/* webpackChunkName: "v-5f4271f8" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/python-web框架/index.html.js").then(({ data }) => data),
   // path: /tag/python/
@@ -97,8 +99,6 @@ export const pagesData = {
   "v-7e8edfe1": () => import(/* webpackChunkName: "v-7e8edfe1" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/爬虫/index.html.js").then(({ data }) => data),
   // path: /tag/%E6%95%B0%E6%8D%AE%E5%BA%93/
   "v-25365ef3": () => import(/* webpackChunkName: "v-25365ef3" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/数据库/index.html.js").then(({ data }) => data),
-  // path: /tag/mongodb/
-  "v-794d224b": () => import(/* webpackChunkName: "v-794d224b" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/mongodb/index.html.js").then(({ data }) => data),
   // path: /tag/%E7%BD%91%E9%A1%B5%E6%BA%90%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90%E6%96%B9%E5%BC%8F/
   "v-5282eb78": () => import(/* webpackChunkName: "v-5282eb78" */"/Users/huangjiabao/GitHub/WebSite/augwewe.github.io/wewe/.vuepress/.temp/pages/tag/网页源代码解析方式/index.html.js").then(({ data }) => data),
   // path: /tag/%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/

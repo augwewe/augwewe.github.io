@@ -314,6 +314,157 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "pymongo",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MongoDB-pymongo",
+        "slug": "mongodb-pymongo",
+        "link": "#mongodb-pymongo",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 连接数据库",
+            "slug": "_1-连接数据库",
+            "link": "#_1-连接数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 指定数据库",
+            "slug": "_2-指定数据库",
+            "link": "#_2-指定数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 指定集合（数据表）",
+            "slug": "_3-指定集合-数据表",
+            "link": "#_3-指定集合-数据表",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 插入数据",
+            "slug": "_4-插入数据",
+            "link": "#_4-插入数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5. 查询数据",
+            "slug": "_5-查询数据",
+            "link": "#_5-查询数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "6. 查询数据范围（int)",
+            "slug": "_6-查询数据范围-int",
+            "link": "#_6-查询数据范围-int",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "7. 查询数据范围(各类属性)",
+            "slug": "_7-查询数据范围-各类属性",
+            "link": "#_7-查询数据范围-各类属性",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "8. 统计",
+            "slug": "_8-统计",
+            "link": "#_8-统计",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "9.排序",
+            "slug": "_9-排序",
+            "link": "#_9-排序",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "10. 偏移",
+            "slug": "_10-偏移",
+            "link": "#_10-偏移",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "11.数据更新update  $set",
+            "slug": "_11-数据更新update-set",
+            "link": "#_11-数据更新update-set",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "12. 指定某个数据增加",
+            "slug": "_12-指定某个数据增加",
+            "link": "#_12-指定某个数据增加",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "13. 数据删减",
+            "slug": "_13-数据删减",
+            "link": "#_13-数据删减",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/MongoDB_/About_MGdb.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MongoDB教程 6.0版",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MongoDB 6.0教程",
+        "slug": "mongodb-6-0教程",
+        "link": "#mongodb-6-0教程",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1下载MongoDB",
+            "slug": "_1-1下载mongodb",
+            "link": "#_1-1下载mongodb",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2环境变量配置",
+            "slug": "_1-2环境变量配置",
+            "link": "#_1-2环境变量配置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.3 下载MongoDB.Shell",
+            "slug": "_1-3-下载mongodb-shell",
+            "link": "#_1-3-下载mongodb-shell",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.4 启动MongoDB 服务",
+            "slug": "_1-4-启动mongodb-服务",
+            "link": "#_1-4-启动mongodb-服务",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/MongoDB_/MGdb.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Django",
     "headers": [
       {
@@ -647,157 +798,6 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/Gra/Try_Exception.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "pymongo",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MongoDB-pymongo",
-        "slug": "mongodb-pymongo",
-        "link": "#mongodb-pymongo",
-        "children": [
-          {
-            "level": 3,
-            "title": "1. 连接数据库",
-            "slug": "_1-连接数据库",
-            "link": "#_1-连接数据库",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2. 指定数据库",
-            "slug": "_2-指定数据库",
-            "link": "#_2-指定数据库",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3. 指定集合（数据表）",
-            "slug": "_3-指定集合-数据表",
-            "link": "#_3-指定集合-数据表",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "4. 插入数据",
-            "slug": "_4-插入数据",
-            "link": "#_4-插入数据",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "5. 查询数据",
-            "slug": "_5-查询数据",
-            "link": "#_5-查询数据",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "6. 查询数据范围（int)",
-            "slug": "_6-查询数据范围-int",
-            "link": "#_6-查询数据范围-int",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "7. 查询数据范围(各类属性)",
-            "slug": "_7-查询数据范围-各类属性",
-            "link": "#_7-查询数据范围-各类属性",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "8. 统计",
-            "slug": "_8-统计",
-            "link": "#_8-统计",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "9.排序",
-            "slug": "_9-排序",
-            "link": "#_9-排序",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "10. 偏移",
-            "slug": "_10-偏移",
-            "link": "#_10-偏移",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "11.数据更新update  $set",
-            "slug": "_11-数据更新update-set",
-            "link": "#_11-数据更新update-set",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "12. 指定某个数据增加",
-            "slug": "_12-指定某个数据增加",
-            "link": "#_12-指定某个数据增加",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "13. 数据删减",
-            "slug": "_13-数据删减",
-            "link": "#_13-数据删减",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/MongoDB_/About_MGdb.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "MongoDB教程 6.0版",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MongoDB 6.0教程",
-        "slug": "mongodb-6-0教程",
-        "link": "#mongodb-6-0教程",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1下载MongoDB",
-            "slug": "_1-1下载mongodb",
-            "link": "#_1-1下载mongodb",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.2环境变量配置",
-            "slug": "_1-2环境变量配置",
-            "link": "#_1-2环境变量配置",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.3 下载MongoDB.Shell",
-            "slug": "_1-3-下载mongodb-shell",
-            "link": "#_1-3-下载mongodb-shell",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.4 启动MongoDB 服务",
-            "slug": "_1-4-启动mongodb-服务",
-            "link": "#_1-4-启动mongodb-服务",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/MongoDB_/MGdb.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1375,16 +1375,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Gra",
+    "title": "Mongo D B",
     "headers": [],
-    "path": "/Blog/2022/Gra/",
+    "path": "/Blog/2022/MongoDB_/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Mongo D B",
+    "title": "Gra",
     "headers": [],
-    "path": "/Blog/2022/MongoDB_/",
+    "path": "/Blog/2022/Gra/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1480,6 +1480,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "MongoDB 标签",
+    "headers": [],
+    "path": "/tag/mongodb/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "python Web框架 标签",
     "headers": [],
     "path": "/tag/python-web%E6%A1%86%E6%9E%B6/",
@@ -1504,13 +1511,6 @@ export const searchIndex = [
     "title": "数据库 标签",
     "headers": [],
     "path": "/tag/%E6%95%B0%E6%8D%AE%E5%BA%93/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "MongoDB 标签",
-    "headers": [],
-    "path": "/tag/mongodb/",
     "pathLocale": "/",
     "extraFields": []
   },

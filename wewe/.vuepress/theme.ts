@@ -58,7 +58,7 @@ export default hopeTheme({
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
       //"/Blog/2022/mywriter.html":["721721"]
-      "/Blog/2022/Crawl/TianMaoAnalysi.html": "831831",
+      "/Blog/2022/Crawl/TianMaoAnalysi": "831831",
       "/Blog/2022/Crawl/TianMaoCrawl.html": "831831",
       "/Blog/2022/Crawl/NovelCrawl.html": "831831",
       "/Blog/2022/Crawl/TianMaoSave.html": "831831",
@@ -71,7 +71,7 @@ export default hopeTheme({
       "Blog/2022/Gra/CrawlBase.html": ["721721"],
       "Blog/2022/Gra/About_Request.html": ["831831"],
       "Blog/2022/Gra/Delay_Wait.html": ["831831"],
-      "Blog/2022/Gra/About_pymysql.html": "831831"
+      "Blog/2022/Gra/About_pymysql": "831831"
     },
   },
 
