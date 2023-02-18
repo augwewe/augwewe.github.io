@@ -1,6 +1,6 @@
 <template><div><h2 id="异步协程" tabindex="-1"><a class="header-anchor" href="#异步协程" aria-hidden="true">#</a> 异步协程</h2>
 <p>如下所示，爬取若干个url,消耗的时间是每个url所需的时间之和。</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time
 <span class="token keyword">def</span> <span class="token function">crawl_page</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"crawling{}"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">)</span>
     sleep_time<span class="token operator">=</span><span class="token builtin">int</span><span class="token punctuation">(</span>url<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
@@ -23,7 +23,7 @@ OKurl_4
 CPU times<span class="token punctuation">:</span> total<span class="token punctuation">:</span> <span class="token number">0</span> ns
 Wall time<span class="token punctuation">:</span> <span class="token number">10</span> s
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>协程,将时间最久的一个任务挂起，在这个时间段内执行其他任务。最终总时间只是其中一个任务所需的最长时间。</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio<span class="token punctuation">,</span>time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio<span class="token punctuation">,</span>time
 
 <span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">crawl_page</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"crawling{}"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -50,7 +50,7 @@ OK url_3
 OK url_6
 <span class="token number">6.00509238243103</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="执行task的另一种方法" tabindex="-1"><a class="header-anchor" href="#执行task的另一种方法" aria-hidden="true">#</a> 执行task的另一种方法</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio<span class="token punctuation">,</span>time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio<span class="token punctuation">,</span>time
 
 <span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">crawl_page</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"crawling{}"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -82,7 +82,7 @@ OK url_4
 <img src="@source/Blog/2022/Gra/AotherWay.assets/image-20230130103858779.png" alt="image-20230130103858779" style="zoom:67%;" />
 <h3 id="实战-豆瓣电影" tabindex="-1"><a class="header-anchor" href="#实战-豆瓣电影" aria-hidden="true">#</a> 实战：豆瓣电影</h3>
 <p>版本1</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> requests
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> requests
 <span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
 
 <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -127,7 +127,7 @@ OK url_4
 CPU times<span class="token punctuation">:</span> total<span class="token punctuation">:</span> <span class="token number">672</span> ms
 Wall time<span class="token punctuation">:</span> <span class="token number">17.2</span> s
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>版本2 协程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio
 <span class="token keyword">import</span> aiohttp
 
 <span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup

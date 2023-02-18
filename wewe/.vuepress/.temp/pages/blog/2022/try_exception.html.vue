@@ -4,7 +4,7 @@
 <p>2.异常类型可以放在一个元组中</p>
 <p>3.非系统型异常可以用Except统一捕获</p>
 <p>4.finally中的语句表示，无论如何都是会被执行的</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
     <span class="token keyword">try</span><span class="token punctuation">:</span>
         the_num<span class="token operator">=</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"please enter here:"</span><span class="token punctuation">)</span>
         num1<span class="token operator">=</span><span class="token builtin">int</span><span class="token punctuation">(</span>the_num<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>

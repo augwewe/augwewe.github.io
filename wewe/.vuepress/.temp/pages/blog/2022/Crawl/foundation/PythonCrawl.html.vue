@@ -1,7 +1,7 @@
 <template><div><h1 id="网络爬虫" tabindex="-1"><a class="header-anchor" href="#网络爬虫" aria-hidden="true">#</a> 网络爬虫</h1>
 <p>定义：当今最大的网络是互联网，最大的爬虫是各类搜索引擎：谷歌，百度。网路爬虫按照一定的规则爬取所需要的信息的程序，通过URl的请求来实现。在包含广泛信息时，我们就需要一些聚焦于某一方面的信息的爬虫来提供服务，例如某一类型的书。</p>
 <h3 id="_1-网络爬虫类型" tabindex="-1"><a class="header-anchor" href="#_1-网络爬虫类型" aria-hidden="true">#</a> 1. 网络爬虫类型</h3>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171231536.png" alt="image-20221119171231536" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171231536.png" alt="image-20221119171231536"></p>
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171113993.png" alt="image-20221119171113993" style="zoom: 67%;" />
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171549635.png" alt="image-20221119171549635" style="zoom: 67%;" />
 <p><strong>查看User-Agent方式，右键-检查-NetWork</strong></p>
@@ -15,13 +15,13 @@
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221119171753590.png" alt="image-20221119171753590" style="zoom:50%;" />
 <p>1.URL 通过value in xx来比较查看</p>
 <p>2.内容（哈希）</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#哈希解析</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment">#哈希解析</span>
 test<span class="token operator">=</span><span class="token string">"cava"</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>存储介质？</p>
 <p>例如将爬取到的url作为MySQl中的主键，定义为Id,查看主键对应的内容，比如第一条值为xiaoyi想去迪士尼，第二条为xiaoyi想去环球影视城，数据已经有更新。</p>
 <p>内容的判断？</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text1<span class="token punctuation">)</span><span class="token operator">==</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text1<span class="token punctuation">)</span><span class="token operator">==</span><span class="token builtin">hash</span><span class="token punctuation">(</span>text2<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token comment">#返回True则表示存在重复内容</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="redis数据库" tabindex="-1"><a class="header-anchor" href="#redis数据库" aria-hidden="true">#</a> Redis数据库</h3>
 <p>tips:内存爆满问题，注意要及时备份</p>
@@ -85,26 +85,26 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>记住用户信息</p>
 <h3 id="dns" tabindex="-1"><a class="header-anchor" href="#dns" aria-hidden="true">#</a> DNS</h3>
 <p>浏览器缓存</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121002817352.png" alt="image-20221121002817352" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121002817352.png" alt="image-20221121002817352"></p>
 <h3 id="页面呈现" tabindex="-1"><a class="header-anchor" href="#页面呈现" aria-hidden="true">#</a> 页面呈现</h3>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121005418250.png" alt="image-20221121005418250" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121005418250.png" alt="image-20221121005418250"></p>
 <h3 id="网页匹配css-内容" tabindex="-1"><a class="header-anchor" href="#网页匹配css-内容" aria-hidden="true">#</a> 网页匹配css 内容</h3>
 <p><strong>tips:先用选择器定位要匹配的内容，再从它的上一级开始匹配</strong></p>
 <p>案例1：</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175216475.png" alt="image-20221121175216475" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175216475.png" alt="image-20221121175216475"></p>
 <p>案例2：</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175353470.png" alt="image-20221121175353470" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175353470.png" alt="image-20221121175353470"></p>
 <p><strong>点击上下箭头检查匹配的内容</strong></p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175421903.png" alt="image-20221121175421903" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221121175421903.png" alt="image-20221121175421903"></p>
 <h2 id="线程" tabindex="-1"><a class="header-anchor" href="#线程" aria-hidden="true">#</a> 线程</h2>
 <h3 id="全局解释器" tabindex="-1"><a class="header-anchor" href="#全局解释器" aria-hidden="true">#</a> 全局解释器</h3>
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221122150529578.png" alt="image-20221122150529578" style="zoom:67%;" />
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122150602191.png" alt="image-20221122150602191" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122150602191.png" alt="image-20221122150602191"></p>
 <p>一秒钟运行一个线程（一个程序）</p>
 <p>如上图所示，thread1和thread2,GIL锁被线程一拿走，且GIL锁只有一个，经过操作系统，在 cpu里执行，时间到了后，释放GIL锁，此时线程2拿到锁，跟线程1 的执行顺序一样。所以即使有2个程序在运行，但线程只有一个。若有其他线程，则会卡在python解释器里。</p>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122151935405.png" alt="image-20221122151935405" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122151935405.png" alt="image-20221122151935405"></p>
 <h3 id="多线程" tabindex="-1"><a class="header-anchor" href="#多线程" aria-hidden="true">#</a> 多线程</h3>
-<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122154327669.png" alt="image-20221122154327669" loading="lazy"></p>
+<p><img src="@source/Blog/2022/PythonCrawl.assets/image-20221122154327669.png" alt="image-20221122154327669"></p>
 <h3 id="进程" tabindex="-1"><a class="header-anchor" href="#进程" aria-hidden="true">#</a> 进程</h3>
 <p>进程定义：一个进程可以做很多事情，并且同时做，互不干扰。</p>
 <p>线程：操作系统中最小的调度单位。</p>
@@ -116,7 +116,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <p>IO密集型，适合爬虫</p>
 <p>CPU密集型不适合多线程</p>
 <p>1.单线程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time
 <span class="token keyword">def</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         i<span class="token operator">+=</span>i
@@ -132,7 +132,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
     main<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2.多线程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time<span class="token punctuation">,</span>threading
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time<span class="token punctuation">,</span>threading
 <span class="token keyword">def</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         i<span class="token operator">+=</span><span class="token number">1</span>
@@ -155,7 +155,7 @@ test<span class="token operator">=</span><span class="token string">"cava"</span
 <span class="token comment">#time:0.2631237506866455</span>
 <span class="token comment">#和test1速度相差并不大，</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>3.非守护线程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time<span class="token punctuation">,</span>threading
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time<span class="token punctuation">,</span>threading
 
 <span class="token keyword">def</span> <span class="token function">start</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>
     time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>num<span class="token punctuation">)</span>
@@ -187,7 +187,7 @@ thread<span class="token punctuation">.</span>join<span class="token punctuation
 <span class="token comment"># True</span>
 <span class="token comment"># 4952</span>
 <span class="token comment"># stop</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> threading<span class="token punctuation">,</span>time
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> threading<span class="token punctuation">,</span>time
 
 <span class="token keyword">def</span> <span class="token function">target</span><span class="token punctuation">(</span>second<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Threading </span><span class="token interpolation"><span class="token punctuation">{</span>threading<span class="token punctuation">.</span>current_thread<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">}</span></span><span class="token string"> is run.'</span></span><span class="token punctuation">)</span>
@@ -222,7 +222,7 @@ thread<span class="token punctuation">.</span>join<span class="token punctuation
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>4.守护线程</p>
 <p>定义：若该线程被设置为守护线程，在主线程结束后即使该线程还没有运行完它也会被强制结束</p>
 <p>守护线程设置方法：在start之前添加 daemon=True</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">target</span><span class="token punctuation">(</span>second<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">target</span><span class="token punctuation">(</span>second<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Threading </span><span class="token interpolation"><span class="token punctuation">{</span>threading<span class="token punctuation">.</span>current_thread<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">}</span></span><span class="token string">is run'</span></span><span class="token punctuation">)</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Threading </span><span class="token interpolation"><span class="token punctuation">{</span>threading<span class="token punctuation">.</span>current_thread<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">}</span></span><span class="token string"> is sleep </span><span class="token interpolation"><span class="token punctuation">{</span>second<span class="token punctuation">}</span></span><span class="token string">s'</span></span><span class="token punctuation">)</span><span class="token comment">#沉睡的秒数</span>
     time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>second<span class="token punctuation">)</span>
@@ -243,7 +243,7 @@ thread<span class="token punctuation">.</span>join<span class="token punctuation
 
 <span class="token comment">#原先应该是显示thread-2 ended后，才显示 Threading MainThread is ended</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>5.互斥锁（浅浅了解一下）</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> threading
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> threading
 <span class="token keyword">import</span> time
 
 count <span class="token operator">=</span> <span class="token number">0</span>
@@ -275,7 +275,7 @@ threads <span class="token operator">=</span> <span class="token punctuation">[<
 <p>所以，如果多个线程同时对某个数据进行读取或修改，就会出现不可预料的结果。为了避免这种情况，我们需要对多个线程进行同步，要实现同步，我们可以对需要操作的数据进行加锁保护，这里就需要用到 <code v-pre>threading.Lock</code> 了</p>
 <p>5.1加互斥锁</p>
 <p><strong>tips:注意最后释放锁，否则会造成死锁</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> threading
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> threading
 <span class="token keyword">import</span> time
 
 lock <span class="token operator">=</span> threading<span class="token punctuation">.</span>Lock<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 创建一个最简单的 读写锁</span>
@@ -316,7 +316,7 @@ stop
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>6.线程池</p>
 <p>可以提前定义大概需要多少线程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> time
 <span class="token keyword">import</span> threadpool
 
 <span class="token keyword">def</span> <span class="token function">get_html</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -345,7 +345,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 <img src="@source/Blog/2022/PythonCrawl.assets/image-20221125103423866.png" alt="image-20221125103423866" style="zoom: 67%;" />
 <p><strong>process类</strong></p>
 <p>多进程示例：</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span>  multiprocessing
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span>  multiprocessing
 <span class="token comment">#多进程</span>
 <span class="token keyword">def</span> <span class="token function">process</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Process:</span><span class="token interpolation"><span class="token punctuation">{</span>index<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
@@ -364,7 +364,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在cpu核数足够的情况下，不同的进程会分配给不同的cpu核来运行，实现真正的并行执行</p>
 <p>在 multiprocessing中有提供方法：cpu_conut来获取当前机器 cpu 的核心数量，通过  active_children 方法来获取当前还在运行的所有进程。</p>
 <p>示例：</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> multiprocessing<span class="token punctuation">,</span>time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> multiprocessing<span class="token punctuation">,</span>time
 
 <span class="token keyword">def</span> <span class="token function">process</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">:</span>
     time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>index<span class="token punctuation">)</span>
@@ -395,7 +395,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 <span class="token comment"># Process:3</span>
 <span class="token comment"># Process:4</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>守护进程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process
 <span class="token keyword">import</span> time
 
 <span class="token keyword">class</span> <span class="token class-name">MyProcess</span><span class="token punctuation">(</span>Process<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -421,7 +421,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 <span class="token comment">#main process ended</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上述程序中，主进程只输出了字符串就结束，同时子进程也结束，可以有效地防止无控制生成子进程，主进程结束后，子进程也会关闭，避免独立的子进程运行。</p>
 <p>等待子进程运行完后主进程再结束</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Process
 <span class="token keyword">import</span> time
 
 <span class="token keyword">class</span> <span class="token class-name">MyProcess</span><span class="token punctuation">(</span>Process<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -454,7 +454,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 <span class="token comment">#main process ended</span>
 <span class="token comment">#父进程等待子进程结束后再结束</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>终止进程</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> multiprocessing<span class="token punctuation">,</span>time
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> multiprocessing<span class="token punctuation">,</span>time
 
 <span class="token keyword">def</span> <span class="token function">process</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"starting"</span><span class="token punctuation">)</span>
@@ -480,7 +480,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 <span class="token comment"># joined: &lt;Process name='Process-1' pid=68076 parent=71916 stopped exitcode=-SIGTERM> False</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>进程互斥锁</p>
 <p>1.不加锁的示例</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span>  Process<span class="token punctuation">,</span>Lock
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span>  Process<span class="token punctuation">,</span>Lock
 <span class="token keyword">import</span> time
 
 <span class="token keyword">class</span> <span class="token class-name">Myprocess</span><span class="token punctuation">(</span>Process<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -514,7 +514,7 @@ pool<span class="token punctuation">.</span>wait<span class="token punctuation">
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从上述程序中可以看出，有不换行的输出</p>
 <p>如何换行输出？</p>
 <p>示例2：</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span>  Process<span class="token punctuation">,</span>Lock
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span>  Process<span class="token punctuation">,</span>Lock
 <span class="token keyword">import</span> time
 
 <span class="token keyword">class</span> <span class="token class-name">Myprocess</span><span class="token punctuation">(</span>Process<span class="token punctuation">)</span><span class="token punctuation">:</span>

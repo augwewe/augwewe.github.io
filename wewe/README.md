@@ -1,6 +1,6 @@
 ---
 home: true
-layout: Blog
+layout: BlogHome
 icon: home
 title: augwewe 
 heroImage: https://img-blog.csdnimg.cn/50204645e14649189a95217e24da7c94.png

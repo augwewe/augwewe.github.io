@@ -1,6 +1,6 @@
 <template><div><h2 id="beautiful-soup" tabindex="-1"><a class="header-anchor" href="#beautiful-soup" aria-hidden="true">#</a> Beautiful Soup</h2>
 <h3 id="安装库-导入包" tabindex="-1"><a class="header-anchor" href="#安装库-导入包" aria-hidden="true">#</a> 安装库,导入包</h3>
-<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>pip install lxml
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>pip install lxml
 pip install BeautifulSoup
 from bs4 import BeautifulSoup
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="四大种类对象" tabindex="-1"><a class="header-anchor" href="#四大种类对象" aria-hidden="true">#</a> 四大种类对象</h3>
@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 *  BeautifulSoup
 *  Comment</p>
 <h3 id="prettify" tabindex="-1"><a class="header-anchor" href="#prettify" aria-hidden="true">#</a> prettify()</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>url <span class="token operator">=</span> <span class="token string">"https://www.xbiquge.so/book/54523/"</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>url <span class="token operator">=</span> <span class="token string">"https://www.xbiquge.so/book/54523/"</span>
 header <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'</span><span class="token punctuation">}</span>
 req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers <span class="token operator">=</span> header<span class="token punctuation">)</span>
 soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>req<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'lxml'</span><span class="token punctuation">)</span>
@@ -19,7 +19,7 @@ soup <span class="token operator">=</span> BeautifulSoup<span class="token punct
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="comment" tabindex="-1"><a class="header-anchor" href="#comment" aria-hidden="true">#</a> Comment</h3>
 <p>Comment 对象是一个特殊类型的 NavigableString 对象，但是当它出现在 HTML 文档中时，如果不对 Comment 对象进行处理，那么我们在后续的处理中可能会出现问题。<strong>HTML 中可以用来添加一段暂不通过网页渲染出来的内容</strong>。</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>url <span class="token operator">=</span> <span class="token string">"https://www.xbiquge.so/book/54523/"</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>url <span class="token operator">=</span> <span class="token string">"https://www.xbiquge.so/book/54523/"</span>
 header <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'</span><span class="token punctuation">}</span>
 req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers <span class="token operator">=</span> header<span class="token punctuation">)</span>
 soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>req<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'lxml'</span><span class="token punctuation">)</span>
@@ -33,7 +33,7 @@ soup <span class="token operator">=</span> BeautifulSoup<span class="token punct
 笔趣阁
 <span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'bs4.element.NavigableString'</span><span class="token operator">></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="css选择器" tabindex="-1"><a class="header-anchor" href="#css选择器" aria-hidden="true">#</a> Css选择器</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">ask_url</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>timeout<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">ask_url</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span>timeout<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment"># global status,html,redirected_url</span>
     the_headers<span class="token operator">=</span><span class="token punctuation">{</span>
         <span class="token string">"User-Agent"</span><span class="token punctuation">:</span><span class="token string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"</span>

@@ -1,6 +1,6 @@
 <template><div><h3 id="延迟插件" tabindex="-1"><a class="header-anchor" href="#延迟插件" aria-hidden="true">#</a> 延迟插件</h3>
 <p>使用目的：请求访问频繁，作非正常浏览判别会被封禁Ip</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> urllib <span class="token keyword">import</span> parse
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> urllib <span class="token keyword">import</span> parse
 <span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
 <span class="token keyword">import</span> time<span class="token punctuation">,</span>requests  <span class="token comment">#睡眠req爬虫库</span>
 

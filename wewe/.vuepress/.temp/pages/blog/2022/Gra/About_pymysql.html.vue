@@ -20,14 +20,14 @@
 <img src="@source/Blog/2022/Gra/About_pymysql.assets/image-20230108095853904.png" alt="image-20230108095853904" style="zoom:50%;" />
 <p><strong>调用数据库API的操作:</strong></p>
 <p>'数据库类型+数据库驱动名称://用户名:口令@机器地址:端口号/数据库名'</p>
-<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>mysql+pymysql://&lt;username>:&lt;password>@&lt;host>|&lt;dbname>[?&lt;options>]
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>mysql+pymysql://&lt;username>:&lt;password>@&lt;host>|&lt;dbname>[?&lt;options>]
 mysql+mysqldb://&lt;user>:&lt;password>@&lt;host>[:&lt;port>]/&lt;dbname>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>mysql+pymysql://:@/[?]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>mysql+pymysql://:@/[?]
 # mysql+pymysql://&lt;username>:&lt;password>@&lt;host>|&lt;dbname>[?&lt;options>]
 mysql+mysqldb://:@[:]/
 # mysql+mysqldb://&lt;user>:&lt;password>@&lt;host>[:&lt;port>]/&lt;dbname>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>连接数据库：</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> sqlalchemy <span class="token keyword">import</span>  create_engine
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> sqlalchemy <span class="token keyword">import</span>  create_engine
 
 enging <span class="token operator">=</span> create_engine<span class="token punctuation">(</span>
     <span class="token string">"mysql+pymysql://root:admin@127.0.0.1:3306/test"</span><span class="token punctuation">,</span>
@@ -36,7 +36,7 @@ enging <span class="token operator">=</span> create_engine<span class="token pun
      echo<span class="token operator">=</span><span class="token boolean">True</span>
 <span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>创建数据表</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span>  sqlalchemy <span class="token keyword">import</span> Table<span class="token punctuation">,</span>Column
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span>  sqlalchemy <span class="token keyword">import</span> Table<span class="token punctuation">,</span>Column
 <span class="token keyword">from</span> sqlalchemy <span class="token keyword">import</span> String<span class="token punctuation">,</span>Boolean<span class="token punctuation">,</span>Integer<span class="token punctuation">,</span>MetaData
 <span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
 <span class="token comment">#导入各种数据类型</span>
@@ -79,7 +79,7 @@ metadata<span class="token punctuation">.</span>create_all<span class="token pun
 </tr>
 </tbody>
 </table>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#1.连接事务</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment">#1.连接事务</span>
 conn<span class="token operator">=</span>enging<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token comment">#2.开始事务</span>
 the_start<span class="token operator">=</span>conn<span class="token punctuation">.</span>begin<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -151,9 +151,9 @@ the_start<span class="token operator">=</span>conn<span class="token punctuation
 </table>
 <h3 id="数据增删改查" tabindex="-1"><a class="header-anchor" href="#数据增删改查" aria-hidden="true">#</a> 数据增删改查</h3>
 <p><strong>插入数据</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"insert into user(name) values('wewe')"</span><span class="token punctuation">)</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"insert into user(name) values('wewe')"</span><span class="token punctuation">)</span>
 engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"insert into user(name) values('xiaoyi')"</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>INSERT INTO TABLE (KEY1,KEYA) VALUES (VALUE1,VALUE2);  # 增加语句
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>INSERT INTO TABLE (KEY1,KEYA) VALUES (VALUE1,VALUE2);  # 增加语句
 
 UPDATE TABLE SET KEY=VALUE, KEY=VALUE WHERE···;          # 修改语句
 
@@ -162,18 +162,18 @@ SELECT * FROM TABLE;   # 查询语句
 DELETE FROM TABLE WHERE ···;     # 删除语句
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>删除数据</strong></p>
 <p>删除全部数据</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"delete from user"</span><span class="token punctuation">)</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"delete from user"</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>删除指定数据</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"delete from user where id = 1"</span><span class="token punctuation">)</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"delete from user where id = 1"</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>更新数据</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#方法1</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment">#方法1</span>
 <span class="token comment"># engine.execute("update user set id = 2,name='python' where id =2")</span>
 <span class="token comment">#方法2</span>
 <span class="token comment"># engine.execute("update user set name = 'haha' where id = 3 ")</span>
 <span class="token comment">#方法3</span>
 <span class="token comment"># engine.execute("update user set name ='san'")</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>查看数据</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>content<span class="token operator">=</span>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"select * from user"</span><span class="token punctuation">)</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>content<span class="token operator">=</span>engine<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"select * from user"</span><span class="token punctuation">)</span>
 <span class="token keyword">for</span> i  <span class="token keyword">in</span> content<span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
 输出<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
@@ -182,7 +182,7 @@ DELETE FROM TABLE WHERE ···;     # 删除语句
 <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'wewe'</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>不适用sql语句</p>
 <p>方法2,采用python语言</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment">#插入数据</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment">#插入数据</span>
 conn<span class="token operator">=</span>engine<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token comment"># conn.execute(user_table.insert(),{"教学表":"www"})</span>
 <span class="token comment"># conn.close()</span>
@@ -197,11 +197,11 @@ conn<span class="token operator">=</span>engine<span class="token punctuation">.
 <span class="token comment"># conn.close()</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>方法3</p>
 <p><strong>插入数据</strong></p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>stmt<span class="token operator">=</span>insert<span class="token punctuation">(</span>user_table<span class="token punctuation">)</span><span class="token punctuation">.</span>values<span class="token punctuation">(</span>教学表<span class="token operator">=</span><span class="token string">"haha"</span><span class="token punctuation">,</span><span class="token builtin">id</span><span class="token operator">=</span><span class="token number">67</span><span class="token punctuation">)</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>stmt<span class="token operator">=</span>insert<span class="token punctuation">(</span>user_table<span class="token punctuation">)</span><span class="token punctuation">.</span>values<span class="token punctuation">(</span>教学表<span class="token operator">=</span><span class="token string">"haha"</span><span class="token punctuation">,</span><span class="token builtin">id</span><span class="token operator">=</span><span class="token number">67</span><span class="token punctuation">)</span>
 compiled<span class="token operator">=</span>stmt<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token keyword">with</span> engine<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> conn<span class="token punctuation">:</span>
     result<span class="token operator">=</span>conn<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>stmt<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">with</span> engine<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> conn<span class="token punctuation">:</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">with</span> engine<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> conn<span class="token punctuation">:</span>
     result <span class="token operator">=</span> conn<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>
         insert<span class="token punctuation">(</span>user_table<span class="token punctuation">)</span><span class="token punctuation">,</span>
         <span class="token punctuation">[</span>
@@ -210,7 +210,7 @@ compiled<span class="token operator">=</span>stmt<span class="token punctuation"
         <span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>更新数据</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> sqlalchemy <span class="token keyword">import</span> update
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> sqlalchemy <span class="token keyword">import</span> update
 stmt <span class="token operator">=</span> <span class="token punctuation">(</span>
     update<span class="token punctuation">(</span>user_table<span class="token punctuation">)</span>
     <span class="token punctuation">.</span>where<span class="token punctuation">(</span>user_table<span class="token punctuation">.</span>c<span class="token punctuation">.</span>教学表 <span class="token operator">==</span> <span class="token string">"xi"</span><span class="token punctuation">)</span>
@@ -218,7 +218,7 @@ stmt <span class="token operator">=</span> <span class="token punctuation">(</sp
 <span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>stmt<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="orm类操纵数据" tabindex="-1"><a class="header-anchor" href="#orm类操纵数据" aria-hidden="true">#</a> ORM类操纵数据</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> sqlalchemy<span class="token punctuation">.</span>orm <span class="token keyword">import</span> sessionmaker
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">from</span> sqlalchemy<span class="token punctuation">.</span>orm <span class="token keyword">import</span> sessionmaker
 <span class="token keyword">from</span> sqlalchemy<span class="token punctuation">.</span>ext<span class="token punctuation">.</span>declarative <span class="token keyword">import</span>  declarative_base
 
 engine <span class="token operator">=</span> create_engine<span class="token punctuation">(</span>

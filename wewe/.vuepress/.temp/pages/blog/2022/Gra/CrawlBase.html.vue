@@ -2,7 +2,7 @@
 <p>1.连接数据库</p>
 <p>2.读取json文件</p>
 <p>3.不知如何将数据形式为列表的存入sqlite中，例如电影剧情分类有武侠，剧情，人物。</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>    <span class="token keyword">def</span> <span class="token function">read_json</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>filename<span class="token punctuation">,</span>read_type<span class="token operator">=</span><span class="token string">"json"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>    <span class="token keyword">def</span> <span class="token function">read_json</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>filename<span class="token punctuation">,</span>read_type<span class="token operator">=</span><span class="token string">"json"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         conn <span class="token operator">=</span> sqlite3<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token string">'D:\SQLite\data\cava.db'</span><span class="token punctuation">)</span>
         conn<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
                             CREATE TABLE MOVIE_DETAIL

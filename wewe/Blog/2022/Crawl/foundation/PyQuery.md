@@ -11,7 +11,6 @@ tag:
 icon: vue
 sticky: false
 star: false
-password: false
 article: true
 timeline: true
 image: false

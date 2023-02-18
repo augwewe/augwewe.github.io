@@ -1,15 +1,15 @@
 export const searchIndex = [
   {
-    "title": "关于博主",
+    "title": "augwewe",
     "headers": [],
-    "path": "/intro.html",
+    "path": "/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "augwewe",
+    "title": "关于博主",
     "headers": [],
-    "path": "/",
+    "path": "/intro.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -37,9 +37,203 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/Blog/MyPlog/MyDay.html",
+    "title": "pymongo",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MongoDB-pymongo",
+        "slug": "mongodb-pymongo",
+        "link": "#mongodb-pymongo",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 连接数据库",
+            "slug": "_1-连接数据库",
+            "link": "#_1-连接数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 指定数据库",
+            "slug": "_2-指定数据库",
+            "link": "#_2-指定数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 指定集合（数据表）",
+            "slug": "_3-指定集合-数据表",
+            "link": "#_3-指定集合-数据表",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 插入数据",
+            "slug": "_4-插入数据",
+            "link": "#_4-插入数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5. 查询数据",
+            "slug": "_5-查询数据",
+            "link": "#_5-查询数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "6. 查询数据范围（int)",
+            "slug": "_6-查询数据范围-int",
+            "link": "#_6-查询数据范围-int",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "7. 查询数据范围(各类属性)",
+            "slug": "_7-查询数据范围-各类属性",
+            "link": "#_7-查询数据范围-各类属性",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "8. 统计",
+            "slug": "_8-统计",
+            "link": "#_8-统计",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "9.排序",
+            "slug": "_9-排序",
+            "link": "#_9-排序",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "10. 偏移",
+            "slug": "_10-偏移",
+            "link": "#_10-偏移",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "11.数据更新update  $set",
+            "slug": "_11-数据更新update-set",
+            "link": "#_11-数据更新update-set",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "12. 指定某个数据增加",
+            "slug": "_12-指定某个数据增加",
+            "link": "#_12-指定某个数据增加",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "13. 数据删减",
+            "slug": "_13-数据删减",
+            "link": "#_13-数据删减",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/MongoDB_/About_MGdb.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MongoDB教程 6.0版",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MongoDB 6.0教程",
+        "slug": "mongodb-6-0教程",
+        "link": "#mongodb-6-0教程",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1下载MongoDB",
+            "slug": "_1-1下载mongodb",
+            "link": "#_1-1下载mongodb",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2环境变量配置",
+            "slug": "_1-2环境变量配置",
+            "link": "#_1-2环境变量配置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.3 下载MongoDB.Shell",
+            "slug": "_1-3-下载mongodb-shell",
+            "link": "#_1-3-下载mongodb-shell",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.4 启动MongoDB 服务",
+            "slug": "_1-4-启动mongodb-服务",
+            "link": "#_1-4-启动mongodb-服务",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/MongoDB_/MGdb.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python 自动化",
+    "headers": [
+      {
+        "level": 3,
+        "title": "读取excel",
+        "slug": "读取excel",
+        "link": "#读取excel",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "追加表格",
+        "slug": "追加表格",
+        "link": "#追加表格",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "os模块部分内容",
+        "slug": "os模块部分内容",
+        "link": "#os模块部分内容",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法二",
+        "slug": "方法二",
+        "link": "#方法二",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "方法三",
+        "slug": "方法三",
+        "link": "#方法三",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "xls&xlsx",
+        "slug": "xls-xlsx",
+        "link": "#xls-xlsx",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Python_Automation/read_Excel.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -321,6 +515,94 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Django",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Django",
+        "slug": "django",
+        "link": "#django",
+        "children": [
+          {
+            "level": 3,
+            "title": "为什么要用虚拟环境？",
+            "slug": "为什么要用虚拟环境",
+            "link": "#为什么要用虚拟环境",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.Django环境搭建",
+            "slug": "_1-django环境搭建",
+            "link": "#_1-django环境搭建",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2.创建项目",
+        "slug": "_2-创建项目",
+        "link": "#_2-创建项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. model层和数据库交互",
+        "slug": "_3-model层和数据库交互",
+        "link": "#_3-model层和数据库交互",
+        "children": []
+      }
+    ],
+    "path": "/Blog/2022/Gra/About_Django.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "request",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.获取request 以文本形式",
+        "slug": "_1-获取request-以文本形式",
+        "link": "#_1-获取request-以文本形式",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1 文本保存",
+            "slug": "_1-1-文本保存",
+            "link": "#_1-1-文本保存",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2 二进制文件（音频，图片）",
+            "slug": "_1-2-二进制文件-音频-图片",
+            "link": "#_1-2-二进制文件-音频-图片",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.测试工具：可以看到请求头等信息",
+            "slug": "_2-测试工具-可以看到请求头等信息",
+            "link": "#_2-测试工具-可以看到请求头等信息",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "请求头函数",
+            "slug": "请求头函数",
+            "link": "#请求头函数",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Blog/2022/Gra/About_Request.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "aiottip",
     "headers": [
       {
@@ -393,50 +675,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Django",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Django",
-        "slug": "django",
-        "link": "#django",
-        "children": [
-          {
-            "level": 3,
-            "title": "为什么要用虚拟环境？",
-            "slug": "为什么要用虚拟环境",
-            "link": "#为什么要用虚拟环境",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.Django环境搭建",
-            "slug": "_1-django环境搭建",
-            "link": "#_1-django环境搭建",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2.创建项目",
-        "slug": "_2-创建项目",
-        "link": "#_2-创建项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. model层和数据库交互",
-        "slug": "_3-model层和数据库交互",
-        "link": "#_3-model层和数据库交互",
-        "children": []
-      }
-    ],
-    "path": "/Blog/2022/Gra/About_Django.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Python 之站在高层框架下的 SQLAIchemy 操作 MySQL",
     "headers": [
       {
@@ -505,50 +743,6 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/Gra/About_pymysql.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "request",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.获取request 以文本形式",
-        "slug": "_1-获取request-以文本形式",
-        "link": "#_1-获取request-以文本形式",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1 文本保存",
-            "slug": "_1-1-文本保存",
-            "link": "#_1-1-文本保存",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.2 二进制文件（音频，图片）",
-            "slug": "_1-2-二进制文件-音频-图片",
-            "link": "#_1-2-二进制文件-音频-图片",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.测试工具：可以看到请求头等信息",
-            "slug": "_2-测试工具-可以看到请求头等信息",
-            "link": "#_2-测试工具-可以看到请求头等信息",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "请求头函数",
-            "slug": "请求头函数",
-            "link": "#请求头函数",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/Gra/About_Request.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -654,214 +848,6 @@ export const searchIndex = [
       }
     ],
     "path": "/Blog/2022/Gra/Try_Exception.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/Blog/2022/Gra/Untitled.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "pymongo",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MongoDB-pymongo",
-        "slug": "mongodb-pymongo",
-        "link": "#mongodb-pymongo",
-        "children": [
-          {
-            "level": 3,
-            "title": "1. 连接数据库",
-            "slug": "_1-连接数据库",
-            "link": "#_1-连接数据库",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2. 指定数据库",
-            "slug": "_2-指定数据库",
-            "link": "#_2-指定数据库",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3. 指定集合（数据表）",
-            "slug": "_3-指定集合-数据表",
-            "link": "#_3-指定集合-数据表",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "4. 插入数据",
-            "slug": "_4-插入数据",
-            "link": "#_4-插入数据",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "5. 查询数据",
-            "slug": "_5-查询数据",
-            "link": "#_5-查询数据",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "6. 查询数据范围（int)",
-            "slug": "_6-查询数据范围-int",
-            "link": "#_6-查询数据范围-int",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "7. 查询数据范围(各类属性)",
-            "slug": "_7-查询数据范围-各类属性",
-            "link": "#_7-查询数据范围-各类属性",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "8. 统计",
-            "slug": "_8-统计",
-            "link": "#_8-统计",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "9.排序",
-            "slug": "_9-排序",
-            "link": "#_9-排序",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "10. 偏移",
-            "slug": "_10-偏移",
-            "link": "#_10-偏移",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "11.数据更新update  $set",
-            "slug": "_11-数据更新update-set",
-            "link": "#_11-数据更新update-set",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "12. 指定某个数据增加",
-            "slug": "_12-指定某个数据增加",
-            "link": "#_12-指定某个数据增加",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "13. 数据删减",
-            "slug": "_13-数据删减",
-            "link": "#_13-数据删减",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/MongoDB_/About_MGdb.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "MongoDB教程 6.0版",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MongoDB 6.0教程",
-        "slug": "mongodb-6-0教程",
-        "link": "#mongodb-6-0教程",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1下载MongoDB",
-            "slug": "_1-1下载mongodb",
-            "link": "#_1-1下载mongodb",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.2环境变量配置",
-            "slug": "_1-2环境变量配置",
-            "link": "#_1-2环境变量配置",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.3 下载MongoDB.Shell",
-            "slug": "_1-3-下载mongodb-shell",
-            "link": "#_1-3-下载mongodb-shell",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.4 启动MongoDB 服务",
-            "slug": "_1-4-启动mongodb-服务",
-            "link": "#_1-4-启动mongodb-服务",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/Blog/2022/MongoDB_/MGdb.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "python 自动化",
-    "headers": [
-      {
-        "level": 3,
-        "title": "读取excel",
-        "slug": "读取excel",
-        "link": "#读取excel",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "追加表格",
-        "slug": "追加表格",
-        "link": "#追加表格",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "os模块部分内容",
-        "slug": "os模块部分内容",
-        "link": "#os模块部分内容",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "方法二",
-        "slug": "方法二",
-        "link": "#方法二",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "方法三",
-        "slug": "方法三",
-        "link": "#方法三",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "xls&xlsx",
-        "slug": "xls-xlsx",
-        "link": "#xls-xlsx",
-        "children": []
-      }
-    ],
-    "path": "/Blog/2022/Python_Automation/read_Excel.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1396,6 +1382,55 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "2022",
+    "headers": [],
+    "path": "/Blog/2022/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Blog",
+    "headers": [],
+    "path": "/Blog/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Mongo D B",
+    "headers": [],
+    "path": "/Blog/2022/MongoDB_/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Python Automation",
+    "headers": [],
+    "path": "/Blog/2022/Python_Automation/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Crawl",
+    "headers": [],
+    "path": "/Blog/2022/Crawl/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Gra",
+    "headers": [],
+    "path": "/Blog/2022/Gra/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Foundation",
+    "headers": [],
+    "path": "/Blog/2022/Crawl/foundation/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "分类",
     "headers": [],
     "path": "/category/",
@@ -1413,20 +1448,6 @@ export const searchIndex = [
     "title": "文章",
     "headers": [],
     "path": "/article/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "加密",
-    "headers": [],
-    "path": "/encrypted/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "幻灯片",
-    "headers": [],
-    "path": "/slide/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1480,9 +1501,23 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "MongoDB 标签",
+    "headers": [],
+    "path": "/tag/mongodb/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "爬虫技术 猫眼电影 标签",
     "headers": [],
     "path": "/tag/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF-%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python Web框架 标签",
+    "headers": [],
+    "path": "/tag/python-web%E6%A1%86%E6%9E%B6/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1501,23 +1536,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "python Web框架 标签",
-    "headers": [],
-    "path": "/tag/python-web%E6%A1%86%E6%9E%B6/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "数据库 标签",
     "headers": [],
     "path": "/tag/%E6%95%B0%E6%8D%AE%E5%BA%93/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "MongoDB 标签",
-    "headers": [],
-    "path": "/tag/mongodb/",
     "pathLocale": "/",
     "extraFields": []
   },

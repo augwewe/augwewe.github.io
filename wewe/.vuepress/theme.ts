@@ -45,16 +45,11 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        name:"augwewe",
+        name: "augwewe",
         description: "Methodical",
         intro: "/intro.html",
       },
-
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
+      editLink: false,
     },
   },
 
@@ -63,20 +58,20 @@ export default hopeTheme({
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
       //"/Blog/2022/mywriter.html":["721721"]
-      "/Blog/2022/Crawl/TianMaoAnalysi.html":["831831"],
-      "/Blog/2022/Crawl/TianMaoCrawl.html":["831831"],
-      "/Blog/2022/Crawl/NovelCrawl.html":["831831"],
-      "/Blog/2022/Crawl/TianMaoSave.html":["831831"],
-      "/Blog/2022/Crawl/ScrapeMovie.html":["831831"],
-      "/Blog/2022/Crawl/AskUrl_Temp.html":["831831"],
-      "/Blog/2022/Crawl/Python_Crawl.html":["831831"],
-      "/Blog/2022/Gra/Template_graduate.html":["831831"],
-      "/Blog/2022/Crawl/foundation/PythonCrawl.html":["831831"],
-      "Blog/2022/Gra/DelayWait.html":["831831"],
-      "Blog/2022/Gra/CrawlBase.html":["721721"],
-      "Blog/2022/Gra/About_Request.html":["831831"],
-      "Blog/2022/Gra/Delay_Wait.html":["831831"],
-      "Blog/2022/Gra/About_pymysql.html":["831831"]
+      "/Blog/2022/Crawl/TianMaoAnalysi.html": "831831",
+      "/Blog/2022/Crawl/TianMaoCrawl.html": "831831",
+      "/Blog/2022/Crawl/NovelCrawl.html": "831831",
+      "/Blog/2022/Crawl/TianMaoSave.html": "831831",
+      "/Blog/2022/Crawl/ScrapeMovie.html": ["831831"],
+      "/Blog/2022/Crawl/AskUrl_Temp.html": ["831831"],
+      "/Blog/2022/Crawl/Python_Crawl.html": ["831831"],
+      "/Blog/2022/Gra/Template_graduate.html": ["831831"],
+      "/Blog/2022/Crawl/foundation/PythonCrawl.html": ["831831"],
+      "Blog/2022/Gra/DelayWait.html": ["831831"],
+      "Blog/2022/Gra/CrawlBase.html": ["721721"],
+      "Blog/2022/Gra/About_Request.html": ["831831"],
+      "Blog/2022/Gra/Delay_Wait.html": ["831831"],
+      "Blog/2022/Gra/About_pymysql.html": "831831"
     },
   },
 
@@ -84,13 +79,23 @@ export default hopeTheme({
     blog: {
       autoExcerpt: true,
     },
-    components: [
-      // "Badge",
-      "PDF",
-      "YouTube",
-      "VideoPlayer",
-      "BiliBili",
-    ],
+    components: {
+      components: [
+        // "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "FontIcon",
+        "CodePen",
+        "PDF",
+        "SiteInfo",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+        "Replit",
+        "ArtPlayer",
+      ],
+    },
     // If you don't need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
@@ -113,9 +118,9 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-       provider: "Waline",
-       serverURL: "https://discuss.augwewe.cn/",
-       reaction: [
+      provider: "Waline",
+      serverURL: "https://discuss.augwewe.cn/",
+      reaction: [
         // '/Waline/tieba/ti7eba_agree.png',
         '/Waline/tieba/tieba_sunglasses.png',
         '/Waline/tieba/tieba_pick_nose.png',
@@ -140,7 +145,7 @@ export default hopeTheme({
       echarts: true,
       flowchart: true,
       gfm: true,
-      imageSize: true,
+      imgSize: true,
       include: true,
       katex: true,
       lazyLoad: true,

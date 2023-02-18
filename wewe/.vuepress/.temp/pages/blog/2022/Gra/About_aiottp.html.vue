@@ -2,7 +2,7 @@
 <h3 id="概念" tabindex="-1"><a class="header-anchor" href="#概念" aria-hidden="true">#</a> 概念</h3>
 <p>iohttp 是一个基于 asyncio 的异步 HTTP 网络模块，它既提供了服务端，又提供了客户端。其中我们用服务端可以搭建一个支持异步处理的服务器，用于处理请求并返回响应，类似于 Django、Flask、Tornado 等一些 Web 服务器。而客户端我们就可以用来发起请求，就类似于 requests 来发起一个 HTTP 请求然后获得响应，但 requests 发起的是同步的网络请求，而 aiohttp 则发起的是异步的。</p>
 <h3 id="_1-attiop基本案例代码" tabindex="-1"><a class="header-anchor" href="#_1-attiop基本案例代码" aria-hidden="true">#</a> 1. attiop基本案例代码</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> asyncio
 
 
@@ -31,7 +31,7 @@ status<span class="token punctuation">:</span> <span class="token number">200</s
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>获取了augwewe.cn网页源代码和响应代码200</p>
 <p>###2.  url参数设置</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> asyncio
 
 
@@ -61,7 +61,7 @@ status<span class="token punctuation">:</span> <span class="token number">200</s
   <span class="token string">"url"</span><span class="token punctuation">:</span> <span class="token string">"https://httpbin.org/get?name=cava&amp;age=25"</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-post表单提交" tabindex="-1"><a class="header-anchor" href="#_3-post表单提交" aria-hidden="true">#</a> 3. post表单提交</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> asyncio
 
 
@@ -97,7 +97,7 @@ status<span class="token punctuation">:</span> <span class="token number">200</s
   <span class="token string">"url"</span><span class="token punctuation">:</span> <span class="token string">"https://httpbin.org/post"</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-post-json数据提交" tabindex="-1"><a class="header-anchor" href="#_4-post-json数据提交" aria-hidden="true">#</a> 4. post json数据提交</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> asyncio
 
 
@@ -136,7 +136,7 @@ status<span class="token punctuation">:</span> <span class="token number">200</s
 
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-返回-响应字段" tabindex="-1"><a class="header-anchor" href="#_5-返回-响应字段" aria-hidden="true">#</a> 5. 返回 响应字段</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>
 <span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> asyncio
 
@@ -186,7 +186,7 @@ json<span class="token punctuation">:</span> <span class="token punctuation">{</
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_6-超时设置" tabindex="-1"><a class="header-anchor" href="#_6-超时设置" aria-hidden="true">#</a> 6. 超时设置</h3>
 <p><a href="http://xn--augwewe-q33kz5bf90ysjk.cn" target="_blank" rel="noopener noreferrer">个人网站augwewe.cn<ExternalLinkIcon/></a> 测试，设定响应时间，若在该时间范围内成功响应则返回200</p>
 <p>本网站有时候是2秒或者3秒，不确定</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> asyncio
 
 
@@ -204,7 +204,7 @@ status<span class="token punctuation">:</span> <span class="token number">200</s
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_7-控制并发量-semaphore" tabindex="-1"><a class="header-anchor" href="#_7-控制并发量-semaphore" aria-hidden="true">#</a> 7. 控制并发量（Semaphore)</h3>
 <p>aiottp可以提供工作量非常大的并发，但是网站并不能及时响应，在短时间内以同一个ip过度频繁得爬取目标网站的内容可能导致被网站禁止访问。</p>
 <p>aiottpy中的Semphore可以控制并发量</p>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio
 <span class="token keyword">import</span> aiohttp
 
 CONCURRENCY <span class="token operator">=</span> <span class="token number">5</span>
@@ -234,7 +234,7 @@ session <span class="token operator">=</span> <span class="token boolean">None</
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上述代码中CONCURRENCY声明最大的并发量为5，目标网站为baidu。用Semaphore创建信号量对象，以此控制进入爬取最大的协程数量，最大数量即为前面设定的5。</p>
 <p>main方法中，声明10000个task,传入到gather方法中。若没有信号量的控制，这些task会同时执行。在有信号量的控制下，同时运行的task 数量会被控制在5个，以此就达到限速的目的。</p>
 <h3 id="实战" tabindex="-1"><a class="header-anchor" href="#实战" aria-hidden="true">#</a> 实战</h3>
-<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">import</span> asyncio
 <span class="token keyword">import</span> aiohttp
 <span class="token keyword">import</span> logging
 <span class="token keyword">import</span> json
