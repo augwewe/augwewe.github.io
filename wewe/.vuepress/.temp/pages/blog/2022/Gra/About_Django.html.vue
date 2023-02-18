@@ -24,6 +24,10 @@
 <p>urls.py中定义链接格式</p>
 <p><img src="@source/Blog/2022/Gra/About_Django.assets/image-20230217220046336.png" alt="image-20230217220046336" loading="lazy"></p>
 <p><img src="@source/Blog/2022/Gra/About_Django.assets/image-20230217220059644.png" alt="image-20230217220059644" loading="lazy"></p>
-</div></template>
+<h2 id="_3-model层和数据库交互" tabindex="-1"><a class="header-anchor" href="#_3-model层和数据库交互" aria-hidden="true">#</a> 3. model层和数据库交互</h2>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token keyword">from</span> django<span class="token punctuation">.</span>db <span class="token keyword">import</span> models
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

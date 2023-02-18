@@ -76,3 +76,11 @@ views.py中定义函数，返回页面内容
 
 ![image-20230217220059644](./About_Django.assets/image-20230217220059644.png)
 
+## 3. model层和数据库交互
+
+```python
+from django.db import models
+
+
+```
+
